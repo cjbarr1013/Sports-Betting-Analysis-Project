@@ -1,0 +1,7490 @@
+[
+    {
+        "id": 382,
+        "firstname": "Dejounte",
+        "lastname": "Murray",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "180",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 1858,
+        "firstname": "Bruno",
+        "lastname": "Fernando",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "240",
+        "jersey": 20,
+        "position": "F-C"
+    },
+    {
+        "id": 1046,
+        "firstname": "Trae",
+        "lastname": "Young",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "164",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 1868,
+        "firstname": "De'Andre",
+        "lastname": "Hunter",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "221",
+        "jersey": 12,
+        "position": "F-G"
+    },
+    {
+        "id": 1903,
+        "firstname": "Dylan",
+        "lastname": "Windler",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "196",
+        "jersey": 9,
+        "position": "G-F"
+    },
+    {
+        "id": 2327,
+        "firstname": "Garrison",
+        "lastname": "Mathews",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 25,
+        "position": "G"
+    },
+    {
+        "id": 2629,
+        "firstname": "Onyeka",
+        "lastname": "Okongwu",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "240",
+        "jersey": 17,
+        "position": "F-C"
+    },
+    {
+        "id": 2569,
+        "firstname": "Saddiq",
+        "lastname": "Bey",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "215",
+        "jersey": 41,
+        "position": "F"
+    },
+    {
+        "id": 2589,
+        "firstname": "Trent",
+        "lastname": "Forrest",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "210",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 2608,
+        "firstname": "Vit",
+        "lastname": "Krejci",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "195",
+        "jersey": 27,
+        "position": "G"
+    },
+    {
+        "id": 2819,
+        "firstname": "Jalen",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "219",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 3444,
+        "firstname": "AJ",
+        "lastname": "Griffin",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 3938,
+        "firstname": "Kobe",
+        "lastname": "Bufkin",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3939,
+        "firstname": "Mouhamed",
+        "lastname": "Gueye",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "210",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3941,
+        "firstname": "Seth",
+        "lastname": "Lundy",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3942,
+        "firstname": "Miles",
+        "lastname": "Norris",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 365,
+        "firstname": "Patty",
+        "lastname": "Mills",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "180",
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 341,
+        "firstname": "Wesley",
+        "lastname": "Matthews",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "220",
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 92,
+        "firstname": "Clint",
+        "lastname": "Capela",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "256",
+        "jersey": 15,
+        "position": "C"
+    },
+    {
+        "id": 743,
+        "firstname": "Bogdan",
+        "lastname": "Bogdanovic",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "225",
+        "jersey": 13,
+        "position": "G"
+    },
+    {
+        "id": 75,
+        "firstname": "Jaylen",
+        "lastname": "Brown",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "223",
+        "jersey": 7,
+        "position": "G-F"
+    },
+    {
+        "id": 882,
+        "firstname": "Jayson",
+        "lastname": "Tatum",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "210",
+        "jersey": null,
+        "position": "F-G"
+    },
+    {
+        "id": 897,
+        "firstname": "Derrick",
+        "lastname": "White",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "190",
+        "jersey": 9,
+        "position": "G"
+    },
+    {
+        "id": 819,
+        "firstname": "Luke",
+        "lastname": "Kornet",
+        "height": {
+            "feet": "7",
+            "inches": "2"
+        },
+        "weight": "250",
+        "jersey": 40,
+        "position": "C-F"
+    },
+    {
+        "id": 1006,
+        "firstname": "Svi",
+        "lastname": "Mykhailiuk",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "205",
+        "jersey": 17,
+        "position": "G-F"
+    },
+    {
+        "id": 2110,
+        "firstname": "Oshae",
+        "lastname": "Brissett",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "210",
+        "jersey": 12,
+        "position": "F-G"
+    },
+    {
+        "id": 970,
+        "firstname": "Wenyen",
+        "lastname": "Gabriel",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "205",
+        "jersey": 35,
+        "position": "F"
+    },
+    {
+        "id": 2844,
+        "firstname": "Neemias",
+        "lastname": "Queta",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "248",
+        "jersey": 88,
+        "position": "C"
+    },
+    {
+        "id": 2635,
+        "firstname": "Payton",
+        "lastname": "Pritchard",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "195",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 2647,
+        "firstname": "Lamar",
+        "lastname": "Stevens",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "230",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 2656,
+        "firstname": "Xavier",
+        "lastname": "Tillman",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "245",
+        "jersey": 2,
+        "position": "F"
+    },
+    {
+        "id": 2851,
+        "firstname": "Jaden",
+        "lastname": "Springer",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "202",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 2921,
+        "firstname": "DJ",
+        "lastname": "Steward",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "163",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2812,
+        "firstname": "Sam",
+        "lastname": "Hauser",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "217",
+        "jersey": 30,
+        "position": "F"
+    },
+    {
+        "id": 2788,
+        "firstname": "Dalano",
+        "lastname": "Banton",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "204",
+        "jersey": 45,
+        "position": "F"
+    },
+    {
+        "id": 3429,
+        "firstname": "JD",
+        "lastname": "Davison",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 3943,
+        "firstname": "Jordan",
+        "lastname": "Walsh",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": 27,
+        "position": "G"
+    },
+    {
+        "id": 3995,
+        "firstname": "Drew",
+        "lastname": "Peterson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 248,
+        "firstname": "Al",
+        "lastname": "Horford",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "240",
+        "jersey": 42,
+        "position": "C-F"
+    },
+    {
+        "id": 242,
+        "firstname": "Jrue",
+        "lastname": "Holiday",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "205",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 432,
+        "firstname": "Kristaps",
+        "lastname": "Porzingis",
+        "height": {
+            "feet": "7",
+            "inches": "3"
+        },
+        "weight": "240",
+        "jersey": 6,
+        "position": "F-C"
+    },
+    {
+        "id": 851,
+        "firstname": "Royce",
+        "lastname": "O'Neale",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "226",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 481,
+        "firstname": "Ben",
+        "lastname": "Simmons",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "240",
+        "jersey": 10,
+        "position": "G-F"
+    },
+    {
+        "id": 175,
+        "firstname": "Dorian",
+        "lastname": "Finney-Smith",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "220",
+        "jersey": 10,
+        "position": "F"
+    },
+    {
+        "id": 876,
+        "firstname": "Dennis",
+        "lastname": "Smith Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 934,
+        "firstname": "Keita",
+        "lastname": "Bates-Diop",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "229",
+        "jersey": 31,
+        "position": "F"
+    },
+    {
+        "id": 940,
+        "firstname": "Mikal",
+        "lastname": "Bridges",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "209",
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 1038,
+        "firstname": "Lonnie",
+        "lastname": "Walker IV",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "204",
+        "jersey": 4,
+        "position": "G-F"
+    },
+    {
+        "id": 1847,
+        "firstname": "Darius",
+        "lastname": "Bazley",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "208",
+        "jersey": 55,
+        "position": "F"
+    },
+    {
+        "id": 1854,
+        "firstname": "Nic",
+        "lastname": "Claxton",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "215",
+        "jersey": 33,
+        "position": "C"
+    },
+    {
+        "id": 1871,
+        "firstname": "Cameron",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "210",
+        "jersey": 23,
+        "position": "F"
+    },
+    {
+        "id": 2325,
+        "firstname": "Armoni",
+        "lastname": "Brooks",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "195",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 2848,
+        "firstname": "Day'Ron",
+        "lastname": "Sharpe",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "265",
+        "jersey": 20,
+        "position": "C"
+    },
+    {
+        "id": 2820,
+        "firstname": "Keon",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "185",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 2855,
+        "firstname": "Cam",
+        "lastname": "Thomas",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "210",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 2861,
+        "firstname": "Trendon",
+        "lastname": "Watford",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "237",
+        "jersey": 2,
+        "position": "F"
+    },
+    {
+        "id": 3944,
+        "firstname": "Noah",
+        "lastname": "Clowney",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "210",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 3945,
+        "firstname": "Dariq",
+        "lastname": "Whitehead",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3946,
+        "firstname": "Jalen",
+        "lastname": "Wilson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 4041,
+        "firstname": "Harry",
+        "lastname": "Giles III",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "240",
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 472,
+        "firstname": "Dennis",
+        "lastname": "Schroder",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "172",
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 142,
+        "firstname": "Spencer",
+        "lastname": "Dinwiddie",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "215",
+        "jersey": 26,
+        "position": "G"
+    },
+    {
+        "id": 254,
+        "firstname": "RJ",
+        "lastname": "Hunter",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "185",
+        "jersey": 28,
+        "position": "G"
+    },
+    {
+        "id": 458,
+        "firstname": "Terry",
+        "lastname": "Rozier",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "190",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 850,
+        "firstname": "Frank",
+        "lastname": "Ntilikina",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "200",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 880,
+        "firstname": "Edmond",
+        "lastname": "Sumner",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 941,
+        "firstname": "Miles",
+        "lastname": "Bridges",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 1879,
+        "firstname": "Cody",
+        "lastname": "Martin",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "205",
+        "jersey": 11,
+        "position": "F"
+    },
+    {
+        "id": 1897,
+        "firstname": "P.J.",
+        "lastname": "Washington",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 1901,
+        "firstname": "Grant",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "236",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 2482,
+        "firstname": "Marques",
+        "lastname": "Bolden",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 24,
+        "position": "C"
+    },
+    {
+        "id": 2566,
+        "firstname": "LaMelo",
+        "lastname": "Ball",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "180",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 2614,
+        "firstname": "Theo",
+        "lastname": "Maledon",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "175",
+        "jersey": 5,
+        "position": null
+    },
+    {
+        "id": 2633,
+        "firstname": "Aleksej",
+        "lastname": "Pokusevski",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "190",
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 2639,
+        "firstname": "Nick",
+        "lastname": "Richards",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "245",
+        "jersey": 4,
+        "position": "C"
+    },
+    {
+        "id": 2831,
+        "firstname": "Tre",
+        "lastname": "Mann",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "178",
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 2793,
+        "firstname": "James",
+        "lastname": "Bouknight",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "190",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 2856,
+        "firstname": "JT",
+        "lastname": "Thor",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "203",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 3506,
+        "firstname": "Mark",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": "C"
+    },
+    {
+        "id": 3469,
+        "firstname": "Bryce",
+        "lastname": "McGowens",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 3947,
+        "firstname": "Amari",
+        "lastname": "Bailey",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "185",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3948,
+        "firstname": "Leaky",
+        "lastname": "Black",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3949,
+        "firstname": "Nathan",
+        "lastname": "Mensah",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "230",
+        "jersey": 31,
+        "position": "C"
+    },
+    {
+        "id": 3950,
+        "firstname": "Brandon",
+        "lastname": "Miller",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4042,
+        "firstname": "Nick",
+        "lastname": "Smith Jr.",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "170",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 227,
+        "firstname": "Gordon",
+        "lastname": "Hayward",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 20,
+        "position": "F"
+    },
+    {
+        "id": 488,
+        "firstname": "Ish",
+        "lastname": "Smith",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "175",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 52,
+        "firstname": "Davis",
+        "lastname": "Bertans",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "225",
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 123,
+        "firstname": "Seth",
+        "lastname": "Curry",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "185",
+        "jersey": 30,
+        "position": "G"
+    },
+    {
+        "id": 2739,
+        "firstname": "Vasilije",
+        "lastname": "Micic",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 631,
+        "firstname": "Alex",
+        "lastname": "Caruso",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "186",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 765,
+        "firstname": "Torrey",
+        "lastname": "Craig",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "221",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 949,
+        "firstname": "Jevon",
+        "lastname": "Carter",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "200",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 1900,
+        "firstname": "Coby",
+        "lastname": "White",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2664,
+        "firstname": "Patrick",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "215",
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 2802,
+        "firstname": "Ayo",
+        "lastname": "Dosunmu",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "200",
+        "jersey": 12,
+        "position": "G"
+    },
+    {
+        "id": 3081,
+        "firstname": "Carlik",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "185",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 2853,
+        "firstname": "Terry",
+        "lastname": "Taylor",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "230",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 3461,
+        "firstname": "Justin",
+        "lastname": "Lewis",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 34,
+        "position": "F"
+    },
+    {
+        "id": 3494,
+        "firstname": "Dalen",
+        "lastname": "Terry",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 3452,
+        "firstname": "Quenton",
+        "lastname": "Jackson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 29,
+        "position": "G"
+    },
+    {
+        "id": 3951,
+        "firstname": "Onuralp",
+        "lastname": "Bitim",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": null,
+        "position": "SF"
+    },
+    {
+        "id": 3952,
+        "firstname": "Henri",
+        "lastname": "Drell",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3953,
+        "firstname": "Max",
+        "lastname": "Heidegger",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "180",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3954,
+        "firstname": "Julian",
+        "lastname": "Phillips",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "197",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3955,
+        "firstname": "Adama",
+        "lastname": "Sanogo",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "258",
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 3964,
+        "firstname": "Andrew",
+        "lastname": "Funk",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "188",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 136,
+        "firstname": "DeMar",
+        "lastname": "DeRozan",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 11,
+        "position": "G-F"
+    },
+    {
+        "id": 534,
+        "firstname": "Nikola",
+        "lastname": "Vucevic",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "260",
+        "jersey": 9,
+        "position": "C"
+    },
+    {
+        "id": 147,
+        "firstname": "Andre",
+        "lastname": "Drummond",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "279",
+        "jersey": 3,
+        "position": "C"
+    },
+    {
+        "id": 308,
+        "firstname": "Zach",
+        "lastname": "LaVine",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "200",
+        "jersey": 8,
+        "position": "G-F"
+    },
+    {
+        "id": 281,
+        "firstname": "Damian",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "245",
+        "jersey": 30,
+        "position": "C"
+    },
+    {
+        "id": 317,
+        "firstname": "Caris",
+        "lastname": "LeVert",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "205",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 391,
+        "firstname": "Georges",
+        "lastname": "Niang",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 20,
+        "position": "F"
+    },
+    {
+        "id": 840,
+        "firstname": "Donovan",
+        "lastname": "Mitchell",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "215",
+        "jersey": 45,
+        "position": "G"
+    },
+    {
+        "id": 727,
+        "firstname": "Jarrett",
+        "lastname": "Allen",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "243",
+        "jersey": 31,
+        "position": "C"
+    },
+    {
+        "id": 1025,
+        "firstname": "Zhaire",
+        "lastname": "Smith",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "205",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 2051,
+        "firstname": "Max",
+        "lastname": "Strus",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "220",
+        "jersey": 31,
+        "position": "G-F"
+    },
+    {
+        "id": 1860,
+        "firstname": "Darius",
+        "lastname": "Garland",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "192",
+        "jersey": 10,
+        "position": "G"
+    },
+    {
+        "id": 1870,
+        "firstname": "Ty",
+        "lastname": "Jerome",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "195",
+        "jersey": 16,
+        "position": "G-F"
+    },
+    {
+        "id": 2392,
+        "firstname": "Dean",
+        "lastname": "Wade",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "228",
+        "jersey": 32,
+        "position": "F-C"
+    },
+    {
+        "id": 2630,
+        "firstname": "Isaac",
+        "lastname": "Okoro",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "225",
+        "jersey": 35,
+        "position": "F-G"
+    },
+    {
+        "id": 2623,
+        "firstname": "Sam",
+        "lastname": "Merrill",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 2800,
+        "firstname": "Sharife",
+        "lastname": "Cooper",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "176",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 2835,
+        "firstname": "Evan",
+        "lastname": "Mobley",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "215",
+        "jersey": 4,
+        "position": "C"
+    },
+    {
+        "id": 3472,
+        "firstname": "Isaiah",
+        "lastname": "Mobley",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 15,
+        "position": "F"
+    },
+    {
+        "id": 3956,
+        "firstname": "Emoni",
+        "lastname": "Bates",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "170",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 3957,
+        "firstname": "Pete",
+        "lastname": "Nance",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "230",
+        "jersey": 48,
+        "position": "F"
+    },
+    {
+        "id": 3958,
+        "firstname": "Justin",
+        "lastname": "Powell",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "197",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 4043,
+        "firstname": "Craig",
+        "lastname": "Porter Jr.",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "186",
+        "jersey": 40,
+        "position": "G"
+    },
+    {
+        "id": 515,
+        "firstname": "Tristan",
+        "lastname": "Thompson",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "254",
+        "jersey": 3,
+        "position": "C-F"
+    },
+    {
+        "id": 373,
+        "firstname": "Marcus",
+        "lastname": "Morris Sr.",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "218",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 246,
+        "firstname": "Richaun",
+        "lastname": "Holmes",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "235",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 283,
+        "firstname": "Derrick",
+        "lastname": "Jones Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "210",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 817,
+        "firstname": "Maxi",
+        "lastname": "Kleber",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "240",
+        "jersey": 42,
+        "position": "F"
+    },
+    {
+        "id": 963,
+        "firstname": "Luka",
+        "lastname": "Doncic",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 77,
+        "position": "F-G"
+    },
+    {
+        "id": 1859,
+        "firstname": "Daniel",
+        "lastname": "Gafford",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "234",
+        "jersey": 21,
+        "position": "F-C"
+    },
+    {
+        "id": 2593,
+        "firstname": "Josh",
+        "lastname": "Green",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "200",
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 3398,
+        "firstname": "Brandon",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "190",
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 2795,
+        "firstname": "Greg",
+        "lastname": "Brown III",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "206",
+        "jersey": 4,
+        "position": "F"
+    },
+    {
+        "id": 2862,
+        "firstname": "Joe",
+        "lastname": "Wieskamp",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "205",
+        "jersey": 15,
+        "position": "G-F"
+    },
+    {
+        "id": 2890,
+        "firstname": "A.J.",
+        "lastname": "Lawson",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "180",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 3407,
+        "firstname": "Jaden",
+        "lastname": "Hardy",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 3959,
+        "firstname": "Dexter",
+        "lastname": "Dennis",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "210",
+        "jersey": 38,
+        "position": "G"
+    },
+    {
+        "id": 3960,
+        "firstname": "OlivierMaxence",
+        "lastname": "Prosper",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": 18,
+        "position": "F"
+    },
+    {
+        "id": 3961,
+        "firstname": "Jordan",
+        "lastname": "Walker",
+        "height": {
+            "feet": "5",
+            "inches": null
+        },
+        "weight": "170",
+        "jersey": 16,
+        "position": "SG"
+    },
+    {
+        "id": 4044,
+        "firstname": "Dereck",
+        "lastname": "Lively II",
+        "height": {
+            "feet": "7",
+            "inches": null
+        },
+        "weight": "234",
+        "jersey": 2,
+        "position": "C"
+    },
+    {
+        "id": 4045,
+        "firstname": "Mike",
+        "lastname": "Miles Jr.",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 261,
+        "firstname": "Kyrie",
+        "lastname": "Irving",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "195",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 374,
+        "firstname": "Markieff",
+        "lastname": "Morris",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "245",
+        "jersey": 13,
+        "position": "F"
+    },
+    {
+        "id": 215,
+        "firstname": "Tim",
+        "lastname": "Hardaway Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "205",
+        "jersey": 11,
+        "position": "G-F"
+    },
+    {
+        "id": 433,
+        "firstname": "Dwight",
+        "lastname": "Powell",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "240",
+        "jersey": 7,
+        "position": "F-C"
+    },
+    {
+        "id": 164,
+        "firstname": "Dante",
+        "lastname": "Exum",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": null
+    },
+    {
+        "id": 383,
+        "firstname": "Jamal",
+        "lastname": "Murray",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "215",
+        "jersey": 27,
+        "position": "G"
+    },
+    {
+        "id": 1055,
+        "firstname": "Amida",
+        "lastname": "Brimah",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "230",
+        "jersey": 37,
+        "position": "C"
+    },
+    {
+        "id": 1014,
+        "firstname": "Michael",
+        "lastname": "Porter Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "218",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 2627,
+        "firstname": "Zeke",
+        "lastname": "Nnaji",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "240",
+        "jersey": 22,
+        "position": "F-C"
+    },
+    {
+        "id": 3091,
+        "firstname": "Braxton",
+        "lastname": "Key",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "225",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 2814,
+        "firstname": "Jay",
+        "lastname": "Huff",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 30,
+        "position": "F"
+    },
+    {
+        "id": 2840,
+        "firstname": "Jamorko",
+        "lastname": "Pickett",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "206",
+        "jersey": 24,
+        "position": "F"
+    },
+    {
+        "id": 3420,
+        "firstname": "Christian",
+        "lastname": "Braun",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3498,
+        "firstname": "Peyton",
+        "lastname": "Watson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 3441,
+        "firstname": "Collin",
+        "lastname": "Gillespie",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 3963,
+        "firstname": "Armaan",
+        "lastname": "Franklin",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3965,
+        "firstname": "Jalen",
+        "lastname": "Pickett",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "202",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3966,
+        "firstname": "Julian",
+        "lastname": "Strawther",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3967,
+        "firstname": "Hunter",
+        "lastname": "Tyson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4070,
+        "firstname": "A.",
+        "lastname": "Toney",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 286,
+        "firstname": "DeAndre",
+        "lastname": "Jordan",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "265",
+        "jersey": 6,
+        "position": "C"
+    },
+    {
+        "id": 264,
+        "firstname": "Reggie",
+        "lastname": "Jackson",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "208",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 243,
+        "firstname": "Justin",
+        "lastname": "Holiday",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "180",
+        "jersey": 9,
+        "position": "F-G"
+    },
+    {
+        "id": 89,
+        "firstname": "Kentavious",
+        "lastname": "Caldwell-Pope",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "204",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 195,
+        "firstname": "Aaron",
+        "lastname": "Gordon",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "235",
+        "jersey": 50,
+        "position": "F"
+    },
+    {
+        "id": 279,
+        "firstname": "Nikola",
+        "lastname": "Jokic",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "284",
+        "jersey": 15,
+        "position": "C"
+    },
+    {
+        "id": 845,
+        "firstname": "Monte",
+        "lastname": "Morris",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "183",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 931,
+        "firstname": "Marvin",
+        "lastname": "Bagley III",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "235",
+        "jersey": 35,
+        "position": "F"
+    },
+    {
+        "id": 945,
+        "firstname": "Troy",
+        "lastname": "Brown Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "215",
+        "jersey": 7,
+        "position": "G-F"
+    },
+    {
+        "id": 987,
+        "firstname": "Kevin",
+        "lastname": "Knox II",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "215",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 1001,
+        "firstname": "Shake",
+        "lastname": "Milton",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "205",
+        "jersey": 18,
+        "position": "G-F"
+    },
+    {
+        "id": 2557,
+        "firstname": "Jontay",
+        "lastname": "Porter",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "240",
+        "jersey": 4,
+        "position": "C-F"
+    },
+    {
+        "id": 2811,
+        "firstname": "Quentin",
+        "lastname": "Grimes",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "210",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 2666,
+        "firstname": "James",
+        "lastname": "Wiseman",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "240",
+        "jersey": 33,
+        "position": "C"
+    },
+    {
+        "id": 2599,
+        "firstname": "Killian",
+        "lastname": "Hayes",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "195",
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 2648,
+        "firstname": "Isaiah",
+        "lastname": "Stewart",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "250",
+        "jersey": 28,
+        "position": "F-C"
+    },
+    {
+        "id": 2587,
+        "firstname": "Malachi",
+        "lastname": "Flynn",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "175",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 2678,
+        "firstname": "Zavier",
+        "lastname": "Simpson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 9,
+        "position": "G"
+    },
+    {
+        "id": 2829,
+        "firstname": "Isaiah",
+        "lastname": "Livers",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "232",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 2801,
+        "firstname": "Cade",
+        "lastname": "Cunningham",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 3790,
+        "firstname": "Stanley",
+        "lastname": "Umude",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 3451,
+        "firstname": "Jaden",
+        "lastname": "Ivey",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 3433,
+        "firstname": "Jalen",
+        "lastname": "Duren",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 3481,
+        "firstname": "Jared",
+        "lastname": "Rhoden",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 42,
+        "position": "G"
+    },
+    {
+        "id": 3417,
+        "firstname": "Buddy",
+        "lastname": "Boeheim",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 27,
+        "position": "F"
+    },
+    {
+        "id": 3438,
+        "firstname": "Simone",
+        "lastname": "Fontecchio",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 3968,
+        "firstname": "Malcolm",
+        "lastname": "Cazalon",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "185",
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 3969,
+        "firstname": "Tosan",
+        "lastname": "Evbuomwan",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "217",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3970,
+        "firstname": "Marcus",
+        "lastname": "Sasser",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3971,
+        "firstname": "Ausar",
+        "lastname": "Thompson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "190",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 181,
+        "firstname": "Danilo",
+        "lastname": "Gallinari",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "236",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 190,
+        "firstname": "Taj",
+        "lastname": "Gibson",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "232",
+        "jersey": 67,
+        "position": "F"
+    },
+    {
+        "id": 84,
+        "firstname": "Alec",
+        "lastname": "Burks",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "214",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 60,
+        "firstname": "Bojan",
+        "lastname": "Bogdanovic",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "226",
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 177,
+        "firstname": "Evan",
+        "lastname": "Fournier",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "205",
+        "jersey": 13,
+        "position": "G-F"
+    },
+    {
+        "id": 384,
+        "firstname": "Mike",
+        "lastname": "Muscala",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "240",
+        "jersey": 33,
+        "position": "F-C"
+    },
+    {
+        "id": 221,
+        "firstname": "Joe",
+        "lastname": "Harris",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 12,
+        "position": "G-F"
+    },
+    {
+        "id": 415,
+        "firstname": "Chris",
+        "lastname": "Paul",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "175",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 322,
+        "firstname": "Kevon",
+        "lastname": "Looney",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "222",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 593,
+        "firstname": "Gary",
+        "lastname": "Payton II",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 1019,
+        "firstname": "Jerome",
+        "lastname": "Robinson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 2827,
+        "firstname": "Jonathan",
+        "lastname": "Kuminga",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3492,
+        "firstname": "Pat",
+        "lastname": "Spencer",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 61,
+        "position": "G"
+    },
+    {
+        "id": 2836,
+        "firstname": "Moses",
+        "lastname": "Moody",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "211",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2806,
+        "firstname": "Usman",
+        "lastname": "Garuba",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "229",
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 3485,
+        "firstname": "Gui",
+        "lastname": "Santos",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 3480,
+        "firstname": "Lester",
+        "lastname": "Quinones",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 25,
+        "position": "G"
+    },
+    {
+        "id": 3972,
+        "firstname": "Kendric",
+        "lastname": "Davis",
+        "height": {
+            "feet": "5",
+            "inches": null
+        },
+        "weight": "184",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 3973,
+        "firstname": "Trayce",
+        "lastname": "JacksonDavis",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "245",
+        "jersey": 32,
+        "position": "F"
+    },
+    {
+        "id": 3974,
+        "firstname": "Javan",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "192",
+        "jersey": 31,
+        "position": "F"
+    },
+    {
+        "id": 3975,
+        "firstname": "Brandin",
+        "lastname": "Podziemski",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "203",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 186,
+        "firstname": "Rudy",
+        "lastname": "Gay",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "250",
+        "jersey": 22,
+        "position": "F-G"
+    },
+    {
+        "id": 124,
+        "firstname": "Stephen",
+        "lastname": "Curry",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "185",
+        "jersey": 30,
+        "position": "G"
+    },
+    {
+        "id": 514,
+        "firstname": "Klay",
+        "lastname": "Thompson",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 287,
+        "firstname": "Cory",
+        "lastname": "Joseph",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "200",
+        "jersey": 18,
+        "position": "G"
+    },
+    {
+        "id": 204,
+        "firstname": "Draymond",
+        "lastname": "Green",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "230",
+        "jersey": 23,
+        "position": "F"
+    },
+    {
+        "id": 354,
+        "firstname": "Rodney",
+        "lastname": "McGruder",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "205",
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 548,
+        "firstname": "Andrew",
+        "lastname": "Wiggins",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "197",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 468,
+        "firstname": "Dario",
+        "lastname": "Saric",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "225",
+        "jersey": 20,
+        "position": "F-C"
+    },
+    {
+        "id": 3810,
+        "firstname": "Donovan",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 88,
+        "position": "G-F"
+    },
+    {
+        "id": 337,
+        "firstname": "Boban",
+        "lastname": "Marjanovic",
+        "height": {
+            "feet": "7",
+            "inches": "3"
+        },
+        "weight": "290",
+        "jersey": 51,
+        "position": "C"
+    },
+    {
+        "id": 527,
+        "firstname": "Fred",
+        "lastname": "VanVleet",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "197",
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 749,
+        "firstname": "Dillon",
+        "lastname": "Brooks",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 24,
+        "position": "G-F"
+    },
+    {
+        "id": 979,
+        "firstname": "Aaron",
+        "lastname": "Holiday",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "185",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 1485,
+        "firstname": "Jock",
+        "lastname": "Landale",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 11,
+        "position": "C"
+    },
+    {
+        "id": 2672,
+        "firstname": "Nate",
+        "lastname": "Hinton",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "210",
+        "jersey": 14,
+        "position": "G-F"
+    },
+    {
+        "id": 2810,
+        "firstname": "Jalen",
+        "lastname": "Green",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "186",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2650,
+        "firstname": "Jae'Sean",
+        "lastname": "Tate",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "230",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 2847,
+        "firstname": "Alperen",
+        "lastname": "Sengun",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "243",
+        "jersey": 28,
+        "position": "C"
+    },
+    {
+        "id": 3430,
+        "firstname": "Darius",
+        "lastname": "Days",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3489,
+        "firstname": "Jabari",
+        "lastname": "Smith Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 3435,
+        "firstname": "Tari",
+        "lastname": "Eason",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 3450,
+        "firstname": "Trevor",
+        "lastname": "Hudgins",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 12,
+        "position": "G"
+    },
+    {
+        "id": 3931,
+        "firstname": "Jeenathan",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 49,
+        "position": "G"
+    },
+    {
+        "id": 3976,
+        "firstname": "Matthew",
+        "lastname": "Mayer",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3977,
+        "firstname": "Amen",
+        "lastname": "Thompson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "214",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3978,
+        "firstname": "Cam",
+        "lastname": "Whitmore",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "232",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 207,
+        "firstname": "Jeff",
+        "lastname": "Green",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "235",
+        "jersey": 32,
+        "position": "F"
+    },
+    {
+        "id": 869,
+        "firstname": "Samardo",
+        "lastname": "Samuels",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 6,
+        "position": "F"
+    },
+    {
+        "id": 82,
+        "firstname": "Reggie",
+        "lastname": "Bullock",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "205",
+        "jersey": 25,
+        "position": "G-F"
+    },
+    {
+        "id": 522,
+        "firstname": "Myles",
+        "lastname": "Turner",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "250",
+        "jersey": 33,
+        "position": "C-F"
+    },
+    {
+        "id": 236,
+        "firstname": "Buddy",
+        "lastname": "Hield",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "220",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 479,
+        "firstname": "Pascal",
+        "lastname": "Siakam",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "230",
+        "jersey": 43,
+        "position": "F"
+    },
+    {
+        "id": 886,
+        "firstname": "Daniel",
+        "lastname": "Theis",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "245",
+        "jersey": 27,
+        "position": "F-C"
+    },
+    {
+        "id": 944,
+        "firstname": "Bruce",
+        "lastname": "Brown",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "202",
+        "jersey": 11,
+        "position": "G-F"
+    },
+    {
+        "id": 3476,
+        "firstname": "Andrew",
+        "lastname": "Nembhard",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 2,
+        "position": "G-F"
+    },
+    {
+        "id": 2628,
+        "firstname": "Jordan",
+        "lastname": "Nwora",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "225",
+        "jersey": 13,
+        "position": "F"
+    },
+    {
+        "id": 2658,
+        "firstname": "Obi",
+        "lastname": "Toppin",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "220",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 2595,
+        "firstname": "Tyrese",
+        "lastname": "Haliburton",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "185",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2626,
+        "firstname": "Aaron",
+        "lastname": "Nesmith",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "215",
+        "jersey": 23,
+        "position": "G-F"
+    },
+    {
+        "id": 2644,
+        "firstname": "Jalen",
+        "lastname": "Smith",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "215",
+        "jersey": 25,
+        "position": "F-C"
+    },
+    {
+        "id": 2817,
+        "firstname": "Isaiah",
+        "lastname": "Jackson",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "205",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 3466,
+        "firstname": "Bennedict",
+        "lastname": "Mathurin",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G-F"
+    },
+    {
+        "id": 3423,
+        "firstname": "Kendall",
+        "lastname": "Brown",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 10,
+        "position": "G"
+    },
+    {
+        "id": 3979,
+        "firstname": "Ben",
+        "lastname": "Sheppard",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "190",
+        "jersey": 26,
+        "position": "G"
+    },
+    {
+        "id": 3980,
+        "firstname": "Oscar",
+        "lastname": "Tshiebwe",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "260",
+        "jersey": 44,
+        "position": "C"
+    },
+    {
+        "id": 3981,
+        "firstname": "Jarace",
+        "lastname": "Walker",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "240",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 3982,
+        "firstname": "Isaiah",
+        "lastname": "Wong",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "184",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 274,
+        "firstname": "James",
+        "lastname": "Johnson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 351,
+        "firstname": "Doug",
+        "lastname": "McDermott",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 348,
+        "firstname": "T.J.",
+        "lastname": "McConnell",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "190",
+        "jersey": 9,
+        "position": "G"
+    },
+    {
+        "id": 434,
+        "firstname": "Norman",
+        "lastname": "Powell",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "215",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 575,
+        "firstname": "Ivica",
+        "lastname": "Zubac",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "240",
+        "jersey": 40,
+        "position": "C"
+    },
+    {
+        "id": 2115,
+        "firstname": "Amir",
+        "lastname": "Coffey",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "210",
+        "jersey": 7,
+        "position": "G-F"
+    },
+    {
+        "id": 1877,
+        "firstname": "Terance",
+        "lastname": "Mann",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "215",
+        "jersey": 14,
+        "position": "G-F"
+    },
+    {
+        "id": 3396,
+        "firstname": "Xavier",
+        "lastname": "Moon",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "165",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 2839,
+        "firstname": "Filip",
+        "lastname": "Petrusev",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "225",
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 2617,
+        "firstname": "Kenyon",
+        "lastname": "Martin Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "215",
+        "jersey": 6,
+        "position": "F"
+    },
+    {
+        "id": 2792,
+        "firstname": "Brandon",
+        "lastname": "Boston Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "188",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2816,
+        "firstname": "Bones",
+        "lastname": "Hyland",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "169",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 2843,
+        "firstname": "Joshua",
+        "lastname": "Primo",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "189",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 3431,
+        "firstname": "Moussa",
+        "lastname": "Diabate",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 3983,
+        "firstname": "Kobe",
+        "lastname": "Brown",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "250",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 3984,
+        "firstname": "Jordan",
+        "lastname": "Miller",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3985,
+        "firstname": "Bryson",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "240",
+        "jersey": 41,
+        "position": "F"
+    },
+    {
+        "id": 520,
+        "firstname": "P.J.",
+        "lastname": "Tucker",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "245",
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 544,
+        "firstname": "Russell",
+        "lastname": "Westbrook",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 40,
+        "firstname": "Nicolas",
+        "lastname": "Batum",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "230",
+        "jersey": 33,
+        "position": "G-F"
+    },
+    {
+        "id": 216,
+        "firstname": "James",
+        "lastname": "Harden",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "220",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 189,
+        "firstname": "Paul",
+        "lastname": "George",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "220",
+        "jersey": 13,
+        "position": "F"
+    },
+    {
+        "id": 314,
+        "firstname": "Kawhi",
+        "lastname": "Leonard",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 2,
+        "position": "F"
+    },
+    {
+        "id": 426,
+        "firstname": "Mason",
+        "lastname": "Plumlee",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "254",
+        "jersey": 24,
+        "position": "F-C"
+    },
+    {
+        "id": 118,
+        "firstname": "Robert",
+        "lastname": "Covington",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "209",
+        "jersey": 23,
+        "position": "F"
+    },
+    {
+        "id": 462,
+        "firstname": "D'Angelo",
+        "lastname": "Russell",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "193",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 560,
+        "firstname": "Christian",
+        "lastname": "Wood",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "214",
+        "jersey": 35,
+        "position": "F"
+    },
+    {
+        "id": 437,
+        "firstname": "Taurean",
+        "lastname": "Prince",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "218",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 1036,
+        "firstname": "Jarred",
+        "lastname": "Vanderbilt",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "214",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 1862,
+        "firstname": "Rui",
+        "lastname": "Hachimura",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "230",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 1775,
+        "firstname": "Gabe",
+        "lastname": "Vincent",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "200",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 1889,
+        "firstname": "Cam",
+        "lastname": "Reddish",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "217",
+        "jersey": null,
+        "position": "F-G"
+    },
+    {
+        "id": 1864,
+        "firstname": "Jaxson",
+        "lastname": "Hayes",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "220",
+        "jersey": 10,
+        "position": "C-F"
+    },
+    {
+        "id": 2620,
+        "firstname": "Skylar",
+        "lastname": "Mays",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "205",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2845,
+        "firstname": "Austin",
+        "lastname": "Reaves",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "197",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 3477,
+        "firstname": "Scotty",
+        "lastname": "Pippen Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 3427,
+        "firstname": "Max",
+        "lastname": "Christie",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 10,
+        "position": "G"
+    },
+    {
+        "id": 3525,
+        "firstname": "Bryce",
+        "lastname": "Hamilton",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 53,
+        "position": "G"
+    },
+    {
+        "id": 3986,
+        "firstname": "Damion",
+        "lastname": "Baugh",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "194",
+        "jersey": 18,
+        "position": "G"
+    },
+    {
+        "id": 3987,
+        "firstname": "Colin",
+        "lastname": "Castleton",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "231",
+        "jersey": 14,
+        "position": "C"
+    },
+    {
+        "id": 3988,
+        "firstname": "Alex",
+        "lastname": "Fudge",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "189",
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 3989,
+        "firstname": "D'Moi",
+        "lastname": "Hodge",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "185",
+        "jersey": 55,
+        "position": "G"
+    },
+    {
+        "id": 3990,
+        "firstname": "Jalen",
+        "lastname": "HoodSchifino",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3991,
+        "firstname": "Maxwell",
+        "lastname": "Lewis",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 3992,
+        "firstname": "Vincent",
+        "lastname": "ValerioBodon",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "200",
+        "jersey": 27,
+        "position": "SF"
+    },
+    {
+        "id": 126,
+        "firstname": "Anthony",
+        "lastname": "Davis",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "253",
+        "jersey": 3,
+        "position": "F-C"
+    },
+    {
+        "id": 265,
+        "firstname": "LeBron",
+        "lastname": "James",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "250",
+        "jersey": 6,
+        "position": "F"
+    },
+    {
+        "id": 626,
+        "firstname": "Shaquille",
+        "lastname": "Harrison",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 814,
+        "firstname": "Luke",
+        "lastname": "Kennard",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "206",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 2201,
+        "firstname": "Mychal",
+        "lastname": "Mulder",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 982,
+        "firstname": "Jaren",
+        "lastname": "Jackson Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "242",
+        "jersey": 13,
+        "position": "F-C"
+    },
+    {
+        "id": 999,
+        "firstname": "Chimezie",
+        "lastname": "Metu",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "225",
+        "jersey": 7,
+        "position": "F-C"
+    },
+    {
+        "id": 1040,
+        "firstname": "Yuta",
+        "lastname": "Watanabe",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "215",
+        "jersey": 18,
+        "position": "G-F"
+    },
+    {
+        "id": 1881,
+        "firstname": "Ja",
+        "lastname": "Morant",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "174",
+        "jersey": 12,
+        "position": "G"
+    },
+    {
+        "id": 1882,
+        "firstname": "Jaylen",
+        "lastname": "Nowell",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "201",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2177,
+        "firstname": "John",
+        "lastname": "Konchar",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "210",
+        "jersey": 46,
+        "position": "G"
+    },
+    {
+        "id": 2568,
+        "firstname": "Desmond",
+        "lastname": "Bane",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "215",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 2857,
+        "firstname": "Isaiah",
+        "lastname": "Todd",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "219",
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 2864,
+        "firstname": "Ziaire",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "185",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 2786,
+        "firstname": "Santi",
+        "lastname": "Aldama",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "215",
+        "jersey": 7,
+        "position": "F-C"
+    },
+    {
+        "id": 2884,
+        "firstname": "DeJon",
+        "lastname": "Jarreau",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "185",
+        "jersey": 33,
+        "position": "G"
+    },
+    {
+        "id": 3341,
+        "firstname": "Jordan",
+        "lastname": "Goodwin",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 3460,
+        "firstname": "Jake",
+        "lastname": "LaRavia",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 3,
+        "position": "F"
+    },
+    {
+        "id": 3483,
+        "firstname": "David",
+        "lastname": "Roddy",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 27,
+        "position": "F"
+    },
+    {
+        "id": 3508,
+        "firstname": "Vince",
+        "lastname": "Williams Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 3463,
+        "firstname": "Kenneth",
+        "lastname": "Lofton Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 6,
+        "position": "F"
+    },
+    {
+        "id": 3892,
+        "firstname": "Jacob",
+        "lastname": "Gilyard",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": null
+    },
+    {
+        "id": 3993,
+        "firstname": "Matthew",
+        "lastname": "Hurt",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "235",
+        "jersey": 20,
+        "position": "F"
+    },
+    {
+        "id": 3994,
+        "firstname": "GG",
+        "lastname": "Jackson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": 45,
+        "position": "F"
+    },
+    {
+        "id": 4003,
+        "firstname": "Trey",
+        "lastname": "Jemison",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "260",
+        "jersey": 56,
+        "position": "C"
+    },
+    {
+        "id": 456,
+        "firstname": "Derrick",
+        "lastname": "Rose",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "200",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 54,
+        "firstname": "Bismack",
+        "lastname": "Biyombo",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "255",
+        "jersey": 18,
+        "position": "C"
+    },
+    {
+        "id": 4,
+        "firstname": "Steven",
+        "lastname": "Adams",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "265",
+        "jersey": 4,
+        "position": "C"
+    },
+    {
+        "id": 403,
+        "firstname": "Victor",
+        "lastname": "Oladipo",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "213",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 486,
+        "firstname": "Marcus",
+        "lastname": "Smart",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "220",
+        "jersey": 36,
+        "position": "G"
+    },
+    {
+        "id": 564,
+        "firstname": "Delon",
+        "lastname": "Wright",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "185",
+        "jersey": 55,
+        "position": "G"
+    },
+    {
+        "id": 446,
+        "firstname": "Josh",
+        "lastname": "Richardson",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "200",
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 138,
+        "firstname": "Cheick",
+        "lastname": "Diallo",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": null
+    },
+    {
+        "id": 724,
+        "firstname": "Bam",
+        "lastname": "Adebayo",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "255",
+        "jersey": 13,
+        "position": "C-F"
+    },
+    {
+        "id": 753,
+        "firstname": "Thomas",
+        "lastname": "Bryant",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "248",
+        "jersey": 13,
+        "position": "C-F"
+    },
+    {
+        "id": 2242,
+        "firstname": "Caleb",
+        "lastname": "Martin",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 1018,
+        "firstname": "Duncan",
+        "lastname": "Robinson",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "215",
+        "jersey": 55,
+        "position": "F"
+    },
+    {
+        "id": 1815,
+        "firstname": "Haywood",
+        "lastname": "Highsmith",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "220",
+        "jersey": 24,
+        "position": "F"
+    },
+    {
+        "id": 1866,
+        "firstname": "Tyler",
+        "lastname": "Herro",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "195",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 2597,
+        "firstname": "R.J.",
+        "lastname": "Hampton",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "175",
+        "jersey": 13,
+        "position": "G"
+    },
+    {
+        "id": 2798,
+        "firstname": "Justin",
+        "lastname": "Champagnie",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "206",
+        "jersey": 11,
+        "position": "G-F"
+    },
+    {
+        "id": 3360,
+        "firstname": "Dru",
+        "lastname": "Smith",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 9,
+        "position": "G"
+    },
+    {
+        "id": 3453,
+        "firstname": "Nikola",
+        "lastname": "Jovic",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 3482,
+        "firstname": "Orlando",
+        "lastname": "Robinson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 25,
+        "position": "C"
+    },
+    {
+        "id": 3503,
+        "firstname": "Alondes",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 31,
+        "position": "G"
+    },
+    {
+        "id": 3424,
+        "firstname": "Jamal",
+        "lastname": "Cain",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 3493,
+        "firstname": "Cole",
+        "lastname": "Swider",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "F"
+    },
+    {
+        "id": 4046,
+        "firstname": "Jaime",
+        "lastname": "Jaquez Jr.",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 327,
+        "firstname": "Kyle",
+        "lastname": "Lowry",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "196",
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 326,
+        "firstname": "Kevin",
+        "lastname": "Love",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "251",
+        "jersey": null,
+        "position": "F-C"
+    },
+    {
+        "id": 86,
+        "firstname": "Jimmy",
+        "lastname": "Butler",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 417,
+        "firstname": "Cameron",
+        "lastname": "Payne",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "183",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 431,
+        "firstname": "Bobby",
+        "lastname": "Portis",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "250",
+        "jersey": 9,
+        "position": "F"
+    },
+    {
+        "id": 115,
+        "firstname": "Pat",
+        "lastname": "Connaughton",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "209",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 46,
+        "firstname": "Malik",
+        "lastname": "Beasley",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "187",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 2034,
+        "firstname": "Lindell",
+        "lastname": "Wigginton",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 28,
+        "position": "G"
+    },
+    {
+        "id": 3405,
+        "firstname": "MarJon",
+        "lastname": "Beauchamp",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 3497,
+        "firstname": "TyTy",
+        "lastname": "Washington Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3443,
+        "firstname": "A.J.",
+        "lastname": "Green",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 3996,
+        "firstname": "Jazian",
+        "lastname": "Gortman",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "170",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3997,
+        "firstname": "Chris",
+        "lastname": "Livingston",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": 7,
+        "position": "F"
+    },
+    {
+        "id": 3998,
+        "firstname": "Omari",
+        "lastname": "Moore",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3999,
+        "firstname": "Drew",
+        "lastname": "Timme",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "235",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4047,
+        "firstname": "Andre",
+        "lastname": "Jackson Jr.",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "200",
+        "jersey": 44,
+        "position": "G"
+    },
+    {
+        "id": 323,
+        "firstname": "Brook",
+        "lastname": "Lopez",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "282",
+        "jersey": 11,
+        "position": "C"
+    },
+    {
+        "id": 325,
+        "firstname": "Robin",
+        "lastname": "Lopez",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "281",
+        "jersey": 33,
+        "position": "C"
+    },
+    {
+        "id": 53,
+        "firstname": "Patrick",
+        "lastname": "Beverley",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "180",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 319,
+        "firstname": "Damian",
+        "lastname": "Lillard",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 121,
+        "firstname": "Jae",
+        "lastname": "Crowder",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "235",
+        "jersey": 99,
+        "position": "F"
+    },
+    {
+        "id": 361,
+        "firstname": "Khris",
+        "lastname": "Middleton",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "222",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 20,
+        "firstname": "Giannis",
+        "lastname": "Antetokounmpo",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "242",
+        "jersey": 34,
+        "position": "F"
+    },
+    {
+        "id": 2408,
+        "firstname": "Thanasis",
+        "lastname": "Antetokounmpo",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "219",
+        "jersey": 43,
+        "position": "F"
+    },
+    {
+        "id": 519,
+        "firstname": "Karl-Anthony",
+        "lastname": "Towns",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "248",
+        "jersey": 32,
+        "position": "C-F"
+    },
+    {
+        "id": 806,
+        "firstname": "Justin",
+        "lastname": "Jackson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 997,
+        "firstname": "Jordan",
+        "lastname": "McLaughlin",
+        "height": {
+            "feet": "5",
+            "inches": "11"
+        },
+        "weight": "185",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 1845,
+        "firstname": "Nickeil",
+        "lastname": "Alexander-Walker",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "205",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 2146,
+        "firstname": "Naz",
+        "lastname": "Reid",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 11,
+        "position": "C-F"
+    },
+    {
+        "id": 2584,
+        "firstname": "Anthony",
+        "lastname": "Edwards",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "225",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 2621,
+        "firstname": "Jaden",
+        "lastname": "McDaniels",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "185",
+        "jersey": 3,
+        "position": "F"
+    },
+    {
+        "id": 3154,
+        "firstname": "Daishen",
+        "lastname": "Nix",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "224",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 3195,
+        "firstname": "Matt",
+        "lastname": "Ryan",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "215",
+        "jersey": 37,
+        "position": "F"
+    },
+    {
+        "id": 2807,
+        "firstname": "Luka",
+        "lastname": "Garza",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "243",
+        "jersey": 55,
+        "position": "C"
+    },
+    {
+        "id": 3474,
+        "firstname": "Wendell",
+        "lastname": "Moore Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 3470,
+        "firstname": "Josh",
+        "lastname": "Minott",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 3456,
+        "firstname": "Trevor",
+        "lastname": "Keels",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 3465,
+        "firstname": "Tyrese",
+        "lastname": "Martin",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 4001,
+        "firstname": "Leonard",
+        "lastname": "Miller",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "210",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 114,
+        "firstname": "Mike",
+        "lastname": "Conley",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "175",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 192,
+        "firstname": "Rudy",
+        "lastname": "Gobert",
+        "height": {
+            "feet": "7",
+            "inches": "1"
+        },
+        "weight": "258",
+        "jersey": 27,
+        "position": "C"
+    },
+    {
+        "id": 540,
+        "firstname": "T.J.",
+        "lastname": "Warren",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "220",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 18,
+        "firstname": "Kyle",
+        "lastname": "Anderson",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "230",
+        "jersey": 5,
+        "position": "F-G"
+    },
+    {
+        "id": 385,
+        "firstname": "Larry",
+        "lastname": "Nance Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "245",
+        "jersey": 22,
+        "position": "F-C"
+    },
+    {
+        "id": 260,
+        "firstname": "Brandon",
+        "lastname": "Ingram",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "190",
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 1071,
+        "firstname": "Kaiser",
+        "lastname": "Gates",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 30,
+        "position": "F"
+    },
+    {
+        "id": 1902,
+        "firstname": "Zion",
+        "lastname": "Williamson",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "284",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 2611,
+        "firstname": "Kira",
+        "lastname": "Lewis Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "170",
+        "jersey": 13,
+        "position": "G"
+    },
+    {
+        "id": 2668,
+        "firstname": "Naji",
+        "lastname": "Marshall",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "220",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 2846,
+        "firstname": "Jeremiah",
+        "lastname": "Robinson-Earl",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "242",
+        "jersey": 50,
+        "position": "F"
+    },
+    {
+        "id": 2822,
+        "firstname": "Herbert",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "206",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 2837,
+        "firstname": "Trey",
+        "lastname": "Murphy III",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "206",
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 3462,
+        "firstname": "E.J.",
+        "lastname": "Liddell",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 2990,
+        "firstname": "Jalen",
+        "lastname": "Crutcher",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "175",
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 2941,
+        "firstname": "Jose",
+        "lastname": "Alvarado",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "179",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 3406,
+        "firstname": "Dyson",
+        "lastname": "Daniels",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 3380,
+        "firstname": "Malcolm",
+        "lastname": "Hill",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 3421,
+        "firstname": "Izaiah",
+        "lastname": "Brockington",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3486,
+        "firstname": "Dereon",
+        "lastname": "Seabron",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 4002,
+        "firstname": "Jordan",
+        "lastname": "Hawkins",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 4004,
+        "firstname": "Tevian",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": 55,
+        "position": "G"
+    },
+    {
+        "id": 4005,
+        "firstname": "Liam",
+        "lastname": "Robbins",
+        "height": {
+            "feet": "7",
+            "inches": null
+        },
+        "weight": "250",
+        "jersey": 4,
+        "position": "C"
+    },
+    {
+        "id": 4048,
+        "firstname": "Landers",
+        "lastname": "Nolley II",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 525,
+        "firstname": "Jonas",
+        "lastname": "Valanciunas",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "265",
+        "jersey": 17,
+        "position": "C"
+    },
+    {
+        "id": 347,
+        "firstname": "CJ",
+        "lastname": "McCollum",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "190",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 571,
+        "firstname": "Cody",
+        "lastname": "Zeller",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 40,
+        "position": "F-C"
+    },
+    {
+        "id": 609,
+        "firstname": "Ryan",
+        "lastname": "Arcidiacono",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "195",
+        "jersey": 51,
+        "position": "G"
+    },
+    {
+        "id": 732,
+        "firstname": "O.G.",
+        "lastname": "Anunoby",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "232",
+        "jersey": 3,
+        "position": "F"
+    },
+    {
+        "id": 978,
+        "firstname": "Isaiah",
+        "lastname": "Hartenstein",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "250",
+        "jersey": 55,
+        "position": "C-F"
+    },
+    {
+        "id": 791,
+        "firstname": "Josh",
+        "lastname": "Hart",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "215",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 946,
+        "firstname": "Jalen",
+        "lastname": "Brunson",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "190",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 962,
+        "firstname": "Donte",
+        "lastname": "DiVincenzo",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "203",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 1020,
+        "firstname": "Mitchell",
+        "lastname": "Robinson",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "240",
+        "jersey": 23,
+        "position": "C-F"
+    },
+    {
+        "id": 1948,
+        "firstname": "DaQuan",
+        "lastname": "Jeffries",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "225",
+        "jersey": 8,
+        "position": "G-F"
+    },
+    {
+        "id": 1846,
+        "firstname": "RJ",
+        "lastname": "Barrett",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "214",
+        "jersey": 9,
+        "position": "F-G"
+    },
+    {
+        "id": 1890,
+        "firstname": "Isaiah",
+        "lastname": "Roby",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "230",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 2111,
+        "firstname": "Charlie",
+        "lastname": "Brown Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "199",
+        "jersey": 16,
+        "position": "G"
+    },
+    {
+        "id": 2561,
+        "firstname": "Precious",
+        "lastname": "Achiuwa",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "225",
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 2636,
+        "firstname": "Immanuel",
+        "lastname": "Quickley",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "190",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 2607,
+        "firstname": "Nathan",
+        "lastname": "Knight",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "253",
+        "jersey": 13,
+        "position": "F-C"
+    },
+    {
+        "id": 2832,
+        "firstname": "Miles",
+        "lastname": "McBride",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "195",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 2849,
+        "firstname": "Jericho",
+        "lastname": "Sims",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "250",
+        "jersey": 45,
+        "position": "C"
+    },
+    {
+        "id": 4006,
+        "firstname": "Jaylen",
+        "lastname": "Martin",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "196",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 4007,
+        "firstname": "Jacob",
+        "lastname": "Toppin",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4083,
+        "firstname": "D.",
+        "lastname": "Skapintsev",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 441,
+        "firstname": "Julius",
+        "lastname": "Randle",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "250",
+        "jersey": 30,
+        "position": "F-C"
+    },
+    {
+        "id": 972,
+        "firstname": "Shai",
+        "lastname": "Gilgeous-Alexander",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "180",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 1044,
+        "firstname": "Kenrich",
+        "lastname": "Williams",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "210",
+        "jersey": 34,
+        "position": "G-F"
+    },
+    {
+        "id": 2040,
+        "firstname": "Luguentz",
+        "lastname": "Dort",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 2604,
+        "firstname": "Isaiah",
+        "lastname": "Joe",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "165",
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 3404,
+        "firstname": "Lindy",
+        "lastname": "Waters III",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "215",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 2808,
+        "firstname": "Josh",
+        "lastname": "Giddey",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "205",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 2863,
+        "firstname": "Aaron",
+        "lastname": "Wiggins",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "190",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 3399,
+        "firstname": "Olivier",
+        "lastname": "Sarr",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 30,
+        "position": "C"
+    },
+    {
+        "id": 3448,
+        "firstname": "Chet",
+        "lastname": "Holmgren",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "C-F"
+    },
+    {
+        "id": 3504,
+        "firstname": "Jalen",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "G-F"
+    },
+    {
+        "id": 3505,
+        "firstname": "Jaylin",
+        "lastname": "Williams",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 6,
+        "position": "F"
+    },
+    {
+        "id": 3432,
+        "firstname": "Ousmane",
+        "lastname": "Dieng",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 13,
+        "position": "F"
+    },
+    {
+        "id": 3501,
+        "firstname": "Jack",
+        "lastname": "White",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 10,
+        "position": "F"
+    },
+    {
+        "id": 4008,
+        "firstname": "Keyontae",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "235",
+        "jersey": 18,
+        "position": "F"
+    },
+    {
+        "id": 4009,
+        "firstname": "Cason",
+        "lastname": "Wallace",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "193",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 4084,
+        "firstname": "A.",
+        "lastname": "Flagler",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 779,
+        "firstname": "Markelle",
+        "lastname": "Fultz",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "209",
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 801,
+        "firstname": "Jonathan",
+        "lastname": "Isaac",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "230",
+        "jersey": 1,
+        "position": "F"
+    },
+    {
+        "id": 899,
+        "firstname": "D.J.",
+        "lastname": "Wilson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 9,
+        "position": "F"
+    },
+    {
+        "id": 950,
+        "firstname": "Wendell",
+        "lastname": "Carter Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "270",
+        "jersey": 34,
+        "position": "C-F"
+    },
+    {
+        "id": 1037,
+        "firstname": "Moritz",
+        "lastname": "Wagner",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "245",
+        "jersey": 21,
+        "position": "F-C"
+    },
+    {
+        "id": 1848,
+        "firstname": "Goga",
+        "lastname": "Bitadze",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "250",
+        "jersey": 88,
+        "position": "C-F"
+    },
+    {
+        "id": 1883,
+        "firstname": "Chuma",
+        "lastname": "Okeke",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "229",
+        "jersey": 3,
+        "position": "F"
+    },
+    {
+        "id": 1892,
+        "firstname": "Admiral",
+        "lastname": "Schofield",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "241",
+        "jersey": 25,
+        "position": "F"
+    },
+    {
+        "id": 2563,
+        "firstname": "Cole",
+        "lastname": "Anthony",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "185",
+        "jersey": 50,
+        "position": "G"
+    },
+    {
+        "id": 2671,
+        "firstname": "Trevelin",
+        "lastname": "Queen",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "190",
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 2677,
+        "firstname": "Kevon",
+        "lastname": "Harris",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 2858,
+        "firstname": "Franz",
+        "lastname": "Wagner",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "220",
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 2852,
+        "firstname": "Jalen",
+        "lastname": "Suggs",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "205",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2833,
+        "firstname": "Mac",
+        "lastname": "McClung",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "185",
+        "jersey": 37,
+        "position": "G"
+    },
+    {
+        "id": 3414,
+        "firstname": "Paolo",
+        "lastname": "Banchero",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 5,
+        "position": "F"
+    },
+    {
+        "id": 3449,
+        "firstname": "Caleb",
+        "lastname": "Houstan",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 3478,
+        "firstname": "Daeqwon",
+        "lastname": "Plowden",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 29,
+        "position": "G-F"
+    },
+    {
+        "id": 4010,
+        "firstname": "Anthony",
+        "lastname": "Black",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 4011,
+        "firstname": "Jett",
+        "lastname": "Howard",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 220,
+        "firstname": "Gary",
+        "lastname": "Harris",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "210",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 258,
+        "firstname": "Joe",
+        "lastname": "Ingles",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "220",
+        "jersey": null,
+        "position": "F-G"
+    },
+    {
+        "id": 407,
+        "firstname": "Kelly",
+        "lastname": "Oubre Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "203",
+        "jersey": 12,
+        "position": "F-G"
+    },
+    {
+        "id": 818,
+        "firstname": "Furkan",
+        "lastname": "Korkmaz",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "202",
+        "jersey": 30,
+        "position": "G-F"
+    },
+    {
+        "id": 249,
+        "firstname": "Danuel",
+        "lastname": "House Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 25,
+        "position": "F-G"
+    },
+    {
+        "id": 932,
+        "firstname": "Mo",
+        "lastname": "Bamba",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "231",
+        "jersey": 11,
+        "position": "C"
+    },
+    {
+        "id": 998,
+        "firstname": "De'Anthony",
+        "lastname": "Melton",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "200",
+        "jersey": 8,
+        "position": "G"
+    },
+    {
+        "id": 2619,
+        "firstname": "Tyrese",
+        "lastname": "Maxey",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2638,
+        "firstname": "Paul",
+        "lastname": "Reed",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "210",
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 2878,
+        "firstname": "Jeff",
+        "lastname": "Dowtin",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "180",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 2804,
+        "firstname": "David",
+        "lastname": "Duke Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "204",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 2917,
+        "firstname": "Javonte",
+        "lastname": "Smart",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "205",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 4012,
+        "firstname": "Terquavion",
+        "lastname": "Smith",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "160",
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 4049,
+        "firstname": "Ricky",
+        "lastname": "Council IV",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "207",
+        "jersey": 16,
+        "position": "G"
+    },
+    {
+        "id": 203,
+        "firstname": "Danny",
+        "lastname": "Green",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "215",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 222,
+        "firstname": "Tobias",
+        "lastname": "Harris",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "226",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 159,
+        "firstname": "Joel",
+        "lastname": "Embiid",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "280",
+        "jersey": 21,
+        "position": "C-F"
+    },
+    {
+        "id": 64,
+        "firstname": "Devin",
+        "lastname": "Booker",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "206",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 926,
+        "firstname": "Grayson",
+        "lastname": "Allen",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "198",
+        "jersey": 7,
+        "position": "G"
+    },
+    {
+        "id": 2565,
+        "firstname": "Udoka",
+        "lastname": "Azubuike",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "270",
+        "jersey": 20,
+        "position": "C-F"
+    },
+    {
+        "id": 1010,
+        "firstname": "Josh",
+        "lastname": "Okogie",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "213",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 966,
+        "firstname": "Drew",
+        "lastname": "Eubanks",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 24,
+        "position": "F-C"
+    },
+    {
+        "id": 1849,
+        "firstname": "Bol",
+        "lastname": "Bol",
+        "height": {
+            "feet": "7",
+            "inches": "2"
+        },
+        "weight": "220",
+        "jersey": 10,
+        "position": "C-F"
+    },
+    {
+        "id": 1875,
+        "firstname": "Nassir",
+        "lastname": "Little",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "220",
+        "jersey": 10,
+        "position": "F-G"
+    },
+    {
+        "id": 2610,
+        "firstname": "Saben",
+        "lastname": "Lee",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "183",
+        "jersey": 38,
+        "position": "G"
+    },
+    {
+        "id": 2859,
+        "firstname": "Ish",
+        "lastname": "Wainright",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "250",
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 153,
+        "firstname": "Kevin",
+        "lastname": "Durant",
+        "height": {
+            "feet": "6",
+            "inches": "10"
+        },
+        "weight": "240",
+        "jersey": 7,
+        "position": "F"
+    },
+    {
+        "id": 570,
+        "firstname": "Thaddeus",
+        "lastname": "Young",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "235",
+        "jersey": 21,
+        "position": "F"
+    },
+    {
+        "id": 196,
+        "firstname": "Eric",
+        "lastname": "Gordon",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "215",
+        "jersey": 10,
+        "position": "G"
+    },
+    {
+        "id": 45,
+        "firstname": "Bradley",
+        "lastname": "Beal",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "207",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 398,
+        "firstname": "Jusuf",
+        "lastname": "Nurkic",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "290",
+        "jersey": 27,
+        "position": "C"
+    },
+    {
+        "id": 71,
+        "firstname": "Malcolm",
+        "lastname": "Brogdon",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "229",
+        "jersey": 13,
+        "position": "G"
+    },
+    {
+        "id": 1023,
+        "firstname": "Anfernee",
+        "lastname": "Simons",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "181",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 930,
+        "firstname": "Deandre",
+        "lastname": "Ayton",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "250",
+        "jersey": 22,
+        "position": "C"
+    },
+    {
+        "id": 1045,
+        "firstname": "Robert",
+        "lastname": "Williams III",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "237",
+        "jersey": 44,
+        "position": "C-F"
+    },
+    {
+        "id": 2160,
+        "firstname": "Moses",
+        "lastname": "Brown",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 6,
+        "position": "C"
+    },
+    {
+        "id": 1896,
+        "firstname": "Matisse",
+        "lastname": "Thybulle",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "201",
+        "jersey": 22,
+        "position": "G-F"
+    },
+    {
+        "id": 2594,
+        "firstname": "Ashton",
+        "lastname": "Hagans",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 22,
+        "position": "G-F"
+    },
+    {
+        "id": 3408,
+        "firstname": "Scoot",
+        "lastname": "Henderson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": null
+    },
+    {
+        "id": 3487,
+        "firstname": "Shaedon",
+        "lastname": "Sharpe",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 3418,
+        "firstname": "Jamaree",
+        "lastname": "Bouyea",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 3496,
+        "firstname": "Jabari",
+        "lastname": "Walker",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 34,
+        "position": "F"
+    },
+    {
+        "id": 3714,
+        "firstname": "Justin",
+        "lastname": "Minaya",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 4014,
+        "firstname": "Ibou",
+        "lastname": "Badji",
+        "height": {
+            "feet": "7",
+            "inches": null
+        },
+        "weight": "240",
+        "jersey": 41,
+        "position": "C"
+    },
+    {
+        "id": 4015,
+        "firstname": "Toumani",
+        "lastname": "Camara",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": 20,
+        "position": "F"
+    },
+    {
+        "id": 4017,
+        "firstname": "Kris",
+        "lastname": "Murray",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "215",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 4018,
+        "firstname": "Duop",
+        "lastname": "Reath",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "245",
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 4069,
+        "firstname": "R.",
+        "lastname": "Rupert",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 200,
+        "firstname": "Jerami",
+        "lastname": "Grant",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "210",
+        "jersey": 9,
+        "position": "F"
+    },
+    {
+        "id": 3724,
+        "firstname": "Taze",
+        "lastname": "Moore",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 44,
+        "position": "G"
+    },
+    {
+        "id": 3614,
+        "firstname": "George",
+        "lastname": "Conditt IV",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 44,
+        "position": "F"
+    },
+    {
+        "id": 331,
+        "firstname": "Trey",
+        "lastname": "Lyles",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "234",
+        "jersey": 41,
+        "position": "F"
+    },
+    {
+        "id": 463,
+        "firstname": "Domantas",
+        "lastname": "Sabonis",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "240",
+        "jersey": 10,
+        "position": "F-C"
+    },
+    {
+        "id": 776,
+        "firstname": "De'Aaron",
+        "lastname": "Fox",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "185",
+        "jersey": 5,
+        "position": "G"
+    },
+    {
+        "id": 842,
+        "firstname": "Malik",
+        "lastname": "Monk",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 980,
+        "firstname": "Kevin",
+        "lastname": "Huerter",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "198",
+        "jersey": 9,
+        "position": "G-F"
+    },
+    {
+        "id": 947,
+        "firstname": "Deonte",
+        "lastname": "Burton",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "240",
+        "jersey": 30,
+        "position": "G-F"
+    },
+    {
+        "id": 1934,
+        "firstname": "Juan",
+        "lastname": "Toscano-Anderson",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 95,
+        "position": "F"
+    },
+    {
+        "id": 2605,
+        "firstname": "Mason",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "200",
+        "jersey": 40,
+        "position": "G"
+    },
+    {
+        "id": 2588,
+        "firstname": "Jordan",
+        "lastname": "Ford",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "175",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 2803,
+        "firstname": "Chris",
+        "lastname": "Duarte",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "190",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 2805,
+        "firstname": "Kessler",
+        "lastname": "Edwards",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "203",
+        "jersey": 14,
+        "position": "F"
+    },
+    {
+        "id": 2834,
+        "firstname": "Davion",
+        "lastname": "Mitchell",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "202",
+        "jersey": 15,
+        "position": "G"
+    },
+    {
+        "id": 3475,
+        "firstname": "Keegan",
+        "lastname": "Murray",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 13,
+        "position": "F"
+    },
+    {
+        "id": 3436,
+        "firstname": "Keon",
+        "lastname": "Ellis",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 23,
+        "position": "G"
+    },
+    {
+        "id": 4020,
+        "firstname": "Colby",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 4021,
+        "firstname": "Jalen",
+        "lastname": "Slawson",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "218",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4022,
+        "firstname": "Sasha",
+        "lastname": "Vezenkov",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 353,
+        "firstname": "JaVale",
+        "lastname": "McGee",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "270",
+        "jersey": null,
+        "position": "C-F"
+    },
+    {
+        "id": 36,
+        "firstname": "Harrison",
+        "lastname": "Barnes",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "225",
+        "jersey": 40,
+        "position": "F"
+    },
+    {
+        "id": 303,
+        "firstname": "Jeremy",
+        "lastname": "Lamb",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "180",
+        "jersey": 26,
+        "position": "G-F"
+    },
+    {
+        "id": 313,
+        "firstname": "Alex",
+        "lastname": "Len",
+        "height": {
+            "feet": "7",
+            "inches": "0"
+        },
+        "weight": "250",
+        "jersey": 25,
+        "position": "C"
+    },
+    {
+        "id": 854,
+        "firstname": "Cedi",
+        "lastname": "Osman",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 762,
+        "firstname": "Zach",
+        "lastname": "Collins",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "250",
+        "jersey": 23,
+        "position": "F-C"
+    },
+    {
+        "id": 973,
+        "firstname": "Devonte'",
+        "lastname": "Graham",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "195",
+        "jersey": 4,
+        "position": "G"
+    },
+    {
+        "id": 2580,
+        "firstname": "Mamadi",
+        "lastname": "Diakite",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 12,
+        "position": "F"
+    },
+    {
+        "id": 1872,
+        "firstname": "Keldon",
+        "lastname": "Johnson",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "220",
+        "jersey": 3,
+        "position": "F-G"
+    },
+    {
+        "id": 2790,
+        "firstname": "Charles",
+        "lastname": "Bassey",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "230",
+        "jersey": 23,
+        "position": "C-F"
+    },
+    {
+        "id": 2661,
+        "firstname": "Devin",
+        "lastname": "Vassell",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "200",
+        "jersey": 24,
+        "position": "G-F"
+    },
+    {
+        "id": 2606,
+        "firstname": "Tre",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "185",
+        "jersey": 33,
+        "position": "G"
+    },
+    {
+        "id": 2830,
+        "firstname": "Sandro",
+        "lastname": "Mamukelashvili",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "240",
+        "jersey": 54,
+        "position": "F-C"
+    },
+    {
+        "id": 3425,
+        "firstname": "Julian",
+        "lastname": "Champagnie",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 55,
+        "position": "F"
+    },
+    {
+        "id": 3419,
+        "firstname": "Malaki",
+        "lastname": "Branham",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 22,
+        "position": "F"
+    },
+    {
+        "id": 3499,
+        "firstname": "Blake",
+        "lastname": "Wesley",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 3490,
+        "firstname": "Jeremy",
+        "lastname": "Sochan",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 10,
+        "position": "F"
+    },
+    {
+        "id": 3415,
+        "firstname": "Dominick",
+        "lastname": "Barlow",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 26,
+        "position": "F"
+    },
+    {
+        "id": 4023,
+        "firstname": "Charles",
+        "lastname": "Bediako",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "220",
+        "jersey": 27,
+        "position": "C"
+    },
+    {
+        "id": 4024,
+        "firstname": "Sidy",
+        "lastname": "Cissoko",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": 25,
+        "position": "G"
+    },
+    {
+        "id": 4025,
+        "firstname": "Sir'Jabari",
+        "lastname": "Rice",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "170",
+        "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 4026,
+        "firstname": "Victor",
+        "lastname": "Wembanyama",
+        "height": {
+            "feet": "7",
+            "inches": null
+        },
+        "weight": "225",
+        "jersey": 1,
+        "position": "C"
+    },
+    {
+        "id": 739,
+        "firstname": "Khem",
+        "lastname": "Birch",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "233",
+        "jersey": 24,
+        "position": "C"
+    },
+    {
+        "id": 428,
+        "firstname": "Jakob",
+        "lastname": "Poeltl",
+        "height": {
+            "feet": "7",
+            "inches": "1"
+        },
+        "weight": "245",
+        "jersey": 25,
+        "position": "C"
+    },
+    {
+        "id": 745,
+        "firstname": "Chris",
+        "lastname": "Boucher",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "200",
+        "jersey": 25,
+        "position": "F-C"
+    },
+    {
+        "id": 1058,
+        "firstname": "Gary",
+        "lastname": "Trent Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "209",
+        "jersey": 33,
+        "position": "G-F"
+    },
+    {
+        "id": 1880,
+        "firstname": "Jalen",
+        "lastname": "McDaniels",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "205",
+        "jersey": 6,
+        "position": "F-C"
+    },
+    {
+        "id": 2637,
+        "firstname": "Jahmi'us",
+        "lastname": "Ramsey",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "G"
+    },
+    {
+        "id": 3411,
+        "firstname": "Ochai",
+        "lastname": "Agbaji",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 30,
+        "position": "G"
+    },
+    {
+        "id": 2789,
+        "firstname": "Scottie",
+        "lastname": "Barnes",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "225",
+        "jersey": 4,
+        "position": "F"
+    },
+    {
+        "id": 3464,
+        "firstname": "Makur",
+        "lastname": "Maker",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 2797,
+        "firstname": "D.J.",
+        "lastname": "Carton",
+        "height": {
+            "feet": "6",
+            "inches": "2"
+        },
+        "weight": "200",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3447,
+        "firstname": "Ron",
+        "lastname": "Harper Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 3440,
+        "firstname": "Javon",
+        "lastname": "Freeman-Liberty",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 3445,
+        "firstname": "Mouhamadou",
+        "lastname": "Gueye",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 17,
+        "position": "F"
+    },
+    {
+        "id": 4027,
+        "firstname": "Gradey",
+        "lastname": "Dick",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "205",
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 4028,
+        "firstname": "Markquis",
+        "lastname": "Nowell",
+        "height": {
+            "feet": "5",
+            "inches": null
+        },
+        "weight": "160",
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 507,
+        "firstname": "Garrett",
+        "lastname": "Temple",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "195",
+        "jersey": 41,
+        "position": "G-F"
+    },
+    {
+        "id": 404,
+        "firstname": "Kelly",
+        "lastname": "Olynyk",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "240",
+        "jersey": 41,
+        "position": "F-C"
+    },
+    {
+        "id": 430,
+        "firstname": "Otto",
+        "lastname": "Porter Jr.",
+        "height": {
+            "feet": "6",
+            "inches": "8"
+        },
+        "weight": "198",
+        "jersey": 32,
+        "position": "F"
+    },
+    {
+        "id": 152,
+        "firstname": "Kris",
+        "lastname": "Dunn",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 18,
+        "position": null
+    },
+    {
+        "id": 830,
+        "firstname": "Lauri",
+        "lastname": "Markkanen",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "240",
+        "jersey": 23,
+        "position": "F-C"
+    },
+    {
+        "id": 761,
+        "firstname": "John",
+        "lastname": "Collins",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "226",
+        "jersey": 20,
+        "position": "F-C"
+    },
+    {
+        "id": 1021,
+        "firstname": "Collin",
+        "lastname": "Sexton",
+        "height": {
+            "feet": "6",
+            "inches": "1"
+        },
+        "weight": "190",
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 1874,
+        "firstname": "Romeo",
+        "lastname": "Langford",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "216",
+        "jersey": 35,
+        "position": "G-F"
+    },
+    {
+        "id": 1867,
+        "firstname": "Talen",
+        "lastname": "Horton-Tucker",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "234",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 1891,
+        "firstname": "Luka",
+        "lastname": "Samanic",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 99,
+        "position": null
+    },
+    {
+        "id": 2785,
+        "firstname": "Omer",
+        "lastname": "Yurtseven",
+        "height": {
+            "feet": "6",
+            "inches": "11"
+        },
+        "weight": "275",
+        "jersey": 77,
+        "position": "C"
+    },
+    {
+        "id": 2799,
+        "firstname": "Josh",
+        "lastname": "Christopher",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "215",
+        "jersey": 9,
+        "position": "G"
+    },
+    {
+        "id": 3454,
+        "firstname": "Johnny",
+        "lastname": "Juzang",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 33,
+        "position": "G"
+    },
+    {
+        "id": 2842,
+        "firstname": "Jason",
+        "lastname": "Preston",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "181",
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 3358,
+        "firstname": "Micah",
+        "lastname": "Potter",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 20,
+        "position": "C"
+    },
+    {
+        "id": 3457,
+        "firstname": "Walker",
+        "lastname": "Kessler",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 24,
+        "position": "C"
+    },
+    {
+        "id": 4029,
+        "firstname": "Keyonte",
+        "lastname": "George",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "185",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 4031,
+        "firstname": "Taylor",
+        "lastname": "Hendricks",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "210",
+        "jersey": null,
+        "position": "F"
+    },
+    {
+        "id": 4032,
+        "firstname": "Taevion",
+        "lastname": "Kinsey",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "190",
+        "jersey": 22,
+        "position": "G"
+    },
+    {
+        "id": 4034,
+        "firstname": "Brice",
+        "lastname": "Sensabaugh",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "235",
+        "jersey": 8,
+        "position": "F"
+    },
+    {
+        "id": 109,
+        "firstname": "Jordan",
+        "lastname": "Clarkson",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "194",
+        "jersey": null,
+        "position": "G"
+    },
+    {
+        "id": 285,
+        "firstname": "Tyus",
+        "lastname": "Jones",
+        "height": {
+            "feet": "6",
+            "inches": "0"
+        },
+        "weight": "196",
+        "jersey": 21,
+        "position": "G"
+    },
+    {
+        "id": 820,
+        "firstname": "Kyle",
+        "lastname": "Kuzma",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "221",
+        "jersey": 33,
+        "position": "F"
+    },
+    {
+        "id": 960,
+        "firstname": "Hamidou",
+        "lastname": "Diallo",
+        "height": {
+            "feet": "6",
+            "inches": "5"
+        },
+        "weight": "202",
+        "jersey": 6,
+        "position": "G"
+    },
+    {
+        "id": 1022,
+        "firstname": "Landry",
+        "lastname": "Shamet",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "190",
+        "jersey": 14,
+        "position": "G"
+    },
+    {
+        "id": 1887,
+        "firstname": "Jordan",
+        "lastname": "Poole",
+        "height": {
+            "feet": "6",
+            "inches": "4"
+        },
+        "weight": "194",
+        "jersey": 3,
+        "position": "G"
+    },
+    {
+        "id": 2564,
+        "firstname": "Deni",
+        "lastname": "Avdija",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "210",
+        "jersey": 9,
+        "position": "F"
+    },
+    {
+        "id": 2796,
+        "firstname": "Jared",
+        "lastname": "Butler",
+        "height": {
+            "feet": "6",
+            "inches": "3"
+        },
+        "weight": "193",
+        "jersey": 13,
+        "position": "G"
+    },
+    {
+        "id": 2590,
+        "firstname": "Anthony",
+        "lastname": "Gill",
+        "height": {
+            "feet": "6",
+            "inches": "7"
+        },
+        "weight": "230",
+        "jersey": 16,
+        "position": "F"
+    },
+    {
+        "id": 2825,
+        "firstname": "Corey",
+        "lastname": "Kispert",
+        "height": {
+            "feet": "6",
+            "inches": "6"
+        },
+        "weight": "224",
+        "jersey": 24,
+        "position": "F"
+    },
+    {
+        "id": 2838,
+        "firstname": "Eugene",
+        "lastname": "Omoruyi",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 97,
+        "position": "F"
+    },
+    {
+        "id": 3428,
+        "firstname": "Johnny",
+        "lastname": "Davis",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 1,
+        "position": "G"
+    },
+    {
+        "id": 3413,
+        "firstname": "Patrick",
+        "lastname": "Baldwin Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 7,
+        "position": "F"
+    },
+    {
+        "id": 3484,
+        "firstname": "Ryan",
+        "lastname": "Rollins",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 2,
+        "position": "G"
+    },
+    {
+        "id": 3597,
+        "firstname": "John",
+        "lastname": "Butler Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "C"
+    },
+    {
+        "id": 3576,
+        "firstname": "Jules",
+        "lastname": "Bernard",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 24,
+        "position": "G"
+    },
+    {
+        "id": 4035,
+        "firstname": "Chase",
+        "lastname": "Audige",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "200",
+        "jersey": 17,
+        "position": "G"
+    },
+    {
+        "id": 4036,
+        "firstname": "Bilal",
+        "lastname": "Coulibaly",
+        "height": {
+            "feet": "6",
+            "inches": null
+        },
+        "weight": "195",
+        "jersey": null,
+        "position": "SG"
+    },
+    {
+        "id": 1191,
+        "firstname": "Xavier",
+        "lastname": "Cooks",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": 40,
+        "position": "G-F"
+    }
+]

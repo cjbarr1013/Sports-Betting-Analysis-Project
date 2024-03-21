@@ -1,0 +1,22 @@
+[
+    {
+        "region": "us",
+        "key": "betmgm",
+        "name": "BetMGM"
+    },
+    {
+        "region": "us",
+        "key": "draftkings",
+        "name": "DraftKings"
+    },
+    {
+        "region": "us",
+        "key": "fanduel",
+        "name": "FanDuel"
+    },
+    {
+        "region": "us",
+        "key": "williamhill_us",
+        "name": "Caesars"
+    }
+]

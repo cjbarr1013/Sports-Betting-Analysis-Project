@@ -1,230 +1,373 @@
+# For game in todays NBA games
+    # Analyze game props
+        # Will need to access game logs for each team
+    # For teams playing in game
+        # For players on team
+
+import os
+import json
+import timeit
 import pandas as pd
-import xlsxwriter
-from datetime import datetime
 import numpy as np
+from datetime import datetime
+import get_data
 pd.set_option('display.max_columns', None)
 
-from nfl_objects import NFLPlayer, NFLTeam, NFLGame, NFLDefense, NFLPlayerProp
+from nba_objects import NBAGame, NBATeam, NBAPlayer, NBAPlayerGamelog, NBAPlayerProp
 from file_handler import FileHandler
-import get_data
-import get_data_api as api
 
 
-class NFLDataAnalysis:
+class NBADataAnalysis:
     def __init__(self):
+        self.games = []
         self.teams = []
         self.players = []
-        self.games = []
+        self.season = get_data.get_seasons('nba')[-1]
+        
+        self.__init_games()
         self.__init_teams()
         self.__init_players()
-        self.__init_odds()
-        self.__init_games()
+        self.__connect_gamelogs_with_games_and_players()
+        self.__connect_games_and_teams()
+        self.__sort_player_gamelogs()
+        self.__connect_players_and_teams()
+        self.__connect_props_and_players()
+        self.__connect_injuries_and_players()
+        self.__set_player_position()
 
-        self.season = self.games[-1].season
-        self.week = self.__init_week()
-
-        self.game_split = [3, 6, 9]
+    def __init_games(self):
+        file_path = 'data/nba/games'
+        game_files = sorted(os.listdir(file_path))
+        for file in game_files:
+            game_handler = FileHandler(file, file_path)
+            games = game_handler.load_file()
+            for key in games:
+                self.games.append(NBAGame(key, games[key]))
+        self.games.sort(key=lambda game: game.datetime)
 
     def __init_teams(self):
-        team_handler = FileHandler('nfl_teams.json', get_data.team_path)
-        team_dicts = team_handler.load_file()
-        
-        for team in team_dicts:
-            self.teams.append(NFLTeam(team))
+        team_handler = FileHandler('nba_teams.json', 
+                                   'data/nba/teams')
+        teams = team_handler.load_file()
+        for team in teams:
+            self.teams.append(NBATeam(team))
 
     def __init_players(self):
-        player_handler = FileHandler('nfl_players.json', get_data.player_path)
-        player_dicts = player_handler.load_file()
-        
-        for player in player_dicts:
+        player_handler = FileHandler('nba_players.json', 
+                                     'data/nba/players')
+        players = player_handler.load_file()
+        alt_name_handler = FileHandler('alt_player_names.json', 
+                                       'data/nba/players')
+        alt_names = alt_name_handler.load_file()
+        for player in players:
+            player = NBAPlayer(player)
+            # Add alternative names, if available
             try:
-                player = NFLPlayer(player)
-            except FileNotFoundError:
-                continue
-            
+                player.alt_names = alt_names[str(player.id)]
+            except KeyError:
+                pass
             self.players.append(player)
-            
-            for team in self.teams:
-                if team.team_id == player.team_id:
-                    team.players.append(player)
+
+    def __get_player_gamelogs(self):
+        file_path = 'data/nba/players/gamelogs'
+        gamelog_files = sorted(os.listdir(file_path))
+        player_gamelogs = []
+        for file in gamelog_files:
+            gamelog_handler = FileHandler(file, file_path)
+            gamelogs = gamelog_handler.load_file()
+            for gamelog in gamelogs:
+                player_gamelogs.append(NBAPlayerGamelog(gamelog))
+        return player_gamelogs
+
+    def __get_player_props(self):
+        file_path = 'data/nba/odds/player_props'
+        prop_files = sorted(os.listdir(file_path))
+        player_props = []
+        for file in prop_files:
+            prop_handler = FileHandler(file, file_path)
+            props = prop_handler.load_file()
+            for prop in props:
+                player_props.append(NBAPlayerProp(prop))
+        return player_props
+    
+    def __get_player_injuries(self):
+        injuries_handler = FileHandler('nba_player_injuries.json', 
+                                       'data/nba/players')
+        return injuries_handler.load_file()
+
+    def __connect_gamelogs_with_games_and_players(self):
+        player_gamelogs = self.__get_player_gamelogs()
+        for gamelog in player_gamelogs:
+            # Attach NBAPlayerGamelog to NBAGame object, and vise versa
+            for game in self.games:
+                if gamelog.game_id == game.id:
+                    gamelog.game = game
+                    if gamelog.team_id == game.home.id:
+                        game.home.player_gamelogs.append(gamelog)
+                    elif gamelog.team_id == game.away.id:
+                        game.away.player_gamelogs.append(gamelog)
                     break
-    
-    def __init_odds(self):
-        for prop in api.markets['nfl']:
-            prefix = prop['prefix']
-            odds_handler = FileHandler(f'{prefix}_odds.json', get_data.line_path)
-            odds_dicts = odds_handler.load_file()
+            # Attach NBAPlayerGamelog to NBAPlayer object
+            for player in self.players:
+                if gamelog.player_id == player.id:
+                    player.gamelog.append(gamelog)
+                    break
+        del player_gamelogs
 
-            for item in odds_dicts:
-                prop = NFLPlayerProp(item)
-                for player in self.players:
-                    player_name = player.name.lower()
-                    prop_name = prop.name.lower()
-                    for ch in ['.', '-', "'", '*', '+']:
-                        player_name = player_name.replace(ch, '')
-                        prop_name = prop_name.replace(ch, '')
-                    if player_name == prop_name and prop.sportsbook in api.sportsbooks:
-                        player.props.append(prop)
-     
-    def __init_games(self):
-        game_handler = FileHandler('nfl_games.json', get_data.game_path)
-        game_dicts = game_handler.load_file()
-        
-        for game in game_dicts:
-            game = NFLGame(game)
-            self.games.append(game)
+    def __sort_player_gamelogs(self):
+        for player in self.players:
+            player.gamelog.sort(key=lambda gamelog: gamelog.game.datetime)
+
+    def __connect_games_and_teams(self):
+        for team in self.teams:
+            for game in self.games:
+                if game.home.team is None:
+                    if game.home.id == team.id:
+                        game.home.team = team
+                        if game.finished == True:
+                            team.finished_games.append(game)
+                        else:
+                            team.scheduled_games.append(game)
+                        continue
+                if game.away.team is None:
+                    if game.away.id == team.id:
+                        game.away.team = team
+                        if game.finished == True:
+                            team.finished_games.append(game)
+                        else:
+                            team.scheduled_games.append(game)
+
+    def __connect_players_and_teams(self):
+        # Take last team_id in player's gamelog, make that their team
+        # If a player switches teams, team won't update until a game is logged
+        for player in self.players:
             for team in self.teams:
-                if team.team_id == game.home_team_id or team.team_id == game.away_team_id:
-                    team.gamelog.append(game)
-    
-    def __init_week(self):
-        for game in self.games:
-            if game.home_score == "":
-                return game.week
-
-    def player_stats_table(self, stat_type: str, stat='', pos=['QB', 'RB', 'WR', 'TE', 'K']):
-        """Given values outlined below, the function returns a sorted Dataframe with columns 
-        representing the player, position, their team, next opponent, last 5 gamelog (right being the 
-        most recent), current line and odds, average this season, and average the last 1, 3, 6, 9 
-        games. All stats are per game.\n
-        stat_type = 'pa' -> stat = 'cmps', 'atts', 'yds', 'tds', 'ints'\n
-        stat_type = 'ru' -> stat = 'atts', 'yds'\n
-        stat_type = 're' -> stat = 'recs', 'yds'\n
-        stat_type = 'fg' -> stat = 'made', 'points'\n
-        stat_type = 'attd' -> stat = ''\n
-        pos == 'QB', 'RB', 'WR', 'TE', 'K', or all by default. Must be list and can contain multiple."""
+                try:
+                    if player.gamelog[-1].team_id == team.id:
+                        player.team = team
+                        team.players.append(player)
+                        break
+                # Exception if player gamelog is empty
+                except IndexError:
+                    break
         
-        columns = ['Player', 'Position', 'Team', 'Opp', 'L5 Log', 'Line', 'Odds', 'Season', 'Last', 
-                   f'L{self.game_split[0]}', f'L{self.game_split[1]}', f'L{self.game_split[2]}']
+        # Sort player list in NBATeam objects by min/game
+        def sort_by_minutes_played(player):
+            mins = []
+            for game in player.gamelog[-25:]:
+                mins.append(game.minutes)
+            return sum(mins) / len(mins)
         
-        info = []
         for team in self.teams:
-            opp_obj = self.get_team_object(team.get_opp(self.season, self.week))
-            for player in team.players:
-                if player.position in pos and opp_obj is not None and len(player.props) > 0:
-                    # Check if stat exists in the player's gamelog, skip if not.
-                    try:
-                        log = player.get_player_stats_log(stat_type, stat)
-                    except:
-                        continue
-                    
-                    # Get line and odds for prop if it exists for player, skip if not.
-                    line, odds = None, None
-                    for item in player.props:
-                        if item.prop == stat_type + '_' + stat or item.prop == stat_type:
-                            line = item.line
-                            odds = item.odds
-                            break
-                    if line is None:
-                        continue
-                    
-                    # Get no. of games played for current season, and calculate season avg.
-                    gp = player.get_gp_by_season(self.season)
-                    if gp == 0:
-                        current_avg = 0
-                    else:
-                        current_avg = sum(log[-gp:]) / gp
+            team.players.sort(key=sort_by_minutes_played, reverse=True)
 
-                    # Build row for player info
-                    row = [player.name, player.position, team.initials, opp_obj.initials,
-                           log[-5:], line, odds, round(current_avg, 2), log[-1]]
-                    for games in self.game_split:
-                        stat_total = sum(log[-games:])
-                        row.append(round(stat_total/games, 2))
+    def __connect_props_and_players(self):
+        props = self.__get_player_props()
+        for player in self.players:
+            for i in range(len(props) - 1, -1, -1):
+                name = props[i].player_name
+                if name == player.full_name or name in player.alt_names:
+                    player.props.append(props.pop(i))
+        # Temp while I figure out names that need added to alt_player_names.json
+        unmatched_names = []
+        for prop in props:
+            if prop.player_name not in unmatched_names:
+                unmatched_names.append(prop.player_name)
+        print('Player prop unmatched names:')
+        print(unmatched_names)
+
+    def __connect_injuries_and_players(self):
+        injuries = self.__get_player_injuries()
+        for player in self.players:
+            for injury in injuries:
+                name = injury['name']
+                if name == player.full_name or name in player.alt_names:
+                    player.injury_status = injury
+                    injuries.remove(injury)
+                    break
+        # Temp while I figure out names that need added to alt_player_names.json
+        unmatched_names = []
+        for injury in injuries:
+            if injury['name'] not in unmatched_names:
+                unmatched_names.append(injury['name'])
+        print('Injuries unmatched names:')
+        print(unmatched_names)
+
+    def __set_player_position(self):
+        for player in self.players:
+            for game in player.gamelog:
+                if game.position is not None:
+                    player.all_positions.append(game.position)
+            try:
+                player.position = player.all_positions[-1]
+                player.all_positions = set(player.all_positions)
+                player.base_position = player.position[-1]
+            # Exception if player.all_positions is empty
+            except IndexError:
+                continue
+
+    def create_player_prop_tables(self, date_obj: datetime, prop_dict: dict):
+        """
+        Gather info for player prop analysis table and return in Pandas 
+        DataFrame.
+        """
+
+        # Need defensive performance data for all teams vs stat
+        def_ranks = self.__get_def_ranks_vs_stats(prop_dict['str_to_stat'])
+
+        # Get games for given datetime object
+        info = []
+        games = self.__get_game_objects(date_obj)
+        for game in games:
+            # These dicts are used for all props within this game
+            matchup_info = self.__get_matchup_info(game)
+            inj_info = self.__get_injury_info(game)
+            for team in [game.away.team, game.home.team]:
+                # Get stats for all recent players vs opponent
+                opp_obj = matchup_info[team.id]['raw']['opp']
+                recent_players_vs = self.__get_recent_player_stats_vs(
+                    opp_obj,
+                    prop_dict['str_to_stat']
+                )
+                # Go through all players on both team for matching props
+                # If props match dict key, gather player, def, analysis info
+                for player in team.players:
+                    props = player.get_props(prop_dict['key'])
+                    if len(props) == 0:
+                        continue
+                    pl_info = self.__get_player_info(player)
+                    prop_info = self.__get_player_prop_info(props)
+                    pl_perf = self.__get_player_prop_performance_info(
+                        player, 
+                        prop_dict['str_to_stat'], 
+                        prop_info['line'],
+                        matchup_info[team.id]['raw']['loc'],
+                        opp_obj,
+                        inj_info['player_objs'][team.id]
+                    )
+                    def_perf = self.__get_def_vs_prop_performance_info(
+                        player,
+                        opp_obj, 
+                        def_ranks,
+                        recent_players_vs
+                    )
+                    perf_analysis = self.__get_performance_analysis_info(
+                        player,
+                        opp_obj,
+                        prop_dict['str_to_stat'],
+                        prop_info['line'],
+                        matchup_info[team.id]['raw']['loc'],
+                        def_ranks
+                    )
+                    # Will be None if gp threshold is not met
+                    if perf_analysis is None:
+                        continue
+                    
+                    row = (pl_info + matchup_info[team.id]['display'] 
+                           + inj_info['display'] + prop_info['display'] 
+                           + pl_perf + def_perf + perf_analysis)
                     info.append(row)
-        
-        # Create table, sort by Season avg, then L3 avg, and return
-        table = pd.DataFrame(info, columns=columns)
-        return table.sort_values(['Season', 'L3'], ascending=False).reset_index(drop=True)
 
-    def stats_against_table(self, stat_type: str, stat='', sort_param='Season'):
-        """Given values outlined below, the function returns a sorted Dataframe with columns 
-        representing the team, next opp, last 5 gamelog (right being the most recent), average allowed 
-        this season, and average allowed the last 1, 3, 6, 9 games. All stats are per game.\n
-        stat_type = 'pa' -> stat = 'cmps', 'atts', 'yds', 'tds', 'ints'\n
-        stat_type = 'ru' -> stat = 'atts', 'yds', 'tds'\n
-        stat_type = 're' -> stat = 'recs', 'yds', 'tds'\n
-        stat_type = 'fg' -> stat = 'made', 'atts', 'points'\n
-        stat_type = 'attd' -> stat = ''"""
-
-        columns = ['Team', 'Opp', 'L5 Log', 'Season', 'Last Game', 
-                   f'L{self.game_split[0]}', f'L{self.game_split[1]}', 
-                   f'L{self.game_split[2]}']
-        
-        info = []
-        for team in self.teams:
-            log = team.defense.get_stats_against_log(stat_type, stat)
-            
-            # Get no. of games played for current season, and calculate season avg.
-            gp = team.defense.get_gp_by_season(self.season)
-            if gp == 0:
-                current_avg = 0
-            else:
-                current_avg = round(sum(log[-gp:]) / gp, 2)
-            
-            # Get display initials for opponent, or 'Bye' if bye week
-            opp = team.get_opp(self.season, self.week)
-            if opp != 'Bye':
-                opp = self.get_team_object(opp).initials
-
-            # Build row for team defense info
-            row = [team.initials, opp, log[-5:], current_avg, log[-1]]
-            for games in self.game_split:
-                stat_total = sum(log[-games:])
-                row.append(round(stat_total/games, 2))
-            info.append(row)
-        
-        # Create table, sort based on sort_param, add rank column, and return
-        table = pd.DataFrame(info, columns=columns)
-        table = table.sort_values([sort_param, 'Season', 'L3'], ascending=True).reset_index(drop=True)
-        table = self.add_rank_index(table, sort_param)
-        return table
-
-    def stats_against_by_pos_table(self, stat_type: str, stat: str, sort_param='sum'):
-        """Returns a Dataframe with columns representing the team, next opp, and given stat allowed 
-        this season to QB, RB, WR and TE.\n
-        stat_type = 'ru' -> stat = 'atts', 'yds', 'tds' -> returns table with QB, RB\n
-        stat_type = 're' -> stat = 'recs', 'yds', 'tds' -> returns table with RB, WR, TE\n
-        sort_param = 'sum', 'QB', 'RB', 'WR', 'TE'"""
-
-        if stat_type == 're':
-            positions = ['RB', 'WR', 'TE']
-        elif stat_type == 'ru':
-            positions = ['QB', 'RB']
-        elif stat_type == 'attd':
-            positions = ['QB', 'RB', 'WR', 'TE']
-        columns = ['Team', 'Opp'] + positions
-        
-        info = []
-        for team in self.teams:
-            # Get display initials for opponent, or 'Bye' if bye week
-            opp = team.get_opp(self.season, self.week)
-            if opp != 'Bye':
-                opp = self.get_team_object(opp).initials
-
-            # Build row for team defense info
-            row = [team.initials, opp]
-            gp = team.defense.get_gp_by_season(self.season)
-            for pos in positions:
-                stat_total = team.defense.get_stats_against_by_pos(pos, stat_type, stat)
-                row.append(round(stat_total/gp, 2))
-            info.append(row)
-        
-        # Create table, sort based on sort_param, and return
-        table = pd.DataFrame(info, columns=columns)
-        if sort_param == 'sum':
-            table.sort_index(key=table.sum(1, numeric_only=True).get, ascending=True, inplace=True)
-        else:
-            table.sort_values(by=sort_param, ascending=True, inplace=True)
-            table = self.add_rank_index(table, sort_param)
-        
+        # Build table and sort by total of prop analysis values
+        table = pd.DataFrame(info)
+        table = table.sort_values(table.columns[423], ascending=False)
         return table.reset_index(drop=True)
+                    
+    def create_alt_player_prop_tables(self):
+        pass
 
-    def add_rank_index(self, table: pd, sort_param: str) -> pd:
+    def create_core_tables(self):
+        pass
+
+    def tables_to_excel(self, file_name: str, tables: list):
+        """
+        Given a file name and a list of Pandas Dataframes, create an Excel 
+        Workbook with a sheet for each table. Tables in list must be tuples 
+        with format (pd, sheet_name)
+        """
+        
+        path = 'excel/nba/' + file_name
+        writer = pd.ExcelWriter(path, engine='xlsxwriter')
+        
+        for table in tables:
+            table[0].to_excel(writer, sheet_name=table[1], header=False, 
+                              index=False)
+
+        writer.close()
+
+    def __get_game_objects(self, date_obj: datetime):
+        """Given datetime object, return game objects for that day"""
+
+        games = []
+        for game in reversed(self.games):
+            if game.datetime.date() == date_obj.date():
+                games.append(game)
+                in_range = True
+            elif 'in_range' in locals():
+                break
+        return games
+
+    def __get_def_ranks_vs_stats(self, stat: str):
+        """Given str_to_stat, return dict with defensive ranks."""
+
+        # Initialize rank dict with team IDs
+        def_ranks = {}
+        for team in self.teams:
+            def_ranks[team.id] = {}
+        
+        # Define columns and positions
+        columns = ['Team', 'L5', 'L10', 'L20', 'Season']
+        positions = ['all', 'G', 'F', 'C']
+
+        # Make table for each pos with all team values for each split
+        for pos in positions:
+            info = []
+            for team in self.teams:
+                def_ranks[team.id][pos] = {}
+                gp_season = team.get_no_of_gp(seasons=[self.season])
+                n_games = max(20, gp_season)
+                stats_against = team.get_tot_stats_against([stat], pos=pos, 
+                                                           n_games=n_games)
+                rank_splits = [5, 10, 20, gp_season]
+                stat_splits = []
+                for split in rank_splits:
+                    stat_avg = round(sum(stats_against[-split:]) / split, 2)
+                    stat_splits.append(stat_avg)
+                row = [team] + stat_splits
+                info.append(row)
+            table = pd.DataFrame(info, columns=columns)
+            
+            # Loop through each rank split, sort by split, and add ranks
+            for col in columns[-4:]:
+                table = table.sort_values([col, 'Season'], ascending=True)
+                table = table.reset_index(drop=True)
+                table = self.__add_rank_index(table, col)
+                # Go through each row, get rank and split value for dict
+                for i in range(len(table)):
+                    temp_dict = {
+                        'rank': table.loc[i, 'Rank'],
+                        'value': table.loc[i, col]
+                        }
+                    def_ranks[table.loc[i, 'Team'].id][pos][col] = temp_dict
+
+        return def_ranks
+    
+    def __add_rank_index(self, table: pd, col: str):
+        """
+        Add column to provided Dataframe ranking values in col. Different from 
+        index bc if values in col are equal, the rank will be same.
+        """
+
+        # Delete previous rank col, if it exists
+        try:
+            table.drop(columns='Rank', inplace=True)
+        except KeyError:
+            pass
+
         ranks = []
         prev_value = 0
         i, j = 1, 1
-        for value in table[sort_param]:
+        for value in table[col]:
             if value == prev_value:
                 ranks.append(i)
             else:
@@ -232,466 +375,402 @@ class NFLDataAnalysis:
                 i = j
             j += 1
             prev_value = value
-
-        table.insert(0, "Rank", ranks)
+        table.insert(0, 'Rank', ranks)
         return table
-            
-    def display_prop_analysis(self, market: dict):
-        """Given a market dict from get_data_api.py, return a Panda Dataframe displaying 
-        Player Info, Past Performance, Opponent's Defensive Performance, and Prop Analysis values."""
+    
+    def __get_matchup_info(self, game: NBAGame):
+        """Given game object, return dict with matchup info"""
+
+        home_matchup = 'vs ' + game.away.team.code
+        away_matchup = 'at ' + game.home.team.code
+        date_time = game.datetime.strftime('%A, %B %-d @ %-I:%M%p')
+
+        return {
+            game.home.id: {
+                'display': [home_matchup, date_time],
+                'raw': {
+                    'opp': game.away.team,
+                    'loc': 'home'
+                    }
+            },
+            game.away.id: {
+                'display': [away_matchup, date_time],
+                'raw': {
+                    'opp': game.home.team,
+                    'loc': 'away'
+                    }
+            }
+        }
+
+    def __get_injury_info(self, game: NBAGame):
+        """Given NBA Game obj, return dict with injury info."""
         
-        # Defining column names for data table
-        log_games = 10
-        log_stat_strings = [f'stat_{i+1}' for i in range(log_games)]
-        log_opp_strings = [f'opp_{i+1}' for i in range(log_games)]
+        inj_per_team = 5
+        display_report = []
+        player_objs = {}
 
-        matchup_games = 5
-        matchup_stat_strings = [f'stat_{i+1}' for i in range(matchup_games)]
-        matchup_opp_strings = [f'opp_{i+1}' for i in range(matchup_games)]
-
-        player_info_cols = ['Player', 'Position', 'Team', 'Injury']
-
-        matchup_cols = ['Next Opp.'] + matchup_stat_strings + matchup_opp_strings
-
-        player_perf_cols = ['Season Avg.', 
-                            f'L{self.game_split[0]} Avg.', 
-                            f'L{self.game_split[1]} Avg.', 
-                            f'L{self.game_split[2]} Avg.'] + log_stat_strings + log_opp_strings
-                            
-        def_perf_cols = ['Season Avg.', 'Season Avg. vs. Pos.', 
-                         f'L{self.game_split[0]} Avg.',
-                         f'L{self.game_split[1]} Avg.', 
-                         f'L{self.game_split[2]} Avg.'] + log_stat_strings + log_opp_strings
-        
-        prop_info_cols = ['Prop', 'fd_line', 'fd_over', 'fd_under',
-                          'dk_line', 'dk_over', 'dk_under',
-                          'espn_line', 'espn_over', 'espn_under']
-
-        analysis_cols = ['analysis_pl', 'analysis_def', 'analysis_tot']
-
-        columns = player_info_cols + matchup_cols + player_perf_cols
-        columns += def_perf_cols + prop_info_cols + analysis_cols
-
-        # Main loop for going through players on each team to find matching props
-        info = []
-        for team in self.teams:
+        # Loop through all players on both teams to find injuries
+        for team in [game.away.team, game.home.team]:
+            team_report = [team.code]
+            player_objs[team.id] = []
             for player in team.players:
-                for prop in player.props:
-                    if prop.prop == market['prefix']:
-                        
-                        # Get all info for player and prop
-                        opp_obj = self.get_team_object(team.get_opp(self.season, self.week))
-                        player_info = self.get_player_info_data(player, team)
-                        matchup_info = self.get_matchup_data(opp_obj, player, market, matchup_games)
-                        player_perf_info = self.get_player_perf_data(player, market, log_games)
-                        def_perf_info = self.get_def_perf_data(opp_obj, market, log_games, player.position)
-                        
-                        # Get list of prop objects only if they pertain to called upon market
-                        props = [obj for obj in player.props if obj.prop == market['prefix']]
-                        prop_info = self.get_prop_info_data(props, prop.prop)
-                        
-                        # If no min line for analysis, go to next prop
-                        if prop_info[0] is None:
-                            continue
-                        
-                        analysis_info = self.get_analysis_data(player, opp_obj, market, prop_info[0])
-                        
-                        # Construct row, then break prop loop to move onto next player
-                        row = player_info + matchup_info + player_perf_info
-                        row += def_perf_info + prop_info[1] + analysis_info
-                        info.append(row)
-                        break
-        
-        # Build table and sort by total of prop analysis values
-        table = pd.DataFrame(info, columns=columns)
-        return table.sort_values(['analysis_tot', 'analysis_pl'], ascending=False).reset_index(drop=True)
+                if player.injury_status is not None:
+                    # Append items to team report
+                    team_report.append(player.position)
+                    team_report.append(player.first_name[0] + '. ' +
+                                       player.last_name)
+                    if player.injury_status['status'] == 'Out':
+                        team_report.append('OUT')
+                    elif player.injury_status['status'] == 'Day-To-Day':
+                        team_report.append('GTD')
+                    else:
+                        team_report.append(None)
 
-    def get_player_info_data(self, player: NFLPlayer, team: NFLTeam):
-        """"""
-        
-        # Assign info to variables
-        name = player.name
-        pos = player.position
-        tm = team.initials
-        inj = self.get_display_injury(player)
+                    # Append IDs to dict
+                    player_objs[team.id].append(player)
 
-        # Assemble row and return
-        row = [name, pos, tm, inj]
-        return row
+                if len(team_report) == (inj_per_team * 3) + 1:
+                    break
+            # If inj list not full, fill with None
+            team_report = self.__fill_with_none(team_report, (inj_per_team*3)+1)
+            display_report += team_report
 
-    def get_matchup_data(self, opp: NFLTeam, player: NFLPlayer, 
-                         market: dict, n_games: int):
-        """"""
-
-        # Get nicely displayed opponent info
-        opp_info = self.get_display_next_opp(opp)
-        
-        # Get full stat log to use in rest of function
-        stat_type, stat = market['stat_type'], market['stat']
-        full_stat_log = player.get_player_stats_log(stat_type, stat, opp.initials)
-        
-        # Get stat log and opponent log. Add None to make length == n_games
-        stat_log = full_stat_log[-n_games:]
-        opp_log = self.get_display_opp_log(n_games, player=player, opp_inits=opp.initials)
-        while len(stat_log) < n_games:
-            stat_log.append(None)
-            opp_log.append(None)
-
-        # Assemble row and return
-        row = [opp_info] + stat_log + opp_log
-        return row
-
-    def get_player_perf_data(self, player: NFLPlayer, 
-                             market: dict, n_games: int):
-        """"""
-
-        # Get full stat log to use in rest of function
-        stat_type, stat = market['stat_type'], market['stat']
-        full_stat_log = player.get_player_stats_log(stat_type, stat)
-        
-        # Calculate season average
-        gp = player.get_gp_by_season(self.season)
-        if gp == 0:
-            season_avg = None
-        else:
-            season_avg = round(sum(full_stat_log[-gp:]) / gp, 2)
-        
-        # Get average for each value in self.game_split
-        splits = []
-        for games in self.game_split:
-            if player.gp_all_time >= games:
-                splits.append(round(sum(full_stat_log[-games:]) / games, 2))
-            else:
-                splits.append(None)
-        
-        # Get stat log and opponent log. Add None to make length == n_games
-        stat_log = full_stat_log[-n_games:]
-        opp_log = self.get_display_opp_log(n_games, player=player)
-        while len(stat_log) < n_games:
-            stat_log.append(None)
-            opp_log.append(None)
-
-        # Assemble row and return
-        row = [season_avg] + splits + stat_log + opp_log
-        return row
-
-    def get_def_perf_data(self, team: NFLTeam, market: dict, 
-                          n_games: int, pos: str):
-        """"""
-
-        # Get full stat log to use in rest of function
-        stat_type, stat = market['stat_type'], market['stat']
-        full_stat_log = team.defense.get_stats_against_log(stat_type, stat)
-
-        # Calculate season average
-        gp = team.defense.get_gp_by_season(self.season)
-        if gp == 0:
-            season_avg = None
-        else:
-            season_avg = round(sum(full_stat_log[-gp:]) / gp, 2)
-            rank = self.get_def_rank(team, stat_type, stat, games=gp)
-            season_avg = f'{season_avg} ({rank})'
-
-        # Calculate season average vs player's position, and get rank
-        # If passing or kicking stat, it will be the same as previous step
-        if gp == 0:
-            season_avg_vs_pos = None
-        else:
-            if stat_type in ['pa', 'fg']:
-                season_avg_vs_pos = season_avg
-            elif team.defense.get_stats_against_by_pos(pos, stat_type, stat) is None:
-                season_avg_vs_pos = None
-            else:
-                season_tot_vs_pos = team.defense.get_stats_against_by_pos(pos, stat_type, stat)
-                season_avg_vs_pos = round(season_tot_vs_pos / gp, 2)
-                rank = self.get_def_rank(team, stat_type, stat, pos=pos)
-                season_avg_vs_pos = f'{season_avg_vs_pos} ({rank})'
-
-        # Get average and rank for each value in self.game_split
-        splits = []
-        for games in self.game_split:
-            avg = round(sum(full_stat_log[-games:]) / games, 2)
-            rank = self.get_def_rank(team, stat_type, stat, games=games)
-            splits.append(f'{avg} ({rank})')
-
-        # Get stat log and opponent log
-        stat_log = full_stat_log[-n_games:]
-        opp_log = self.get_display_opp_log(n_games, team=team)
-        while len(stat_log) < n_games:
-            stat_log.append(None)
-            opp_log.append(None)
-
-        # Assemble row and return
-        row = [season_avg] + [season_avg_vs_pos] + splits + stat_log + opp_log
-        return row
+        return {
+            'display': display_report,
+            'player_objs': player_objs
+        }
     
-    def get_prop_info_data(self, props: list, prop_id):
-        """Given list of NFL player props (with related prop_id) and prop 
-        name ('attd', 'pa_cmps', etc.), get lines/odds for FD, DK, and ESPN. 
-        Also get smallest line and return in a tuple with line/odds list."""
+    def __get_recent_player_stats_vs(self, opp: NBATeam, stat: str):
+        """
+        Return dict, where the player's pos points to recent related player
+        stats vs the opp defense.
+        """
 
-        # Initialize line/odds variables as None
-        fd_line, fd_over, fd_under = None, None, None
-        dk_line, dk_over, dk_under = None, None, None
-        espn_line, espn_over, espn_under = None, None, None
-
-        # Divide prop objects into lists
-        fd_props = [prop for prop in props if prop.sportsbook == 'fanduel']
-        dk_props = [prop for prop in props if prop.sportsbook == 'draftkings']
-        espn_props = [prop for prop in props if prop.sportsbook == 'barstool']
-
-        # Get Fanduel line/odds
-        # Assuming 2 prop objects (1 over, 1 under) w/ same line
-        if len(fd_props) > 0:
-            fd_line = fd_props[0].line
-            fd_over = fd_props[0].odds
-            if prop_id != 'attd':
-                fd_under = fd_props[1].odds
+        game_list = opp.get_ind_stats_against(['position', 'first_name',
+                                               'last_name', stat, 'location',
+                                               'opponent', 'date'], n_games=6)
         
-        # Get Draftkings line/odds
-        # Assuming 2 prop objects (1 over, 1 under) w/ same line
-        if len(dk_props) > 0:
-            dk_line = dk_props[0].line
-            dk_over = dk_props[0].odds
-            if prop_id != 'attd':
-                dk_under = dk_props[1].odds
-        
-        # Get ESPNBet line/odds
-        if len(espn_props) > 0:
-            # Assuming 2 prop objects (1 over, 1 under) w/ same line
-            if prop_id in ['attd', 'pa_yds']:
-                espn_line = espn_props[0].line
-                espn_over = espn_props[0].odds
-                espn_under = espn_props[1].odds
+        n_players = 2
+        top_g, top_f, top_pf_c = [], [], []
+        for game in game_list:
+            temp_g, temp_f, temp_pf_c = [], [], []
+            # Add players to appropriate list
+            for log in game:
+                if log[0][-1] == 'G':
+                    temp_g.append(log)
+                if log[0][-1] == 'F':
+                    temp_f.append(log)
+                if log[0] in ['PF', 'C']:
+                    temp_pf_c.append(log)
+            # Sort temp lists by stat value, then take top n_players
+            temp_g = sorted(temp_g, key=lambda log: log[3], 
+                            reverse=True)[:n_players]
+            temp_f = sorted(temp_f, key=lambda log: log[3], 
+                            reverse=True)[:n_players]
+            temp_pf_c = sorted(temp_pf_c, key=lambda log: log[3],
+                               reverse=True)[:n_players]
+            # Append temp to macthing lists
+            top_g.append(temp_g)
+            top_f.append(temp_f)
+            top_pf_c.append(temp_pf_c)
 
-            # Assuming 6 prop objects (3 over, 3 under) w/ 3 different lines
-            # Take the middle line/odds
-            elif prop_id in ['pa_atts', 'pa_cmps', 'ru_yds', 're_yds']:
-                try:
-                    espn_line = espn_props[1].line
-                    espn_over = espn_props[1].odds
-                    espn_under = espn_props[4].odds
-                except IndexError:
-                    pass
+        # Make dict where key is position, and points to similar players
+        recent_pl_vs = {}
+        for pos in ['PG', 'SG', 'G']:
+            recent_pl_vs[pos] = top_g
+        for pos in ['SF', 'F']:
+            recent_pl_vs[pos] = top_f
+        for pos in ['PF', 'C']:
+            recent_pl_vs[pos] = top_pf_c
 
-            # Assuming 6 prop objects (3 over, 3 under) w/ 3 different lines
-            # Take line that matches smallest of FD/DK lines
-            elif prop_id in ['pa_tds', 'ru_atts', 
-                             're_recs', 'fg_made', 'fg_points']:
-                lines = [i for i in [fd_line, dk_line] if i is not None]
-                try:
-                    for prop in espn_props:
-                        if prop.line == min(lines):
-                            espn_line = prop.line
-                            if prop.over_under == 'over':
-                                espn_over = prop.odds
-                            else:
-                                espn_under = prop.odds
-                # Take the middle line/odds if no FD/DK line available
-                except ValueError:
-                    try:
-                        espn_line = espn_props[1].line
-                        espn_over = espn_props[1].odds
-                        espn_under = espn_props[4].odds
-                    except IndexError:
-                        pass
-            
-            # Assuming 6 prop objects (3 over, 3 under) w/ 3 different lines
-            # Take line the smallest line (should always be 0.5)
-            elif prop_id == 'pa_ints':
-                espn_line = espn_props[0].line
-                espn_over = espn_props[0].odds
-                espn_under = espn_props[3].odds
-
-        # Find the smallest line for analysis, will be None if no lines
-        # There will be no lines if number of dicts doesn't match typical number of dicts
-        try:
-            min_line = min([i for i in [fd_line, dk_line, espn_line] if i is not None])
-        except ValueError:
-            min_line = None
-
-        # Assemble row and return in tuple
-        row = [props[0].prop_name, fd_line, fd_over, fd_under]
-        row += [dk_line, dk_over, dk_under]
-        row += [espn_line, espn_over, espn_under]
-        return (min_line, row)
+        return recent_pl_vs
     
-    def get_analysis_data(self, player: NFLPlayer, opp: NFLTeam, 
-                          market: dict, line):
-        """Get player and defensive performance values, apply final weights, add together,
-        and return in a list."""
+    def __get_player_info(self, player: NBAPlayer):
+        """
+        Given NBAPlayer obj, return list with basic player info for analysis 
+        tables.
+        """
 
-        # Weights for player and defensive performance metrics
-        w_player = 0.6
-        w_def = 0.4
-        
-        # Get performance values
-        player_score = self.player_performance_analysis(player, market, line)
-        defense_score = self.def_performance_analysis(player, opp, market, line)
-        
-        # Check if player_score == None (player has played 6 or less career games)
-        try:
-            total = (player_score * w_player) + (defense_score * w_def)
-        except TypeError:
-            return [None, round(defense_score, 2), None]
-
-        return [round(player_score, 2), round(defense_score, 2), round(total, 2)]
-
-    def get_display_injury(self, player: NFLPlayer) -> str:
-        """Given NFLPlayer object, return injury status in following format:\n
-        '{status[0]} ({inj})' --> D (Ankle) or 'None' if no injury designation."""
-        
-        if player.injury['game status'] in ['n/a', '']:
-            return 'Active'
+        if player.jersey is not None:
+            jersey = str(player.jersey)
         else:
-            status = player.injury['game status']
-            inj = player.injury['comment']
-            return f'{status[0]} ({inj})'
-        
-    def get_display_next_opp(self, opp: NFLTeam):
-        """Given NFLTeam obj of the opponent, return next opp info in following format:\n
-        '{opp.initials} {game_obj.day} {game_obj.time}' --> DEN Sun 4:30PM"""
-        
-        game_obj = opp.get_next_game_obj()
-        if game_obj.home_team_id == opp.team_id:
-            return f'at {opp.initials} {game_obj.day} {game_obj.time}'
-        else:
-            return f'vs {opp.initials} {game_obj.day} {game_obj.time}'
+            jersey = ''
 
-    def get_display_opp_log(self, games: int, player=None, team=None, opp_inits='all') -> list:
-        """Given NFLPlayer or NFLTeam object and n games, return list of n opponents in the format:\n
-        '{opp} ({date})' --> 'DAL (10/17/2023)'"""
-        
-        if player is not None:
-            locs = player.get_player_loc_log(opp=opp_inits)[-games:]
-            opps = player.get_player_opp_log(opp=opp_inits)[-games:]
-            dates = player.get_player_date_log(opp=opp_inits)[-games:]
-        elif team is not None:
-            locs = team.get_game_loc_log()[-games:]
-            opps = team.get_game_opp_log()[-games:]
-            opps = [self.get_team_object(opp).initials for opp in opps]
-            dates = team.get_game_date_log()[-games:]
-        
-        opp_log = []
-        for loc, opp, date in zip(locs, opps, dates):
-            # Convert str date to datetime object, then convert back to desired str format
-            d = datetime.strptime(date, '%Y-%m-%d').strftime('%m/%d/%y')
-            if loc in ['H', 'N']:
-                opp_log.append(f'{opp} ({d})')
-            else:
-                opp_log.append(f'@{opp} ({d})')
-        return opp_log
+        att = player.position + ' ● ' + player.team.code + ' ● #' + jersey
+        return [player.first_name, player.last_name, player.team.code, att]
 
-    def get_team_object(self, value: str):
-        """Given an team_id, inits or name, get NFLTeam object."""
+    def __get_player_prop_info(self, props: list):
+        """
+        Given list of NBAProp objects, return list with player prop info for 
+        analysis tables, along with the consensus line that will be used for 
+        analysis.
+        """
 
-        for team in self.teams:
-            if value == team.team_id or value == team.name or value == team.initials:
-                return team
-        return None
+        books = 4
+        lines = []
+        for prop in props:
+            lines.append(prop.line)
+        # Consensus line will be most common line. If theres a tie, first
+        # to appear is chosen
+        consensus = sorted(lines, key=lambda x: lines.count(x), reverse=True)[0]
+
+        prop_info = {}
+        for prop in props:
+            # Create dict from bookmaker if it doesn't yet exist
+            if prop.bookmaker_name not in prop_info:
+                prop_info[prop.bookmaker_name] = {}
+            # Add line and odds to dict
+            prop_info[prop.bookmaker_name]['line'] = prop.line
+            if prop.name in ['Over', 'Yes']:
+                prop_info[prop.bookmaker_name]['over'] = prop.price
+            elif prop.name in ['Under', 'No']:
+                prop_info[prop.bookmaker_name]['under'] = prop.price
+        
+        # Take dict items and form into list
+        prop_info_lst = [props[0].market_name, consensus]
+        for book, item in prop_info.items():
+            prop_info_lst.append(book)
+            prop_info_lst.append(item.get('line', None))
+            prop_info_lst.append(item.get('over', None))
+            prop_info_lst.append(item.get('under', None))
+
+        # If prop list not full, fill with None
+        prop_info_lst = self.__fill_with_none(prop_info_lst, 2+(books*4))
+
+        return {
+            'display': prop_info_lst,
+            'line': consensus
+        }
+
+    def __get_player_prop_performance_info(self, player: NBAPlayer, stat: str, 
+                                           line: float, loc: str, opp: NBATeam, 
+                                           inj: list):
+        """
+        Return list with player performance info for analysis tables.\n
+        Includes overall, home/away, vs {opp}, w/o player 1, w/o player 2
+        """
+
+        # Splits and lengths for blocks and graphs
+        avg_splits_all = [5, 10, 20, player.get_no_of_gp(seasons=[self.season])]
+        avg_splits_loc = [5, 10, 20, player.get_no_of_gp(seasons=[self.season],
+                                                         loc=loc)]
+        avg_splits_opp = [3, 6, 9, player.get_no_of_gp(opps=[opp.id])]
+        len_graph_all = 20
+        len_graph_loc = 20
+        len_graph_opp = 10
+
+        # Get stats for overall averages and graph
+        avg_all = self.__get_player_averages(player, stat, avg_splits_all, 1)
+        graph_all = self.__get_graph_stats(player, stat, line, 
+                                           n_games=len_graph_all)
+
+        # Get stats for location based averages and graph
+        avg_loc_title = [loc.capitalize()]
+        avg_loc = self.__get_player_averages(player, stat, avg_splits_loc, 1, 
+                                             loc=loc)
+        avg_loc = avg_loc_title + avg_loc
+        graph_loc = self.__get_graph_stats(player, stat, line, loc=loc, 
+                                           n_games=len_graph_loc)
+
+        # Get stats for opponent based averages and graph
+        avg_opp_title = [f'vs {opp.code}']
+        avg_opp = self.__get_player_averages(player, stat, avg_splits_opp, 1,
+                                             opps=[opp.id])
+        avg_opp = avg_opp_title + avg_opp
+        graph_opp = self.__get_graph_stats(player, stat, line, opps=[opp.id], 
+                                           n_games=len_graph_opp)
+
+        # Get stats for without blocks
+        wo_players = self.__find_similar_players(player, inj, 2)
+        wo_blocks = []
+        for pl in wo_players:
+            wo_blocks.append(f'w/o  {pl.first_name[0]}. {pl.last_name}')
+            wo_blocks += self.__get_with_without_block_stats(player, stat, 
+                                                        without_player=[pl.id], 
+                                                        n_games=6)
+        wo_blocks = self.__fill_with_none(wo_blocks, 38)
+
+        # Combine lists and return
+        return avg_all + graph_all + avg_loc + graph_loc + avg_opp + \
+            graph_opp + wo_blocks
     
-    def get_def_rank(self, team: NFLTeam, stat_type: str, stat: str, games=0, pos=''):
-        """Given stat_type, stat, and # of games OR position, return int value of
-        rank for either all pos for last n games, or for pos this season."""
+    def __get_def_vs_prop_performance_info(self, player: NBAPlayer, 
+                                           opp: NBATeam, def_ranks: dict,
+                                           recent_pl_vs: list):
+        """
+        Return list with def vs prop performance info for analysis tables.
+        Includes opp vs all, opp vs pos, and recent players vs blocks.
+        """
 
-        if pos != '':
-            table = self.stats_against_by_pos_table(stat_type, stat, pos)
-        elif games in self.game_split:
-            table = self.stats_against_table(stat_type, stat, f'L{games}')
-        elif games > 0:
-            table = self.stats_against_table(stat_type, stat, 'Season')
-        else:
-            return 0
+        expand_pos = {'all': 'All', 'G': 'Guards', 
+                      'F': 'Forwards', 'C': 'Centers'}
+        splits = ['L5', 'L10', 'L20', 'Season']
+
+        # Get stats and ranks for def vs all and vs pos blocks
+        def_vs_blocks = []
+        for pos in ['all', player.base_position]:
+            def_vs_blocks += [f'{opp.code} vs {expand_pos[pos]}']
+            for split in splits:
+                value = def_ranks[opp.id][pos][split]['value']
+                rank_value = def_ranks[opp.id][pos][split]['rank']
+                rank_display = self.__make_ordinal(rank_value)
+                def_vs_blocks += [value, rank_display]
+
+        # Get stats for recent players vs blocks
+        recent_vs_blocks = []
+        games = recent_pl_vs[player.position]
+        for game in reversed(games):
+            game_block = []
+            for log in game:
+                pos = log[0]
+                name = f'{log[1][0]}. {log[2]}'
+                stat = log[3]
+                matchup = self.__condense_matchup_info([log[4]], [log[5]], 
+                                                       [log[6]])
+                game_block += [pos, name, stat, matchup[0]]
+            game_block = self.__fill_with_none(game_block, 8)
+            # Add all but last item, don't need matchup twice
+            recent_vs_blocks += game_block[:-1]
         
-        return table.loc[table['Team'] == team.initials, 'Rank'].iloc[0]
+        return def_vs_blocks + recent_vs_blocks
 
-    def player_performance_analysis(self, player: NFLPlayer, market: dict, line):
-        """Used in display_performance_analysis, return value representing player 
-        performance vs the given stat"""
+    def __get_performance_analysis_info(self, player: NBAPlayer, opp: NBATeam, 
+                                        stat: str, line: float, loc: str, 
+                                        def_ranks: dict):
+        """"""
 
-        stat_type, stat = market['stat_type'], market['stat']
-        metrics = self.get_player_metrics(player)
+        # Get performance analysis values
+        s_pl_all = self.__analyze_player_prop_performance(player, stat, line, 
+                                                          seasons=[self.season])
+        s_pl_loc = self.__analyze_player_prop_performance(player, stat, line, 
+                                                          seasons=[self.season],
+                                                          loc=loc)
+        s_pl_opp = self.__analyze_player_prop_performance(player, stat, line,
+                                                          opp=[opp.id])
+       
+        def_vs_all_ranks = def_ranks[opp.id]['all']
+        def_vs_pos_ranks = def_ranks[opp.id][player.base_position]
+        s_def_all = self.__analyze_def_vs_stat_performance(opp, 
+                                                           def_vs_all_ranks)
+        s_def_pos = self.__analyze_def_vs_stat_performance(opp, 
+                                                           def_vs_pos_ranks)
 
-        # Metrics var will be empty dict if player.gp_all_time < certain value
-        if len(metrics) == 0:
+        # Define weight values
+        w_pl_all = 0.4
+        w_pl_loc = 0.2
+        w_pl_opp = 0.2
+        if s_pl_opp is None:
+            w_pl_all = 0.5
+            w_pl_loc = 0.3
+            w_pl_opp = 0
+        elif s_pl_opp is None and s_pl_loc is None:
+            w_pl_all = 0.8
+            w_pl_loc = 0
+            w_pl_opp = 0
+        elif s_pl_opp is None and s_pl_loc is None and s_pl_all is None:
             return None
         
-        # Get average over number of games provided by metrics variable
-        # Then use player_avg_vs_line to get performance value
-        m_player = []
-        player_stat_log = player.get_player_stats_log(stat_type, stat)
-        for games in metrics['splits']:
-            avg = sum(player_stat_log[-games:]) / games
-            m_avl = self.player_avg_vs_line(avg, line)
-            m_player.append(m_avl)
+        w_def_all = 0.1
+        w_def_pos = 0.1
 
-        # Use log_vs_line to get performance value based on 
-        # number of times line has been covered
-        for n in metrics['n_cover']:
-            m_p_cover = self.log_vs_line(player_stat_log[-n:], line)
-            m_player.append(m_p_cover)
+        # Calculate total performance value
+        total = 0
+        for s, w in zip([s_pl_all, s_pl_loc, s_pl_opp, s_def_all, s_def_pos],
+                        [w_pl_all, w_pl_loc, w_pl_opp, w_def_all, w_def_pos]):
+            if s is not None:
+                total += s*w
+        total = round(total*100, 2)
 
-        # Apply weights and return score
-        score = 0
-        for m, w in zip(m_player, metrics['weights']):
-            score += m * w
-        return score
+        # Round score values for display
+        scores = []
+        for s in [s_pl_all, s_pl_loc, s_pl_opp, s_def_all, s_def_pos]:
+            if s is not None:
+                scores.append(round(s*100))
+            else:
+                scores.append(None)
 
-    def def_performance_analysis(self, player: NFLPlayer, opp: NFLTeam, 
-                                 market: dict, line):
-        """Used in display_performance_analysis, return value representing defensive 
-        performance vs the given stat"""
+        return scores + [total]
 
-        stat_type, stat = market['stat_type'], market['stat']
-        metrics = self.get_def_metrics(opp, stat_type)
 
-        # Get performace value based on def rank vs stat
-        m_def = []
-        for games in metrics['splits']:
-            m_rvs = self.def_rank_vs_stat(opp, stat_type, stat, games=games)
-            m_def.append(m_rvs)
+    def __analyze_player_prop_performance(self, player: NBAPlayer, stat: str,
+                                          line: float, seasons=[], loc='all', 
+                                          opp=[]):
+        """
+        Return metric representing player performance vs. given stat.\n
+        seasons = list of int\n
+        loc = 'home', 'away' or 'all'\n
+        opp = list of player id ints
+        """
         
-        # Get performance value based on def rank vs stat vs position
-        # If passing or kicking stat, then value is based on def rank vs stat 
-        # this season because these stats are usually only one player.
-        # No data for rushing yards vs WRs, so will treat that situation
-        # same as passing or kicking prop for now
-        if stat_type in ['pa', 'fg'] or opp.defense.get_stats_against_by_pos(player.position, stat_type, stat) is None:
-            gp = opp.defense.get_gp_by_season(self.season)
-            m_rvsvp = self.def_rank_vs_stat(opp, stat_type, stat, games=gp)
+        # Get player metrics
+        gp = player.get_no_of_gp(loc=loc, opps=opp)
+        # Define 4th split based on performance analysis type (all, loc, or opp)
+        if len(opp) == 0:
+            spl_4 = player.get_no_of_gp(seasons=seasons, loc=loc)
         else:
-            m_rvsvp = self.def_rank_vs_stat(opp, stat_type, stat, pos=player.position)
+            spl_4 = gp
         
-        m_def.append(m_rvsvp)
+        m = self.__get_player_metrics(gp, spl_4)
+        # Length will be zero if gp threshold not met
+        if len(m) == 0:
+            return None
+        
+        # Calculate avg vs line metrics
+        avgs = self.__get_player_averages(player, stat, m['splits']['avl'],
+                                          loc=loc, opps=opp)
+        m_avl = []
+        for avg in avgs:
+            m_avl.append(self.__calculate_avg_vs_line_metric(avg, line))
 
-        # Use log_vs_line to get performance value based on number of times line has been covered
-        # Will be TypeError if n_cover == None, and n_cover will be None 
-        # if stat_type in [ru, re] because these stats are accumulated by
-        # multiple players, not just one like 'pa' and 'fg'
-        try:
-            for n in metrics['n_cover']:
-                def_stat_log = opp.defense.get_stats_against_log(stat_type, stat)[-n:]
-                m_d_cover = self.log_vs_line(def_stat_log, line)
-                m_def.append(m_d_cover)
-        except TypeError:
-            m_def.extend([0, 0, 0])
+        # Calculate log vs line metrics
+        log = player.get_stats([stat], loc=loc, opps=opp)
+        m_cover = []
+        for split in m['splits']['cover']:
+            m_cover.append(self.__calculate_log_vs_line_metric(log[-split:], 
+                                                               line))
+              
+        # Apply weights to metrics
+        for i in range(len(m_avl)):
+            m_avl[i] *= m['weights']['avl'][i]
+            m_cover[i] *= m['weights']['cover'][i]
+        
+        return sum(m_avl) + sum (m_cover)
 
-        # Apply weights and return score
-        score = 0
-        for m, w in zip(m_def, metrics['weights']):
-            score += m * w
-        return score
+    def __analyze_def_vs_stat_performance(self, opp: NBATeam, def_ranks: dict):
+        """
+        Return metric representing defensive performance vs. given stat.\n
+        def_ranks should be dict from def_ranks[opp.id][pos]
+        """
 
-    def player_avg_vs_line(self, avg: float, line: float):
-        """Take an average stat value and prop line to determine performance value.\n"""
+        # Get defensive metrics
+        m = self.__get_def_metrics(opp)
 
+        # Calculate rank vs stat metrics
+        m_rvs = []
+        for split in def_ranks.values():
+            m_rvs.append(self.__calculate_rank_vs_stat_metric(split['rank']))
+
+        # Apply weights to metrics
+        for i in range(len(m_rvs)):
+            m_rvs[i] *= m['weights']['rvs'][i]
+
+        return sum(m_rvs)
+
+    def __calculate_avg_vs_line_metric(self, avg: float, line: float):
+        """Use average stat value and line to determine performance value."""
+        
         ratio = avg / line
-        ratio = 0.5 if ratio < 0.5 else 2 if ratio > 2 else ratio
+        if ratio < 0.5:
+            ratio = 0.5
+        elif ratio > 2:
+            ratio = 2
         return np.interp(ratio, [0.5, 1, 2], [0, 0.5, 1])
 
-    def log_vs_line(self, log: list, line: float):
-        """Take stat log and prop line to see how often the line has been covered 
-        and return a performance value."""
+    def __calculate_log_vs_line_metric(self, log: list, line: float):
+        """
+        Take stat log and line to see how often the line has been covered 
+        and return a performance value.
+        """
 
         count = 0
         for stat in log:
@@ -699,136 +778,226 @@ class NFLDataAnalysis:
                 count += 1
         return count / len(log)
 
-    def def_rank_vs_stat(self, team: NFLTeam, stat_type: str, stat: str, games=0, pos=''):
-        """Return performance value based on the defense's rank vs given stat."""
-
-        rank = self.get_def_rank(team, stat_type, stat, games, pos)
-        return rank / 32
+    def __calculate_rank_vs_stat_metric(self, rank: int):
+        """Take rank value and divide by 30 to calc performance value"""
+        
+        return rank / 30
     
-    def get_player_metrics(self, player: NFLPlayer):
-        """Given NFLPlayer object, return metrics used to analyze player performance.\n
-        Returns a dictionary with the following:\n
-        'splits': list of 3 ints representing # of games to include in avg vs line analysis\n
-        'n_cover': int representing # of games to include in log vs line analysis\n
-        'weights': weights to apply to each metric"""
-        
-        gp = player.gp_all_time
-        g1, g2, g3 = self.game_split[0], self.game_split[1], self.game_split[2]
-        
-        # Weight splits for main metrics
-        avg_v_line = 1/2
-        cover_num = 1/2
-        
-        # If the player has < 6 career gp, not enough data for analysis
-        if gp < 6:
-            return {}
-        elif 6 <= gp < 9:
-            return {'splits': [g1, gp-g1, gp],
-                    'n_cover': [g1, gp-g1, gp],
-                    'weights': [avg_v_line*(5.5/10), avg_v_line*(4.5/10), 0,
-                                cover_num*(5.5/10), cover_num*(4.5/10), 0]}
-        elif 9 <= gp < 12:
-            return {'splits': [g1, g2, gp-g1],
-                    'n_cover': [g1, g2, gp-g1],
-                    'weights': [avg_v_line*(4/10), avg_v_line*(3/10), avg_v_line*(3/10),
-                                cover_num*(4/10), cover_num*(3/10), cover_num*(3/10)]}
-        elif gp >= 12:
-            return {'splits': [g1, g2, g3],
-                    'n_cover': [g1, g2, g3],
-                    'weights': [avg_v_line*(4/10), avg_v_line*(3/10), avg_v_line*(3/10),
-                                cover_num*(4/10), cover_num*(3/10), cover_num*(3/10)]}
+    def __get_player_metrics(self, gp: int, spl_4: int):
+        """
+        Return player splits and weights based on number of games played.\n 
+        Split 4 will also need to be provided. Will either be gp this season
+        if determining metrics for overall or home/away, or will be gp all time 
+        if getting metrics for vs opponent.
+        """
 
-    def get_def_metrics(self, team: NFLTeam, stat_type: str):
-        """Given NFLTeam object and stat_type == 'pa', 'ru', 're', 'fg', 
-        return metrics used to analyze defensive performance.\n
-        Returns a dictionary with the following:\n
-        'splits': list of 3 ints representing # of games to include in rank vs line analysis\n
-        'n_cover': int representing # of games to include in log vs line analysis (if applicable)\n
-        'weights': weights to apply to each metric"""
-        
-        gp = team.defense.get_gp_by_season(self.season)
-        g1, g2, g3 = self.game_split[0], self.game_split[1], self.game_split[2]
-
-        if stat_type in ['pa', 'fg']:
-            # Weight splits for main metrics
-            cover = 1/4
-            rvs = 1/2
-            rvsvp = 1/4
-            
-            if gp < g1:
-                return {'splits':  [g1, g2, g3],
-                        'n_cover': [g1, g2, g3],
-                        'weights': [(rvs * (5/10)) + (rvsvp * (1/6)), (rvs * (3/10)) + (rvsvp * (1/6)), 
-                                    (rvs * (2/10)) + (rvsvp * (1/6)), 
-                                    0, 
-                                    (cover * (5/10)) + (rvsvp * (1/6)), (cover * (3/10)) + (rvsvp * (1/6)), 
-                                    (cover * (2/10)) + (rvsvp * (1/6))]}
-
-            else:
-                return {'splits': [g1, g2, g3],
-                        'n_cover': [g1, g2, g3],
-                        'weights': [(rvs * (4/10)), (rvs * (3/10)), 
-                                    (rvs * (3/10)),
-                                    rvsvp, 
-                                    (cover * (4/10)), (cover * (3/10)), 
-                                    (cover * (3/10))]}
-            
+        # Determine split values based on games played
+        if gp >= 40:
+            spl_1 = 5
+            spl_2 = 10
+            spl_3 = 20
+            spl_4 = spl_4
+        elif 4 <= gp < 40:
+            spl_1 = round(gp/7.99)
+            spl_2 = round(gp/4)
+            spl_3 = round(gp/2)
+            spl_4 = spl_4
         else:
-            # Weight splits for main metrics
-            # Cover metric weight is split between other two because rushing and
-            # receiving stats are accumulated by multiple players.
-            # This is also why n_cover is None, and it's weight is 0
-            cover = 1/4
-            rvs = (1/2) + (cover * (3/4))
-            rvsvp = (1/4) + (cover * (1/4))
+            return {}
 
-            if gp < g1:
-                return {'splits': [g1, g2, g3],
-                        'n_cover': [None, None, None],
-                        'weights': [(rvs * (5/10)) + (rvsvp * (1/3)), (rvs * (3/10)) + (rvsvp * (1/3)), 
-                                    (rvs * (2/10)) + (rvsvp * (1/3)), 
-                                    0, 
-                                    0, 0, 0]}
+        # Weights for main metrics
+        avl = 0.3
+        cover = 0.7
+
+        # Weights for individual splits
+        if spl_4 >= 4:
+            avl_1 = avl*(7/20)
+            avl_2 = avl*(5/20)
+            avl_3 = avl*(4/20)
+            avl_4 = avl*(4/20)
+            cov_1 = cover*(7/20)
+            cov_2 = cover*(5/20)
+            cov_3 = cover*(4/20)
+            cov_4 = cover*(4/20)
+        # If spl_4 is less than 4, split 4th metric weight and set as zero
+        else:
+            avl_1 = avl*(9/20)
+            avl_2 = avl*(6/20)
+            avl_3 = avl*(5/20)
+            avl_4 = 0
+            cov_1 = cover*(9/20)
+            cov_2 = cover*(6/20)
+            cov_3 = cover*(5/20)
+            cov_4 = 0
+
+        return {
+            'splits': {
+                'avl': [spl_1, spl_2, spl_3, spl_4],
+                'cover': [spl_1, spl_2, spl_3, spl_4]
+            },
+            'weights': {
+                'avl': [avl_1, avl_2, avl_3, avl_4],
+                'cover': [cov_1, cov_2, cov_3, cov_4]
+            }
+        }
+
+    def __get_def_metrics(self, opp: NBATeam):
+        """
+        Return player weights based on number of games played. Same splits 
+        that are used for display will be used in analysis.
+        """
+
+        # Weights for individual splits (only one)
+        rvs = 1
+
+        # Weights for individual splits
+        gp_season = opp.get_no_of_gp(seasons=[self.season])
+        if gp_season >= 3:
+            rvs_1 = rvs*(4/20)
+            rvs_2 = rvs*(5/20)
+            rvs_3 = rvs*(5/20)
+            rvs_4 = rvs*(6/20)
+        # If gp_season is less than 3, split 4th metric weight and set as zero
+        else:
+            rvs_1 = rvs*(6/20)
+            rvs_2 = rvs*(6/20)
+            rvs_3 = rvs*(8/20)
+            rvs_4 = 0
+
+        return {
+            'weights': {
+                'rvs': [rvs_1, rvs_2, rvs_3, rvs_4]
+            }
+        }
+
+    def __get_player_averages(self, player: NBAPlayer, stat: str, splits: list,
+                              n_round: int=2, loc='all', opps: list=[]):
+        """Return list with player stat averages."""
+
+        stat_log = player.get_stats([stat], loc=loc, opps=opps)
+
+        averages = []
+        for split in splits:
+            if len(stat_log) >= split and split != 0:
+                avg = sum(stat_log[-split:]) / split
+                averages.append(round(avg, n_round))
             else:
-                return {'splits': [g1, g2, g3],
-                        'n_cover': [None, None, None],
-                        'weights': [(rvs * (4/10)), (rvs * (3/10)), 
-                                    (rvs * (3/10)), 
-                                    rvsvp, 
-                                    0, 0, 0]}
+                averages.append(None)
+        return averages
 
-    def tables_to_excel(self, file_name: str, tables: list):
-        """Given a file name and a list of Pandas Dataframes, create an Excel Workbook 
-        with a sheet for each table. Tables in list must be tuples with format (pd, sheet_name)"""
+    def __get_graph_stats(self, player: NBAPlayer, stat: str, line: float, 
+                          loc='all', opps: list=[], n_games=20):
+        """Return list with stats ready for analysis graphs."""
+
+        mins, stats, locs, opps_2, dates = player.get_stats(['minutes', stat, 
+                                                     'location', 'opponent', 
+                                                     'date'], loc=loc, 
+                                                     opps=opps, 
+                                                     n_games=n_games)
+
+        stats_over = [stat if stat > line else None for stat in stats]
+        stats_under = [stat if stat < line else None for stat in stats]
+        matchups = self.__condense_matchup_info(locs, opps_2, dates)
+
+        # Length of all variables should equal n_games
+        mins = self.__fill_with_none(mins, n_games)
+        stats = self.__fill_with_none(stats, n_games)
+        stats_over = self.__fill_with_none(stats_over, n_games)
+        stats_under = self.__fill_with_none(stats_under, n_games)
+        matchups = self.__fill_with_none(matchups, n_games)
+
+        return mins + stats + stats_over + stats_under + matchups
         
-        path = 'excel/nfl/' + file_name
-        writer = pd.ExcelWriter(path, engine='xlsxwriter')
+    def __get_with_without_block_stats(self, player: NBAPlayer, stat: str,  
+                                 without_player: list=[], with_player: list=[],
+                                 n_games=6):
+        """
+        Return list with stats ready for with/without analysis blocks.\n
+        with/without_player inputs must be list of player IDs.
+        """
+
+        mins, stats, locs, opps, dates = player.get_stats(['minutes', stat, 
+                                            'location', 'opponent', 'date'],
+                                            without_player=without_player,
+                                            with_player=with_player,
+                                            n_games=n_games)
+        matchups = self.__condense_matchup_info(locs, opps, dates)
         
-        for table in tables:
-            table[0].to_excel(writer, sheet_name=table[1])
+        stat_list = []
+        for i, j, k in zip(reversed(mins), reversed(stats), reversed(matchups)):
+            stat_list += [i, j, k]
+        stat_list = self.__fill_with_none(stat_list, n_games)
+        return stat_list
 
-        writer.close()
+    def __condense_matchup_info(self, locs: list, opps: list, dates: list):
+        """Return list with condensed matchup info (vs. LAC 12/30/23)"""
 
+        matchups = []
+        for loc, opp, date in zip(locs, opps, dates):
+            if loc == 'home':
+                matchup = f'vs {opp} {date}'
+            elif loc == 'away':
+                matchup = f'at {opp} {date}'
+            else:
+                matchup = f'{opp} {date}'
+            matchups.append(matchup)
+        return matchups
+    
+    def __fill_with_none(self, lst: list, end_length: int):
+        """Return list filled to end length with None type values."""
+
+        while len(lst) < end_length:
+            lst.append(None)
+        return lst
+    
+    def __find_similar_players(self, main_player: NBAPlayer, player_list: list, 
+                               n: int):
+        """
+        Return n NBAPlayer object(s) from player_list that are most comparable
+        to player. player_list must be list of NBAPlayer objects.
+        """
+        
+        similar_players = []
+        for player in player_list:
+            if (player.position == main_player.position 
+                and player != main_player):
+                similar_players.append(player)
+        for player in player_list:
+            if (player.base_position == main_player.base_position and 
+                player not in similar_players + [main_player]):
+                similar_players.append(player)
+        for player in player_list:
+            if player not in similar_players + [main_player]:
+                similar_players.append(player)
+        return similar_players[:n]
+    
+    def __make_ordinal(self, n: int):
+        """Convert an integer into its ordinal representation i.e. 1 -> 1st"""
+        n = int(n)
+        if 11 <= (n % 100) <= 13:
+            suffix = 'th'
+        else:
+            suffix = ['th', 'st', 'nd', 'rd', 'th'][min(n % 10, 4)]
+        return str(n) + suffix
+    
 
 if __name__ == "__main__":
-    analysis = NFLDataAnalysis()
-    for player in analysis.players:
-        if len(player.props) > 0:
-            print()
-            print(player.name)
-            for prop in player.props:
-                if prop.prop in ['pa_tds', 'ru_atts', 
-                                    're_recs', 'fg_made', 'fg_points']:
-                    if prop.sportsbook == 'barstool':
-                        print(prop.prop_name)
-                        print(prop.line)
-                        print(prop.odds)
-                        print(prop.over_under)
-    
+    analysis = NBADataAnalysis()
+    prop_handler = FileHandler('api_keys_player_prop_markets.json', 'data/nba/odds')
+    props = prop_handler.load_file()
+    date_obj = datetime.fromisoformat("2024-02-03T20:30:00-05:00")
+    for prop in props:
+        analysis.create_player_prop_tables(date_obj, prop)
 
-    
-
-
-
-        
+    #file_path = 'data/nba/odds/player_props'
+    #files = sorted(os.listdir(file_path))
+    #player_props = []
+    #for file in files:
+        #prop_handler = FileHandler(file, file_path)
+        #props = prop_handler.load_file()
+        #for i in range(len(props) -1, -1, -1):
+            #if props[i]['bookmaker_key'] == 'espnbet':
+                #del props[i]
+        #prop_handler = FileHandler(file, file_path)
+        #prop_handler.write_file(props)
         

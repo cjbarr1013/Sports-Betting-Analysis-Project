@@ -1,0 +1,23 @@
+[
+    {
+        "key": "h2h",
+        "name": "Moneyline",
+        "ext_name": "Head to Head / Moneyline",
+        "abv_name": "ML",
+        "group": "core"
+    },
+    {
+        "key": "spreads",
+        "name": "Spread",
+        "ext_name": "Points Spread / Handicap",
+        "abv_name": "Spread",
+        "group": "core"
+    },
+    {
+        "key": "totals",
+        "name": "Total",
+        "ext_name": "Total Points",
+        "abv_name": "Total",
+        "group": "core"
+    }
+]

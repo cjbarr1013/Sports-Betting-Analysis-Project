@@ -1,0 +1,82 @@
+[
+    {
+        "key": "player_points_alternate",
+        "name": "Alternate Points",
+        "ext_name": "Player Alternate Points",
+        "abv_name": "Alt Pts",
+        "stat": ["points"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_rebounds_alternate",
+        "name": "Alternate Rebounds",
+        "ext_name": "Player Alternate Rebounds",
+        "abv_name": "Alt Reb",
+        "stat": ["rebounds"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_assists_alternate",
+        "name": "Alternate Assists",
+        "ext_name": "Player Alternate Assists",
+        "abv_name": "Alt Ast",
+        "stat": ["assists"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_threes_alternate",
+        "name": "Alternate Threes",
+        "ext_name": "Player Alternate Threes",
+        "abv_name": "Alt 3PM",
+        "stat": ["threes"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_blocks_alternate",
+        "name": "Alternate Blocks",
+        "ext_name": "Player Alternate Blocks",
+        "abv_name": "Alt Blk",
+        "stat": ["blocks"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_steals_alternate",
+        "name": "Alternate Steals",
+        "ext_name": "Player Alternate Steals",
+        "abv_name": "Alt Stl",
+        "stat": ["steals"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_points_rebounds_assists_alternate",
+        "name": "Alternate Points + Rebounds + Assists",
+        "ext_name": "Player Alternate Points + Rebounds + Assists",
+        "abv_name": "Alt Pts + Reb + Ast",
+        "stat": ["points", "rebounds", "assists"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_points_rebounds_alternate",
+        "name": "Alternate Points + Rebounds",
+        "ext_name": "Player Alternate Points + Rebounds",
+        "abv_name": "Alt Pts + Reb",
+        "stat": ["points", "rebounds"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_points_assists_alternate",
+        "name": "Alternate Points + Assists",
+        "ext_name": "Player Alternate Points + Assists",
+        "abv_name": "Alt Pts + Ast",
+        "stat": ["points", "assists"],
+        "group": "alt_player_props"
+    },
+    {
+        "key": "player_rebounds_assists_alternate",
+        "name": "Alternate Rebounds + Assists",
+        "ext_name": "Player Alternate Rebounds + Assists",
+        "abv_name": "Alt Reb + Ast",
+        "stat": ["rebounds", "assists"],
+        "group": "alt_player_props"
+    }
+]

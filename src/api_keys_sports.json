@@ -1,0 +1,18 @@
+{
+    "nba": {
+        "key": "basketball_nba",
+        "name": "NBA"
+    },
+    "nfl": {
+        "key": "americanfootball_nfl",
+        "name": "NFL"
+    },
+    "nhl": {
+        "key": "icehockey_nhl",
+        "name": "NHL"
+    },
+    "mlb": {
+        "key": "baseball_mlb",
+        "name": "MLB"
+    }
+}

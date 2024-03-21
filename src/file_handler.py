@@ -1,5 +1,6 @@
 import os
 import json
+import csv
 import pandas as pd
 
 class FileHandler:
@@ -23,16 +24,16 @@ class FileHandler:
         elif self.type == 'csv':
             if type(data) is pd.core.frame.DataFrame:
                 self.__df_to_csv(data)
-            else:
-                pass
+            elif type(data) is list:
+                self.__list_to_csv(data)        
         else:
             print(f'File type .{self.type} not supported.')
 
-    def add_to_file(self):
+    def add_to_file(self, data):
         if self.type == 'json':
-            pass
+            self.__add_to_json(data)
         elif self.type == 'csv':
-            pass
+            self.__add_to_csv(data)
         else:
             print(f'File type .{self.type} not supported.')
 
@@ -44,11 +45,33 @@ class FileHandler:
         with open(self.fp, 'w') as f:
             json.dump(data, f, indent=4)
 
+    def __add_to_json(self, data):
+        with open(self.fp) as f:
+            json_data = json.load(f)
+        
+        if type(json_data) is list:
+            json_data.append(data)
+        elif type(json_data) is dict:
+            json_data.update(data)
+        
+        with open(self.fp, 'w') as f:
+            json.dump(json_data, f, indent=4)
+
     def __csv_to_df(self):
         return pd.read_csv(self.fp)
 
     def __df_to_csv(self, df: pd):
         df.to_csv(self.fp, index=False)
+
+    def __list_to_csv(self, data):
+        with open(self.fp, 'w') as f:
+            writer = csv.writer(f)
+            writer.writerow(data)
+
+    def __add_to_csv(self, data):
+        with open(self.fp, 'a') as f:
+            writer = csv.writer(f)
+            writer.writerow(data)
 
 
 if __name__ == "__main__":

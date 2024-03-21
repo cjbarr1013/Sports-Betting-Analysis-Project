@@ -1,0 +1,114 @@
+[
+    {
+        "key": "player_points",
+        "name": "Points",
+        "ext_name": "Player Points",
+        "abv_name": "Pts",
+        "str_to_stat": "points",
+        "group": "player_props"
+    },
+    {
+        "key": "player_rebounds",
+        "name": "Rebounds",
+        "ext_name": "Player Rebounds",
+        "abv_name": "Reb",
+        "str_to_stat": "rebounds",
+        "group": "player_props"
+    },
+    {
+        "key": "player_assists",
+        "name": "Assists",
+        "ext_name": "Player Assists",
+        "abv_name": "Ast",
+        "str_to_stat": "assists",
+        "group": "player_props"
+    },
+    {
+        "key": "player_threes",
+        "name": "Threes",
+        "ext_name": "Player Threes",
+        "abv_name": "3PM",
+        "str_to_stat": "threes",
+        "group": "player_props"
+    },
+    {
+        "key": "player_blocks",
+        "name": "Blocks",
+        "ext_name": "Player Blocks",
+        "abv_name": "Blk",
+        "str_to_stat": "blocks",
+        "group": "player_props"
+    },
+    {
+        "key": "player_steals",
+        "name": "Steals",
+        "ext_name": "Player Steals",
+        "abv_name": "Stl",
+        "str_to_stat": "steals",
+        "group": "player_props"
+    },
+    {
+        "key": "player_blocks_steals",
+        "name": "Blocks + Steals",
+        "ext_name": "Player Blocks + Steals",
+        "abv_name": "Blk + Stl",
+        "str_to_stat": "blocks_steals",
+        "group": "player_props"
+    },
+    {
+        "key": "player_turnovers",
+        "name": "Turnovers",
+        "ext_name": "Player Turnovers",
+        "abv_name": "TOV",
+        "str_to_stat": "turnovers",
+        "group": "player_props"
+    },
+    {
+        "key": "player_points_rebounds_assists",
+        "name": "Pts + Reb + Ast",
+        "ext_name": "Player Points + Rebounds + Assists",
+        "abv_name": "P + R + A",
+        "str_to_stat": "points_rebounds_assists",
+        "group": "player_props"
+    },
+    {
+        "key": "player_points_rebounds",
+        "name": "Pts + Reb",
+        "ext_name": "Player Points + Rebounds",
+        "abv_name": "P + R",
+        "str_to_stat": "points_rebounds",
+        "group": "player_props"
+    },
+    {
+        "key": "player_points_assists",
+        "name": "Pts + Ast",
+        "ext_name": "Player Points + Assists",
+        "abv_name": "P + A",
+        "str_to_stat": "points_assists",
+        "group": "player_props"
+    },
+    {
+        "key": "player_rebounds_assists",
+        "name": "Reb + Ast",
+        "ext_name": "Player Rebounds + Assists",
+        "abv_name": "R + A",
+        "str_to_stat": "rebounds_assists",
+        "group": "player_props"
+    },
+    {
+        "key": "player_double_double",
+        "name": "Double Double",
+        "ext_name": "Player Double Double",
+        "abv_name": "Double Double",
+        "str_to_stat": "double_double",
+        "group": "player_props"
+    },
+    {
+        "key": "player_triple_double",
+        "name": "Triple Double",
+        "ext_name": "Player Triple Double",
+        "abv_name": "Triple Double",
+        "str_to_stat": "triple_double",
+        "group": "player_props"
+    }
+]
