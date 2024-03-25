@@ -1,18 +1,28 @@
 [
     {
+        "name": "Onyeka Okongwu",
+        "status": "Out",
+        "comment": "Mar 24: Okongwu (toe) will be inactive Monday against Boston, Brad Rowland of the Locked On Podcast Network reports."
+    },
+    {
+        "name": "AJ Griffin",
+        "status": "Out",
+        "comment": "Mar 21: The Hawks announced Thursday that Bufkin has been diagnosed with a right ankle sprain and will be re-evaluated in 7-10 days."
+    },
+    {
+        "name": "Kobe Bufkin",
+        "status": "Out",
+        "comment": "Mar 21: The Hawks announced Thursday that Bufkin (toe) is making progress in his re-habilitation and will be re-evaluated in 7-10 days."
+    },
+    {
         "name": "Jalen Johnson",
-        "status": "Day-To-Day",
-        "comment": "Mar 19: Johnson implied after exiting in the fourth quarter of Monday's 136-105 loss to the Lakers with a right ankle injury that he's feeling OK, though his status for Thursday's game in Phoenix is cloudy, Lauren L. Williams of The Atlanta Journal-Constitution reports."
+        "status": "Out",
+        "comment": "Mar 21: The Hawks announced Thursday that Johnson has been diagnosed with a right ankle sprain and will be re-evaluated in one week, Brad Rowland of the Locked On Podcast Network reports."
     },
     {
         "name": "Seth Lundy",
         "status": "Out",
         "comment": "Mar 18: Lundy (back) was inactive Sunday in the G League College Park Skyhawks' 96-91 loss to the Sioux Falls Skyforce due to a back injury."
-    },
-    {
-        "name": "AJ Griffin",
-        "status": "Out",
-        "comment": "Mar 18: Griffin (lower body) has been ruled out for Monday's game against the Lakers."
     },
     {
         "name": "Mouhamed Gueye",
@@ -25,34 +35,44 @@
         "comment": "Mar 11: Bey suffered a torn left ACL and is out for the remainder of the season, ESPN's Adrian Wojnarowski reports."
     },
     {
-        "name": "Kobe Bufkin",
-        "status": "Out",
-        "comment": "Mar 7: The Hawks announced Thursday that Bufkin (toe) has been diagnosed with a left big toe sprain and will be in a walking boot for the next 10 days, Brad Rowland of the Locked On Podcast Network reports."
-    },
-    {
         "name": "Trae Young",
         "status": "Out",
         "comment": "Feb 25: Young (finger) has a torn radial collateral ligament in the fifth finger of his left hand. He will undergo surgery Tuesday and be re-evaluated in four weeks."
     },
     {
+        "name": "Xavier Tillman",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Tillman is questionable Monday against Atlanta due to left knee swelling, Justin Turpin of WEEI.com reports."
+    },
+    {
+        "name": "Derrick White",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: White is questionable for Monday's game against the Hawks due to a right hand sprain, Justin Turpin of WEEI.com reports."
+    },
+    {
         "name": "Jrue Holiday",
         "status": "Out",
-        "comment": "Mar 20: Holiday (shoulder) won't play Wednesday against the Bucks, Justin Turpin of WEEI.com reports."
+        "comment": "Mar 24: Holiday (shoulder) is inactive for Monday's game against Atlanta, Justin Turpin of WEEI.com reports."
     },
     {
-        "name": "Sam Hauser",
+        "name": "Dennis Smith Jr.",
         "status": "Out",
-        "comment": "Mar 20: Hauser (ankle) won't play in Wednesday's game versus the Bucks, Justin Turpin of WEEI.com reports."
+        "comment": "Mar 24: Smith has been ruled out for Monday's game against Toronto due to right hip synovitis, Brian Lewis of the New York Post reports."
     },
     {
-        "name": "Dorian Finney-Smith",
+        "name": "Keita Bates-Diop",
         "status": "Out",
-        "comment": "Mar 20: Finney-Smith (ankle) is out for Thursday's game versus the Bucks, C.J. Holmes of the New York Daily News reports."
+        "comment": "Mar 24: Bates-Diop has been ruled out for Monday's game against the Raptors due to a right shin stress reaction, Meghan Triplett of YES Network reports."
     },
     {
-        "name": "Nic Claxton",
+        "name": "Cameron Johnson",
+        "status": "Out",
+        "comment": "Mar 24: Johnson has been ruled out for Monday's game against the Raptors due to a left big toe sprain, Brian Lewis of the New York Post reports."
+    },
+    {
+        "name": "Keon Johnson",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Claxton is questionable for Thursday's game against Milwaukee due to an illness, Brian Lewis of the New York Post reports."
+        "comment": "Mar 21: Johnson is available for Wednesday's game against the Bucks, NBA freelance journalist Billy Reinhardt reports."
     },
     {
         "name": "Ben Simmons",
@@ -66,23 +86,28 @@
     },
     {
         "name": "Coby White",
-        "status": "Out",
-        "comment": "Mar 20: White (hip) is listed as questionable for Thursday's game versus the Rockets."
+        "status": "Day-To-Day",
+        "comment": "Mar 24: White is listed as probable for Monday's game against Washington due to a right hip strain."
     },
     {
         "name": "Alex Caruso",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Caruso (ankle) is questionable for Thursday's game in Houston."
+        "comment": "Mar 24: Caruso is probable for Monday's game against the Wizards due to a left ankle sprain."
+    },
+    {
+        "name": "Dalen Terry",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Terry is  probably for Monday's game against Washington due to the right calf contusion."
+    },
+    {
+        "name": "Lonzo Ball",
+        "status": "Out",
+        "comment": "Mar 21: There is optimism that Ball (knee) will be able to play next season, K.C. Johnson of NBC Sports Chicago reports."
     },
     {
         "name": "Julian Phillips",
         "status": "Out",
         "comment": "Mar 15: The Bulls announced Friday that Phillips has been diagnosed with a right foot sprain and is out indefinitely."
-    },
-    {
-        "name": "Lonzo Ball",
-        "status": "Out",
-        "comment": "Mar 9: Ball (knee) has begun cutting, sprinting and jumping in controlled, non-contact situations, K.C. Johnson of NBC Sports Chicago reports."
     },
     {
         "name": "Patrick Williams",
@@ -95,14 +120,19 @@
         "comment": "Feb 8: LaVine underwent season-ending surgery on his right foot Thursday, Will Gottlieb of AllCHGO.com reports."
     },
     {
-        "name": "Dean Wade",
+        "name": "Ty Jerome",
         "status": "Out",
-        "comment": "Mar 19: Wade (knee) has been ruled out for Wednesday's game against the Heat."
+        "comment": "Mar 24: Jerome (ankle) remains out for Sunday's game against the Heat and is without a clear return timeline."
     },
     {
         "name": "Max Strus",
         "status": "Out",
-        "comment": "Mar 19: Strus (knee) has been ruled out for Wednesday's game against the Heat."
+        "comment": "Mar 23: Strus (knee) won't play in Sunday's game versus the the Heat."
+    },
+    {
+        "name": "Dean Wade",
+        "status": "Out",
+        "comment": "Mar 23: Wade (knee) has been ruled out for Sunday's game against the Heat."
     },
     {
         "name": "Donovan Mitchell",
@@ -110,14 +140,9 @@
         "comment": "Mar 19: Mitchell will be re-evaluated in one week after undergoing a procedure on his nasal fracture Tuesday, Shams Charania of The Athletic reports."
     },
     {
-        "name": "Evan Mobley",
-        "status": "Out",
-        "comment": "Mar 11: Mobley (ankle) is no longer wearing a walking boot, Chris Fedor of The Cleveland Plain Dealer reports."
-    },
-    {
-        "name": "Ty Jerome",
-        "status": "Out",
-        "comment": "Jan 25: Jerome underwent arthroscopic surgery on his right ankle on January 23 and he remains out indefinitely, Spencer Davies of SI.com reports."
+        "name": "Maxi Kleber",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Kleber is questionable for Monday's game against Utah due to right knee soreness, Grant Afseth of SI.com reports."
     },
     {
         "name": "Josh Green",
@@ -131,8 +156,18 @@
     },
     {
         "name": "Zeke Nnaji",
+        "status": "Out",
+        "comment": "Mar 24: Nnaji (thigh) has been ruled out for Monday's game against the Grizzlies."
+    },
+    {
+        "name": "Jamal Murray",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Nnaji (back) is out for Tuesday's game versus the Timberwolves, Vinny Benedetto of The Denver Gazette reports."
+        "comment": "Mar 24: Murray (ankle) is listed as questionable for Monday's game against the Grizzlies."
+    },
+    {
+        "name": "Nikola Jokic",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Jokic (back/hip) is questionable for Monday's game against the Grizzlies."
     },
     {
         "name": "Vlatko Cancar",
@@ -140,14 +175,34 @@
         "comment": "Aug 17: Cancar underwent surgery surgery on his left knee Thursday and is out indefinitely, Vinny Benedetto of The Denver Gazette reports."
     },
     {
+        "name": "Jalen Duren",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Duren (back) won't play Sunday against the Pelicans. Johnny Kane of Bally Sports Detroit reports."
+    },
+    {
+        "name": "Cade Cunningham",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Cunningham has been ruled out for Sunday's game against the Pelicans due to left knee injury management, Keith Langlois of the Pistons' official site reports."
+    },
+    {
         "name": "Taj Gibson",
         "status": "Out",
-        "comment": "Mar 20: Gibson (hamstring) has been ruled out for Wednesday's game against the Pacers, James L. Edwards III of The Athletic reports."
+        "comment": "Mar 24: Gibson (hamstring) will not play in Sunday's game versus the Pelicans."
+    },
+    {
+        "name": "Quentin Grimes",
+        "status": "Out",
+        "comment": "Mar 23: Grimes (knee) has been ruled out for Sunday's matchup with the Pelicans."
     },
     {
         "name": "Simone Fontecchio",
         "status": "Out",
-        "comment": "Mar 20: Fontecchio (toe) has been ruled out for Wednesday's game against the Pacers, Omari Sankofa II of the Detroit Free Press"
+        "comment": "Mar 23: Fontecchio (toe) will not play in Sunday's game versus the Pelicans."
+    },
+    {
+        "name": "Stanley Umude",
+        "status": "Out",
+        "comment": "Mar 22: The Pistons announced Friday that Umude will miss the remainder of the season due to a hairline fracture in his right ankle, Keith Langlois of the Pistons' official site reports."
     },
     {
         "name": "Isaiah Stewart",
@@ -158,21 +213,6 @@
         "name": "Ausar Thompson",
         "status": "Out",
         "comment": "Mar 20: The Pistons announced Wednesday that Thompson will miss the remainder of the season while being treated for a blood clot, Shams Charania of The Athletic reports."
-    },
-    {
-        "name": "Quentin Grimes",
-        "status": "Out",
-        "comment": "Mar 19: Grimes (knee) won't play in Wednesday's game versus the Pacers."
-    },
-    {
-        "name": "Moses Moody",
-        "status": "Day-To-Day",
-        "comment": "Mar 19: Moody (knee) is questionable for Wednesday's game against Memphis."
-    },
-    {
-        "name": "Draymond Green",
-        "status": "Day-To-Day",
-        "comment": "Mar 19: Green (back) is questionable for Wednesday's game against the Grizzlies."
     },
     {
         "name": "Cam Whitmore",
@@ -195,34 +235,44 @@
         "comment": "Feb 1: Adams (knee) was traded from the Grizzlies to the Rockets in exchange for Victor Oladipo and three second-round picks Thursday, Adrian Wojnarowski of ESPN reports."
     },
     {
+        "name": "Isaiah Wong",
+        "status": "Day-To-Day",
+        "comment": "Mar 22: Wong tallied 24 points (6-13 FG, 5-7 3Pt, 7-11 FT) and three assists over 22 minutes during Sunday's 100-85 Summer League loss to the Pistons."
+    },
+    {
         "name": "Bennedict Mathurin",
         "status": "Out",
         "comment": "Mar 9: Mathurin is slated to undergo season-ending surgery to repair a torn labrum in his right shoulder, Adrian Wojnarowski of ESPN reports."
     },
     {
-        "name": "Terance Mann",
-        "status": "Day-To-Day",
-        "comment": "Mar 20: Mann (shoulder) participated in shootaround ahead of Wednesday's game versus the Trail Blazers, Law Murray of The Athletic reports."
+        "name": "Russell Westbrook",
+        "status": "Out",
+        "comment": "Mar 24: Westbrook has been cleared to return for Monday's game against Indiana after three weeks of recovery following surgery on a fractured left hand, Joey Linn of SI.com reports."
     },
     {
-        "name": "Norman Powell",
+        "name": "P.J. Tucker",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Powell (lower leg) participated in shootaround ahead of Wednesday's game versus the Trail Blazers, Law Murray of The Athletic reports."
+        "comment": "Mar 24: Tucker (calf) has been ruled out for Sunday's game against the 76ers, Law Murray of The Athletic reports."
     },
     {
         "name": "Moussa Diabate",
+        "status": "Out",
+        "comment": "Mar 23: Diabate recorded 10 points (4-14 FG, 1-1 FT), 18 rebounds, five assists, three steals and three blocks over 39 minutes in Sunday's 115-111 win over Westchester."
+    },
+    {
+        "name": "Jordan Miller",
         "status": "Day-To-Day",
-        "comment": "Mar 17: Diabate recorded 10 points (4-14 FG, 1-1 FT), 18 rebounds, five assists, three steals and three blocks over 39 minutes in Sunday's 115-111 win over Westchester."
+        "comment": "Mar 23: Miller was absent during Thursday's 110-101 win over Greensboro with an Achilles injury."
     },
     {
-        "name": "Russell Westbrook",
-        "status": "Out",
-        "comment": "Mar 4: Westbrook underwent surgery on his fractured left hand Monday, and the hope is that he will return before the start of the playoffs, Adrian Wojnarowski of ESPN reports."
+        "name": "D'Angelo Russell",
+        "status": "Day-To-Day",
+        "comment": "Mar 25: Russell is out for Sunday's game against the Pacers due to a non-COVID illness, Dave McMenamin of ESPN.com reports."
     },
     {
-        "name": "Cam Reddish",
+        "name": "Jalen Hood-Schifino",
         "status": "Out",
-        "comment": "Mar 20: Coach Darvin Ham said Reddish (ankle) was a full participant during Wednesday's practice and expects him to be available Friday against the 76ers, Dave McMenamin of ESPN.com reports."
+        "comment": "Mar 23: Los Angeles recalled Hood-Schifino from the G League's South Bay Lakers on Sunday."
     },
     {
         "name": "Christian Wood",
@@ -245,39 +295,44 @@
         "comment": "Feb 25: Castleton is expected to miss multiple weeks after he recently suffered a fractured right wrist, Dan Woike of the Los Angeles Times reports."
     },
     {
-        "name": "Lamar Stevens",
-        "status": "Out",
-        "comment": "Mar 19: Stevens (adductor) won't play in Wednesday's game versus the Warriors."
-    },
-    {
         "name": "Yuta Watanabe",
         "status": "Out",
-        "comment": "Mar 19: Watanabe (personal) will not play against the Warriors on Wednesday."
+        "comment": "Mar 24: Watanabe (personal) has been ruled out for Sunday's game against the Nuggets."
     },
     {
         "name": "Brandon Clarke",
         "status": "Out",
-        "comment": "Mar 19: Clarke (Achilles) won't play in Wednesday's game versus the Warriors."
+        "comment": "Mar 24: Clarke (Achilles) is doubtful for Monday's game against the Nuggets."
     },
     {
-        "name": "Scotty Pippen Jr.",
+        "name": "Lamar Stevens",
         "status": "Out",
-        "comment": "Mar 19: Pippen (leg) will not play against the Warriors on Wednesday."
+        "comment": "Mar 24: Stevens (thigh) is questionable for Monday's game against the Nuggets."
     },
     {
-        "name": "Santi Aldama",
+        "name": "John Konchar",
         "status": "Day-To-Day",
-        "comment": "Mar 19: Aldama (elbow) is listed as questionable for Wednesday's game versus the Warriors."
+        "comment": "Mar 24: Konchar is doubtful for Monday's game against the Nuggets due to right heel soreness."
+    },
+    {
+        "name": "Jake LaRavia",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: LaRavia is questionable for Monday's game against the Nuggets due to an illness."
     },
     {
         "name": "Luke Kennard",
         "status": "Out",
-        "comment": "Mar 19: Kennard (personal) won't play in Wednesday's game versus the Warriors."
+        "comment": "Mar 24: Kennard (personal) has been ruled out for Monday's game against the Nuggets."
     },
     {
         "name": "Vince Williams Jr.",
         "status": "Out",
-        "comment": "Mar 19: Williams (knee) is doubtful for Wednesday's game against the Warriors."
+        "comment": "Mar 24: Williams (knee) is doubtful for Monday's game against the Nuggets."
+    },
+    {
+        "name": "Desmond Bane",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Bane (back) is questionable for Monday's game against the Nuggets."
     },
     {
         "name": "Derrick Rose",
@@ -300,19 +355,19 @@
         "comment": "Jan 11: Morant underwent successful surgery on his right shoulder Thursday and will be out for the remainder of 2023-24, Chris Haynes of Turner Sports reports."
     },
     {
-        "name": "Bam Adebayo",
-        "status": "Out",
-        "comment": "Mar 20: Adebayo (back) has been ruled out for Wednesday's game against Cleveland, Ira Winderman of the South Florida Sun Sentinel reports."
-    },
-    {
-        "name": "Kevin Love",
-        "status": "Out",
-        "comment": "Mar 19: Love (heel) has been ruled out for Wednesday's game against the Cavaliers, Ira Winderman of the South Florida Sun Sentinel reports."
+        "name": "Jaime Jaquez Jr.",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Jaquez is out Sunday versus Cleveland due to discomfort in his left knee and ankle, Tim Reynolds of Associated Press reports."
     },
     {
         "name": "Duncan Robinson",
         "status": "Out",
-        "comment": "Mar 19: Robinson (back) will be unavailable for Wednesday's game against Cleveland."
+        "comment": "Mar 23: Robinson (back) won't play in Sunday's game versus the Cavaliers, Ira Winderman of the South Florida Sun Sentinel reports."
+    },
+    {
+        "name": "Kevin Love",
+        "status": "Out",
+        "comment": "Mar 23: Love (heel) will remain sidelined for Sunday's game versus the Cavaliers, Ira Winderman of the South Florida Sun Sentinel reports."
     },
     {
         "name": "Tyler Herro",
@@ -325,19 +380,9 @@
         "comment": "Mar 6: The Heat announced that Richardson underwent successful surgery to repair right shoulder instability Wednesday."
     },
     {
-        "name": "Giannis Antetokounmpo",
-        "status": "Out",
-        "comment": "Mar 20: Antetokounmpo (hamstring) will not play in Wednesday's game against the Celtics, Shams Charania of The Athletic reports."
-    },
-    {
-        "name": "Naz Reid",
+        "name": "AJ Green",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Reid (head) is inactive for Tuesday's game against Denver, Tim MacMahon of ESPN.com reports."
-    },
-    {
-        "name": "Rudy Gobert",
-        "status": "Out",
-        "comment": "Mar 19: Gobert (ribs) won't play in Tuesday's game versus the Nuggets."
+        "comment": "Mar 24: Green (illness) has been ruled out for Sunday's game against Oklahoma City, Eric Nehm of The Athletic reports."
     },
     {
         "name": "Jaylen Clark",
@@ -350,44 +395,54 @@
         "comment": "Mar 12: The Timberwolves announced Tuesday that Towns underwent successful surgery to repair a left knee lateral meniscus tear and will be re-evaluated in four weeks."
     },
     {
-        "name": "Matt Ryan",
-        "status": "Day-To-Day",
-        "comment": "Mar 20: Ryan is listed as questionable for Thursday's game versus the Magic due to a non-COVID illness."
-    },
-    {
         "name": "Dyson Daniels",
         "status": "Out",
-        "comment": "Mar 18: Daniels (knee) was able to go through a full practice Monday, Will Guillory of The Athletic reports."
+        "comment": "Mar 23: Daniels (knee) is out for Sunday's game versus the Pistons."
     },
     {
-        "name": "Mitchell Robinson",
+        "name": "Brandon Ingram",
         "status": "Out",
-        "comment": "Mar 20: Robinson (ankle) was a full participant at Wednesday's practice, Steve Popper of Newsday reports."
-    },
-    {
-        "name": "OG Anunoby",
-        "status": "Day-To-Day",
-        "comment": "Mar 19: Anunoby (elbow) is expected to miss time beyond Monday's game against Golden State, Adrian Wojnarowski of ESPN reports."
+        "comment": "Mar 22: Ingram suffered a bone contusion in his left knee Thursday against the Magic and is expected to miss at least two weeks, Shams Charania of The Athletic reports."
     },
     {
         "name": "Julius Randle",
         "status": "Out",
-        "comment": "Mar 12: Randle (shoulder) continues ramping up in \"controlled contact situations\" but has not progressed to any scrimmaging, Tim Bontemps of ESPN.com reports."
+        "comment": "Mar 25: Knicks head coach Tom Thibodeau said Friday that Randle is still waiting to take contact and is \"trying to strengthen the shoulder area,\" Stefan Bondy of the New York Post reports. \"Some days have been better than others,\" Thibodeau added. \"But just keep working at it and you never know when it turns. So that's the way we have to approach it.\""
+    },
+    {
+        "name": "Mitchell Robinson",
+        "status": "Out",
+        "comment": "Mar 24: Robinson (ankle) has been ruled out for Monday's game against the Pistons, Stefan Bondy of the New York Post reports."
+    },
+    {
+        "name": "OG Anunoby",
+        "status": "Out",
+        "comment": "Mar 24: Anunoby (elbow) has been declared out for Monday's game against the Pistons, Stefan Bondy of the New York Post reports."
+    },
+    {
+        "name": "Luguentz Dort",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Dort won't return to Sunday's game against the Bucks due to a face/nose contusion, Rylan Stiles of FanSided.com reports."
+    },
+    {
+        "name": "Gary Harris",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Harris (foot) won't play in Saturday's game versus the Kings."
+    },
+    {
+        "name": "Caleb Houstan",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Houston won't return to Saturday's game against the Kings due to left ankle soreness, Cody Taylor of USA Today reports."
+    },
+    {
+        "name": "Kyle Lowry",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Lowry will not play in Sunday's game against the Clippers for rest purposes, Adam Aaronson of PhillyVoice.com reports."
     },
     {
         "name": "Joel Embiid",
         "status": "Out",
         "comment": "Mar 20: Embiid (knee) won't be with the 76ers during their upcoming four-game road trip, which starts Wednesday in Phoenix and ends Monday in Sacramento, Shams Charania of The Athletic reports."
-    },
-    {
-        "name": "Tobias Harris",
-        "status": "Day-To-Day",
-        "comment": "Mar 20: Harris (ankle), who is questionable for Wednesday's game against the Suns, participated in Philadelphia's morning shootaround, Gina Mizell of The Philadelphia Inquirer reports."
-    },
-    {
-        "name": "Kai Jones",
-        "status": "Out",
-        "comment": "Mar 19: Jones (hamstring) will be inactive for Wednesday's game against Phoenix."
     },
     {
         "name": "De'Anthony Melton",
@@ -405,39 +460,34 @@
         "comment": "Mar 20: Lee (knee) has been ruled out for Wednesday's game against the 76ers, and there's no timetable for his return."
     },
     {
-        "name": "Josh Okogie",
+        "name": "Shaedon Sharpe",
         "status": "Out",
-        "comment": "Mar 19: Okogie (abdomen) will not play Wednesday against the 76ers, Kellan Olson of ArizonaSports.com reports."
+        "comment": "Mar 24: Sharpe (abdomen) has been assigned to the team's G League affiliate for conditioning."
     },
     {
-        "name": "Bol Bol",
+        "name": "Deandre Ayton",
         "status": "Day-To-Day",
-        "comment": "Mar 19: Bol is probable for Wednesday's game versus the 76ers with a right ankle sprain, Kellan Olson of ArizonaSports.com reports."
+        "comment": "Mar 24: Ayton (elbow) is questionable for Monday's game against the Rockets."
     },
     {
         "name": "Anfernee Simons",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Simons is questionable for Wednesday's game against the Clippers due to left knee tendinitis."
+        "comment": "Mar 24: Simons (knee) is questionable for Monday's game against Houston."
     },
     {
         "name": "Matisse Thybulle",
-        "status": "Day-To-Day",
-        "comment": "Mar 19: Thybulle (ankle) is questionable for Wednesday's game against the Clippers."
-    },
-    {
-        "name": "Malcolm Brogdon",
         "status": "Out",
-        "comment": "Mar 19: Brogdon (elbow) is out for Wednesday's game versus the Clippers."
+        "comment": "Mar 24: Thybulle (ankle) is questionable for Monday's game against the Rockets."
     },
     {
         "name": "Jerami Grant",
         "status": "Out",
-        "comment": "Mar 19: Grant (hamstring) is doubtful for Wednesday's game against the Clippers."
+        "comment": "Mar 24: Grant (hamstring) is doubtful for Monday's game against the Rockets."
     },
     {
-        "name": "Shaedon Sharpe",
+        "name": "Malcolm Brogdon",
         "status": "Out",
-        "comment": "Mar 7: Portland head coach Chauncey Billups said Wednesday that Sharpe (abdomen) has resumed light shooting work, Sean Highkin of RoseGardenReport.com reports."
+        "comment": "Mar 22: Brogdon (elbow) has been ramping up his activity, Sean Highkin of RoseGardenReport.com reports."
     },
     {
         "name": "Robert Williams III",
@@ -447,12 +497,12 @@
     {
         "name": "Sasha Vezenkov",
         "status": "Out",
-        "comment": "Mar 20: Vezenkov (ankle) won't play in Wednesday's game versus the Raptors, Sean Cunningham of Fox 40 Sacramento reports."
+        "comment": "Mar 24: Vezenkov (ankle) is questionable for Monday's game against the 76ers."
     },
     {
         "name": "Kevin Huerter",
         "status": "Out",
-        "comment": "Mar 19: Huerter (shoulder) will be inactive Wednesday against Toronto."
+        "comment": "Mar 21: The Kings announced Thursday that Huerter, who has been ruled out for Thursday's game against Washington, has been diagnosed with a dislocated shoulder and labral tear and doesn't have a timetable to return, Jason Anderson of The Sacramento Bee reports."
     },
     {
         "name": "Trey Lyles",
@@ -460,9 +510,9 @@
         "comment": "Mar 15: Lyeles (knee) is expected to be reevaluated in two weeks due to an MCL sprain, Frankie Cartoscelli of KHTK Sactown Sports 1140 reports."
     },
     {
-        "name": "Zach Collins",
+        "name": "Victor Wembanyama",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Collins is out for Tuesday's game against them Mavericks due to concussion-like symptoms."
+        "comment": "Mar 24: Wembanyama is questionable for Monday's game against the Suns due to a left ankle sprain, Andrew Lopez of ESPN.com reports."
     },
     {
         "name": "Charles Bassey",
@@ -470,14 +520,19 @@
         "comment": "Dec 12: Bassey will miss the remainder of the season after tearing his left ACL in Sunday's G League contest against the Legends, Jeff McDonald of the San Antonio Express-News reports."
     },
     {
-        "name": "Immanuel Quickley",
-        "status": "Out",
-        "comment": "Mar 20: Quickley (personal) does not have a timetable to return, Eric Koreen of The Athletic reports."
-    },
-    {
         "name": "D.J. Carton",
         "status": "Out",
-        "comment": "Mar 19: Carton (ankle) won't play in Wednesday's game versus the Kings, Blake Murphy of Sportsnet.ca reports."
+        "comment": "Mar 24: Carton (ankle) has been ruled out for Sunday's game against the Nets, Blake Murphy of Sportsnet.ca reports."
+    },
+    {
+        "name": "Jontay Porter",
+        "status": "Out",
+        "comment": "Mar 24: Porter (personal) has been ruled out for Monday's game against the Nets, Blake Murphy of Sportsnet.ca reports."
+    },
+    {
+        "name": "Immanuel Quickley",
+        "status": "Out",
+        "comment": "Mar 24: Quickley (personal) won't play Monday against the Nets, Blake Murphy of Sportsnet.ca reports."
     },
     {
         "name": "RJ Barrett",
@@ -502,42 +557,42 @@
     {
         "name": "Jordan Clarkson",
         "status": "Out",
-        "comment": "Mar 19: Clarkson (groin) will not play in Wednesday's game against Oklahoma City, Andy Larsen of The Salt Lake Tribune reports."
+        "comment": "Mar 24: Clarkson (groin) is questionable for Monday's game against the Mavericks."
+    },
+    {
+        "name": "Omer Yurtseven",
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Yurtseven (ankle) is questionable for Monday's game against Dallas."
     },
     {
         "name": "Lauri Markkanen",
-        "status": "Out",
-        "comment": "Mar 19: Markkanen is out for Wednesday's game versus the Thunder due to quadriceps contusion maintenance, Andy Larsen of The Salt Lake Tribune reports."
+        "status": "Day-To-Day",
+        "comment": "Mar 24: Markkanen (quadriceps) is questionable for Monday's game against Dallas."
     },
     {
-        "name": "Eugene Omoruyi",
+        "name": "Kyle Kuzma",
         "status": "Out",
-        "comment": "Mar 20: Omoruyi (ankle) has been ruled out for Thursday's game against the Kings."
-    },
-    {
-        "name": "Marvin Bagley III",
-        "status": "Out",
-        "comment": "Mar 20: Bagley (back) won't play in Thursday's game versus the Kings."
+        "comment": "Mar 24: Kuzma is out for Monday's game against the Bulls due to left shoulder soreness."
     },
     {
         "name": "Landry Shamet",
         "status": "Out",
-        "comment": "Mar 20: Shamet (calf) has been ruled out for Thursday's game against the Kings."
+        "comment": "Mar 24: Shamet (calf) has been ruled out for Monday's game against the Bulls."
     },
     {
-        "name": "Richaun Holmes",
+        "name": "Eugene Omoruyi",
+        "status": "Out",
+        "comment": "Mar 24: Omoruyi (ankle) has been ruled out for Monday's game against Chicago."
+    },
+    {
+        "name": "Jordan Poole",
         "status": "Day-To-Day",
-        "comment": "Mar 20: Holmes is questionable for Thursday's game against the Kings due to a non-COVID illness."
+        "comment": "Mar 24: Poole is questionable for Monday's game against the Bulls due to a right ankle sprain."
     },
     {
         "name": "Tyus Jones",
         "status": "Out",
-        "comment": "Mar 20: Jones (back) has been ruled out for Thursday's game against the Kings."
-    },
-    {
-        "name": "Deni Avdija",
-        "status": "Out",
-        "comment": "Mar 20: Avdija (knee) is questionable for Thursday's game versus the Kings."
+        "comment": "Mar 24: Jones (back) has been ruled out for Monday's game against the Bulls."
     },
     {
         "name": "Bilal Coulibaly",

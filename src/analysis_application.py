@@ -12,6 +12,7 @@ class AnalysisApplication:
     def __init__(self):
         self.sport = None
         self.analysis = None
+        self.props_lim = {'nba': 4, 'nfl': 4, 'nhl': 4, 'mlb': 4}
 
     def initialize_objects(self):
         if self.sport == 'nba':
@@ -25,9 +26,11 @@ class AnalysisApplication:
             pass
 
     def complete_data_reload(self):
-        """Completely reload all team, game, player, and player stats data for 
+        """
+        Completely reload all team, game, player, and player stats data for 
         all seasons.\n
-        311/100 API calls, cost $0.0311, 31.1 min."""
+        311/100 API calls, cost $0.0311, 31.1 min.
+        """
         
         # Get list of all seasons
         seasons = get_data.get_seasons(self.sport)
@@ -48,9 +51,11 @@ class AnalysisApplication:
                 get_data.get_player_stats_data(f'{self.sport}', team['id'], season)
 
     def refresh_data(self):
-        """Refresh all team, game, player, and player stats data for current season.
+        """
+        Refresh all team, game, player, and player stats data for current season.
         Can use if last update occured during the current season.\n
-        63/100 API calls, cost $0.00, 6.3 min."""
+        63/100 API calls, cost $0.00, 6.3 min.
+        """
         
         # Get current season
         season = get_data.get_seasons(self.sport)[-1]
@@ -67,35 +72,50 @@ class AnalysisApplication:
             get_data.get_player_stats_data(self.sport, team['id'], season)
 
     def refresh_core_lines(self, date_str: str):
-        """Use market keys and date string to get odds for featured markets.\n
-        Will result in (3 x n_events)/20,000 API calls."""
+        """
+        Use market keys and date string to get odds for featured markets.\n
+        Will result in (3 x n_events)/20,000 API calls.
+        """
 
         markets_handler = FileHandler('api_keys_core_markets.json', 'src')
         markets = markets_handler.load_file()
         for market in markets:
             get_data.get_core_market_odds(self.sport, market, date_str)
 
-    def refresh_player_prop_lines(self, date_str: str):
-        """Update events.json, then use market keys and date string to get odds
+    def refresh_player_prop_lines(self, date_str: str, limited=False):
+        """
+        Update events.json, then use market keys and date string to get odds
         for all markets other than the featured markets.\n
-        Will results in (n_markets x n_events)/20,000 API calls."""
+        Will results in (n_markets x n_events)/20,000 API calls.
+        """
 
         get_data.get_events(self.sport, date_str)
         markets_handler = FileHandler('api_keys_player_prop_markets.json', 
                                       f'data/{self.sport}/odds')
         markets = markets_handler.load_file()
+        if limited:
+            markets = markets[:self.props_lim[self.sport]]
+        
         for market in markets:
             get_data.get_additional_market_odds(self.sport, market)
 
     def update_core_analysis_workbook(self):
         pass
 
-    def update_player_prop_analysis_workbook(self, date_str: str):
-        """"""
+    def update_player_prop_analysis_workbook(self, date_str: str, limited=False):
+        """
+        Update player prop data in prop analysis workbook.\n
+        date_str should be in form 'yyyy-mm-dd'\n
+        limited is False by default, if True only take core props 
+        from API keys json file (This will differ between sports).
+        """
 
         markets_handler = FileHandler('api_keys_player_prop_markets.json', 
                                       f'data/{self.sport}/odds')
         markets = markets_handler.load_file()
+        if limited:
+            markets = markets[:self.props_lim[self.sport]]
+        
         date_obj = datetime.strptime(date_str, '%Y-%m-%d')
 
         tables = []
@@ -110,6 +130,14 @@ class AnalysisApplication:
     def input_date(self):
         dt = input('Please input date in format yyyy-mm-dd: ')
         return dt
+    
+    def input_limited(self):
+        while True:
+            lim = input('Would you like the limited workbook? (y/n): ')
+            if lim == 'y':
+                return True
+            elif lim == 'n':
+                return False
 
     def exit(self):
         sys.exit()
@@ -185,14 +213,16 @@ class AnalysisApplication:
                 self.refresh_core_lines(dt)
             elif command == '3':
                 dt = self.input_date()
-                self.refresh_player_prop_lines(dt)
+                lim = self.input_limited()
+                self.refresh_player_prop_lines(dt, limited=lim)
             elif command == '4':
                 self.initialize_objects()
                 self.update_core_analysis_workbook()
             elif command == '5':
                 dt = self.input_date()
+                lim = self.input_limited()
                 self.initialize_objects()
-                self.update_player_prop_analysis_workbook(dt)
+                self.update_player_prop_analysis_workbook(dt, limited=lim)
             elif command == '6':
                 dt = self.input_date()
                 self.refresh_data()
@@ -201,18 +231,20 @@ class AnalysisApplication:
                 self.update_core_analysis_workbook()
             elif command == '7':
                 dt = self.input_date()
+                lim = self.input_limited()
                 self.refresh_data()
-                self.refresh_player_prop_lines(dt)
+                self.refresh_player_prop_lines(dt, limited=lim)
                 self.initialize_objects()
-                self.update_player_prop_analysis_workbook(dt)
+                self.update_player_prop_analysis_workbook(dt, limited=lim)
             elif command == '8':
                 dt = self.input_date()
+                lim = self.input_limited()
                 self.refresh_data()
                 self.refresh_core_lines(dt)
-                self.refresh_player_prop_lines(dt)
+                self.refresh_player_prop_lines(dt, limited=lim)
                 self.initialize_objects()
                 self.update_core_analysis_workbook()
-                self.update_player_prop_analysis_workbook(dt)
+                self.update_player_prop_analysis_workbook(dt, limited=lim)
             elif command == 'main':
                 self.main_menu()
                 break

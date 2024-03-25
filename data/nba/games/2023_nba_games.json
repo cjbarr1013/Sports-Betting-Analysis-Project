@@ -42789,7 +42789,7 @@
         "datetime": "2024-03-20T19:00:00-04:00",
         "date": "03/20/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -42802,29 +42802,29 @@
             "id": 20,
             "code": "MIA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "31",
+                "q2": "30",
+                "q3": "22",
+                "q4": "24",
+                "ot": 0,
+                "total": 107
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 3
         },
         "home": {
             "id": 7,
             "code": "CLE",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "27",
+                "q3": "18",
+                "q4": "29",
+                "ot": 0,
+                "total": 104
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -3
         }
     },
     "13545": {
@@ -42832,7 +42832,7 @@
         "datetime": "2024-03-20T19:00:00-04:00",
         "date": "03/20/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -42845,29 +42845,29 @@
             "id": 15,
             "code": "IND",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "29",
+                "q2": "34",
+                "q3": "35",
+                "q4": "24",
+                "ot": 0,
+                "total": 122
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 19
         },
         "home": {
             "id": 10,
             "code": "DET",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "24",
+                "q2": "28",
+                "q3": "26",
+                "q4": "25",
+                "ot": 0,
+                "total": 103
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -19
         }
     },
     "13546": {
@@ -42875,7 +42875,7 @@
         "datetime": "2024-03-20T19:30:00-04:00",
         "date": "03/20/24",
         "time": "7:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -42888,29 +42888,29 @@
             "id": 21,
             "code": "MIL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "28",
+                "q3": "27",
+                "q4": "36",
+                "ot": 0,
+                "total": 119
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -3
         },
         "home": {
             "id": 2,
             "code": "BOS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "33",
+                "q2": "36",
+                "q3": "32",
+                "q4": "21",
+                "ot": 0,
+                "total": 122
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 3
         }
     },
     "13547": {
@@ -42918,7 +42918,7 @@
         "datetime": "2024-03-20T19:30:00-04:00",
         "date": "03/20/24",
         "time": "7:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -42931,29 +42931,29 @@
             "id": 30,
             "code": "SAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "32",
+                "q2": "36",
+                "q3": "31",
+                "q4": "24",
+                "ot": 0,
+                "total": 123
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 34
         },
         "home": {
             "id": 38,
             "code": "TOR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "18",
+                "q3": "20",
+                "q4": "24",
+                "ot": 0,
+                "total": 89
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -34
         }
     },
     "13548": {
@@ -42961,7 +42961,7 @@
         "datetime": "2024-03-20T20:00:00-04:00",
         "date": "03/20/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -42974,29 +42974,29 @@
             "id": 40,
             "code": "UTA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "25",
+                "q2": "29",
+                "q3": "26",
+                "q4": "27",
+                "ot": 0,
+                "total": 107
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -12
         },
         "home": {
             "id": 25,
             "code": "OKC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "31",
+                "q2": "22",
+                "q3": "29",
+                "q4": "37",
+                "ot": 0,
+                "total": 119
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 12
         }
     },
     "13549": {
@@ -43004,7 +43004,7 @@
         "datetime": "2024-03-20T22:00:00-04:00",
         "date": "03/20/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43017,29 +43017,29 @@
             "id": 19,
             "code": "MEM",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "32",
+                "q2": "26",
+                "q3": "32",
+                "q4": "26",
+                "ot": 0,
+                "total": 116
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -21
         },
         "home": {
             "id": 11,
             "code": "GSW",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "33",
+                "q2": "35",
+                "q3": "40",
+                "q4": "29",
+                "ot": 0,
+                "total": 137
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 21
         }
     },
     "13550": {
@@ -43047,7 +43047,7 @@
         "datetime": "2024-03-20T22:00:00-04:00",
         "date": "03/20/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43060,29 +43060,29 @@
             "id": 27,
             "code": "PHI",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "23",
+                "q2": "24",
+                "q3": "19",
+                "q4": "36",
+                "ot": 0,
+                "total": 102
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         },
         "home": {
             "id": 28,
             "code": "PHX",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "21",
+                "q2": "39",
+                "q3": "30",
+                "q4": "25",
+                "ot": 0,
+                "total": 115
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         }
     },
     "13551": {
@@ -43090,7 +43090,7 @@
         "datetime": "2024-03-20T22:00:00-04:00",
         "date": "03/20/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43103,29 +43103,29 @@
             "id": 16,
             "code": "LAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "33",
+                "q3": "34",
+                "q4": "22",
+                "ot": 0,
+                "total": 116
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         },
         "home": {
             "id": 29,
             "code": "POR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "22",
+                "q3": "20",
+                "q4": "33",
+                "ot": 0,
+                "total": 103
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         }
     },
     "13552": {
@@ -43133,7 +43133,7 @@
         "datetime": "2024-03-21T19:00:00-04:00",
         "date": "03/21/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43146,29 +43146,29 @@
             "id": 23,
             "code": "NOP",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "20",
+                "q3": "27",
+                "q4": "31",
+                "ot": 0,
+                "total": 106
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -15
         },
         "home": {
             "id": 26,
             "code": "ORL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "23",
+                "q2": "34",
+                "q3": "38",
+                "q4": "26",
+                "ot": 0,
+                "total": 121
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 15
         }
     },
     "13553": {
@@ -43176,7 +43176,7 @@
         "datetime": "2024-03-21T19:00:00-04:00",
         "date": "03/21/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43189,29 +43189,29 @@
             "id": 30,
             "code": "SAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "27",
+                "q3": "22",
+                "q4": "26",
+                "ot": 0,
+                "total": 102
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -7
         },
         "home": {
             "id": 41,
             "code": "WAS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "35",
+                "q2": "21",
+                "q3": "28",
+                "q4": "25",
+                "ot": 0,
+                "total": 109
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 7
         }
     },
     "13554": {
@@ -43219,7 +43219,7 @@
         "datetime": "2024-03-21T20:00:00-04:00",
         "date": "03/21/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43232,29 +43232,29 @@
             "id": 6,
             "code": "CHI",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "33",
+                "q3": "33",
+                "q4": "23",
+                "ot": 0,
+                "total": 117
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -10
         },
         "home": {
             "id": 14,
             "code": "HOU",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "42",
+                "q2": "26",
+                "q3": "37",
+                "q4": "22",
+                "ot": 0,
+                "total": 127
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 10
         }
     },
     "13555": {
@@ -43262,7 +43262,7 @@
         "datetime": "2024-03-21T20:00:00-04:00",
         "date": "03/21/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43275,29 +43275,29 @@
             "id": 4,
             "code": "BKN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "19",
+                "q2": "25",
+                "q3": "25",
+                "q4": "39",
+                "ot": 0,
+                "total": 108
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -7
         },
         "home": {
             "id": 21,
             "code": "MIL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "26",
+                "q2": "34",
+                "q3": "21",
+                "q4": "34",
+                "ot": 0,
+                "total": 115
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 7
         }
     },
     "13556": {
@@ -43305,7 +43305,7 @@
         "datetime": "2024-03-21T20:30:00-04:00",
         "date": "03/21/24",
         "time": "8:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43318,29 +43318,29 @@
             "id": 40,
             "code": "UTA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "15",
+                "q3": "31",
+                "q4": "24",
+                "ot": 0,
+                "total": 97
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -16
         },
         "home": {
             "id": 8,
             "code": "DAL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "26",
+                "q2": "27",
+                "q3": "30",
+                "q4": "30",
+                "ot": 0,
+                "total": 113
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 16
         }
     },
     "13557": {
@@ -43348,7 +43348,7 @@
         "datetime": "2024-03-21T21:00:00-04:00",
         "date": "03/21/24",
         "time": "9:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43361,29 +43361,29 @@
             "id": 24,
             "code": "NYK",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "26",
+                "q3": "20",
+                "q4": "24",
+                "ot": 0,
+                "total": 100
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         },
         "home": {
             "id": 9,
             "code": "DEN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "32",
+                "q2": "29",
+                "q3": "27",
+                "q4": "25",
+                "ot": 0,
+                "total": 113
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         }
     },
     "13558": {
@@ -43391,7 +43391,7 @@
         "datetime": "2024-03-21T22:30:00-04:00",
         "date": "03/21/24",
         "time": "10:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43404,29 +43404,29 @@
             "id": 1,
             "code": "ATL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "37",
+                "q2": "23",
+                "q3": "33",
+                "q4": "22",
+                "ot": 0,
+                "total": 115
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         },
         "home": {
             "id": 28,
             "code": "PHX",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "35",
+                "q3": "31",
+                "q4": "32",
+                "ot": 0,
+                "total": 128
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         }
     },
     "13559": {
@@ -43434,7 +43434,7 @@
         "datetime": "2024-03-22T19:00:00-04:00",
         "date": "03/22/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43447,29 +43447,29 @@
             "id": 2,
             "code": "BOS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "32",
+                "q2": "37",
+                "q3": "35",
+                "q4": "25",
+                "ot": 0,
+                "total": 129
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 27
         },
         "home": {
             "id": 10,
             "code": "DET",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "34",
+                "q2": "19",
+                "q3": "30",
+                "q4": "19",
+                "ot": 0,
+                "total": 102
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -27
         }
     },
     "13560": {
@@ -43477,7 +43477,7 @@
         "datetime": "2024-03-22T19:00:00-04:00",
         "date": "03/22/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43490,29 +43490,29 @@
             "id": 25,
             "code": "OKC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "35",
+                "q3": "26",
+                "q4": "34",
+                "ot": 0,
+                "total": 123
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 20
         },
         "home": {
             "id": 38,
             "code": "TOR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "35",
+                "q2": "21",
+                "q3": "22",
+                "q4": "25",
+                "ot": 0,
+                "total": 103
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -20
         }
     },
     "13561": {
@@ -43520,7 +43520,7 @@
         "datetime": "2024-03-22T20:00:00-04:00",
         "date": "03/22/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43533,29 +43533,29 @@
             "id": 23,
             "code": "NOP",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "21",
+                "q2": "25",
+                "q3": "30",
+                "q4": "35",
+                "ot": 0,
+                "total": 111
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 23
         },
         "home": {
             "id": 20,
             "code": "MIA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "20",
+                "q2": "22",
+                "q3": "24",
+                "q4": "22",
+                "ot": 0,
+                "total": 88
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -23
         }
     },
     "13562": {
@@ -43563,7 +43563,7 @@
         "datetime": "2024-03-22T20:00:00-04:00",
         "date": "03/22/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43576,29 +43576,29 @@
             "id": 7,
             "code": "CLE",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "20",
+                "q2": "29",
+                "q3": "17",
+                "q4": "25",
+                "ot": 0,
+                "total": 91
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         },
         "home": {
             "id": 22,
             "code": "MIN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "25",
+                "q2": "21",
+                "q3": "26",
+                "q4": "32",
+                "ot": 0,
+                "total": 104
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         }
     },
     "13563": {
@@ -43606,7 +43606,7 @@
         "datetime": "2024-03-22T20:00:00-04:00",
         "date": "03/22/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43619,29 +43619,29 @@
             "id": 19,
             "code": "MEM",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "18",
+                "q2": "25",
+                "q3": "28",
+                "q4": "28",
+                "ot": 0,
+                "total": 99
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 2
         },
         "home": {
             "id": 31,
             "code": "SAS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "14",
+                "q3": "24",
+                "q4": "29",
+                "ot": 0,
+                "total": 97
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -2
         }
     },
     "13564": {
@@ -43649,7 +43649,7 @@
         "datetime": "2024-03-22T22:00:00-04:00",
         "date": "03/22/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43662,29 +43662,29 @@
             "id": 15,
             "code": "IND",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "38",
+                "q2": "28",
+                "q3": "36",
+                "q4": "21",
+                "ot": 0,
+                "total": 123
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 12
         },
         "home": {
             "id": 11,
             "code": "GSW",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "38",
+                "q2": "29",
+                "q3": "21",
+                "q4": "23",
+                "ot": 0,
+                "total": 111
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -12
         }
     },
     "13565": {
@@ -43692,7 +43692,7 @@
         "datetime": "2024-03-22T22:00:00-04:00",
         "date": "03/22/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43705,29 +43705,29 @@
             "id": 16,
             "code": "LAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "42",
+                "q2": "28",
+                "q3": "31",
+                "q4": "24",
+                "ot": 0,
+                "total": 125
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 8
         },
         "home": {
             "id": 29,
             "code": "POR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "26",
+                "q3": "27",
+                "q4": "37",
+                "ot": 0,
+                "total": 117
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -8
         }
     },
     "13566": {
@@ -43735,7 +43735,7 @@
         "datetime": "2024-03-22T22:30:00-04:00",
         "date": "03/22/24",
         "time": "10:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43748,29 +43748,29 @@
             "id": 27,
             "code": "PHI",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "23",
+                "q2": "29",
+                "q3": "24",
+                "q4": "18",
+                "ot": 0,
+                "total": 94
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -7
         },
         "home": {
             "id": 17,
             "code": "LAL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "24",
+                "q2": "26",
+                "q3": "25",
+                "q4": "26",
+                "ot": 0,
+                "total": 101
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 7
         }
     },
     "13567": {
@@ -43778,7 +43778,7 @@
         "datetime": "2024-03-23T13:00:00-04:00",
         "date": "03/23/24",
         "time": "1:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43791,29 +43791,29 @@
             "id": 4,
             "code": "BKN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "27",
+                "q3": "20",
+                "q4": "16",
+                "ot": 0,
+                "total": 93
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -12
         },
         "home": {
             "id": 24,
             "code": "NYK",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "28",
+                "q3": "24",
+                "q4": "25",
+                "ot": 0,
+                "total": 105
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 12
         }
     },
     "13568": {
@@ -43821,7 +43821,7 @@
         "datetime": "2024-03-23T19:00:00-04:00",
         "date": "03/23/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43834,29 +43834,29 @@
             "id": 30,
             "code": "SAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "27",
+                "q3": "27",
+                "q4": "28",
+                "ot": 0,
+                "total": 109
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 2
         },
         "home": {
             "id": 26,
             "code": "ORL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "26",
+                "q2": "30",
+                "q3": "25",
+                "q4": "26",
+                "ot": 0,
+                "total": 107
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -2
         }
     },
     "13569": {
@@ -43864,7 +43864,7 @@
         "datetime": "2024-03-23T19:30:00-04:00",
         "date": "03/23/24",
         "time": "7:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43877,29 +43877,29 @@
             "id": 5,
             "code": "CHA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "28",
+                "q2": "20",
+                "q3": "26",
+                "q4": "17",
+                "ot": 0,
+                "total": 91
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -41
         },
         "home": {
             "id": 1,
             "code": "ATL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "36",
+                "q3": "33",
+                "q4": "33",
+                "ot": 0,
+                "total": 132
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 41
         }
     },
     "13570": {
@@ -43907,7 +43907,7 @@
         "datetime": "2024-03-23T20:00:00-04:00",
         "date": "03/23/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43920,29 +43920,29 @@
             "id": 38,
             "code": "TOR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "25",
+                "q2": "23",
+                "q3": "33",
+                "q4": "28",
+                "ot": 0,
+                "total": 109
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -3
         },
         "home": {
             "id": 41,
             "code": "WAS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "23",
+                "q2": "28",
+                "q3": "26",
+                "q4": "35",
+                "ot": 0,
+                "total": 112
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 3
         }
     },
     "13571": {
@@ -43950,7 +43950,7 @@
         "datetime": "2024-03-23T20:00:00-04:00",
         "date": "03/23/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -43963,29 +43963,29 @@
             "id": 2,
             "code": "BOS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "31",
+                "q2": "35",
+                "q3": "29",
+                "q4": "29",
+                "ot": 0,
+                "total": 124
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 11
         },
         "home": {
             "id": 6,
             "code": "CHI",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "31",
+                "q2": "29",
+                "q3": "32",
+                "q4": "21",
+                "ot": 0,
+                "total": 113
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -11
         }
     },
     "13572": {
@@ -43993,7 +43993,7 @@
         "datetime": "2024-03-23T20:00:00-04:00",
         "date": "03/23/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44006,29 +44006,29 @@
             "id": 40,
             "code": "UTA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "21",
+                "q2": "34",
+                "q3": "36",
+                "q4": "28",
+                "ot": 0,
+                "total": 119
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -28
         },
         "home": {
             "id": 14,
             "code": "HOU",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "47",
+                "q2": "38",
+                "q3": "37",
+                "q4": "25",
+                "ot": 0,
+                "total": 147
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 28
         }
     },
     "13573": {
@@ -44036,7 +44036,7 @@
         "datetime": "2024-03-23T20:00:00-04:00",
         "date": "03/23/24",
         "time": "8:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44049,29 +44049,29 @@
             "id": 28,
             "code": "PHX",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "26",
+                "q2": "39",
+                "q3": "38",
+                "q4": "28",
+                "ot": 0,
+                "total": 131
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 25
         },
         "home": {
             "id": 31,
             "code": "SAS",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "17",
+                "q2": "30",
+                "q3": "24",
+                "q4": "35",
+                "ot": 0,
+                "total": 106
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -25
         }
     },
     "13574": {
@@ -44079,7 +44079,7 @@
         "datetime": "2024-03-23T22:00:00-04:00",
         "date": "03/23/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44092,29 +44092,29 @@
             "id": 9,
             "code": "DEN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "26",
+                "q2": "31",
+                "q3": "28",
+                "q4": "29",
+                "ot": 0,
+                "total": 114
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 3
         },
         "home": {
             "id": 29,
             "code": "POR",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "22",
+                "q2": "25",
+                "q3": "36",
+                "q4": "28",
+                "ot": 0,
+                "total": 111
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -3
         }
     },
     "13575": {
@@ -44122,7 +44122,7 @@
         "datetime": "2024-03-24T15:00:00-04:00",
         "date": "03/24/24",
         "time": "3:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44135,29 +44135,29 @@
             "id": 23,
             "code": "NOP",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "29",
+                "q2": "28",
+                "q3": "26",
+                "q4": "31",
+                "ot": 0,
+                "total": 114
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 13
         },
         "home": {
             "id": 10,
             "code": "DET",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "10",
+                "q2": "31",
+                "q3": "25",
+                "q4": "35",
+                "ot": 0,
+                "total": 101
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -13
         }
     },
     "13576": {
@@ -44165,7 +44165,7 @@
         "datetime": "2024-03-24T15:30:00-04:00",
         "date": "03/24/24",
         "time": "3:30PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44178,29 +44178,29 @@
             "id": 27,
             "code": "PHI",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "41",
+                "q2": "22",
+                "q3": "25",
+                "q4": "33",
+                "ot": 0,
+                "total": 121
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 14
         },
         "home": {
             "id": 16,
             "code": "LAC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "29",
+                "q2": "27",
+                "q3": "27",
+                "q4": "24",
+                "ot": 0,
+                "total": 107
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -14
         }
     },
     "13577": {
@@ -44208,7 +44208,7 @@
         "datetime": "2024-03-24T18:00:00-04:00",
         "date": "03/24/24",
         "time": "6:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44221,29 +44221,29 @@
             "id": 7,
             "code": "CLE",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "22",
+                "q2": "17",
+                "q3": "18",
+                "q4": "27",
+                "ot": 0,
+                "total": 84
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -37
         },
         "home": {
             "id": 20,
             "code": "MIA",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "32",
+                "q2": "28",
+                "q3": "30",
+                "q4": "31",
+                "ot": 0,
+                "total": 121
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 37
         }
     },
     "13578": {
@@ -44251,7 +44251,7 @@
         "datetime": "2024-03-24T19:00:00-04:00",
         "date": "03/24/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44264,29 +44264,29 @@
             "id": 25,
             "code": "OKC",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "22",
+                "q2": "25",
+                "q3": "17",
+                "q4": "29",
+                "ot": 0,
+                "total": 93
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -25
         },
         "home": {
             "id": 21,
             "code": "MIL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "25",
+                "q2": "23",
+                "q3": "34",
+                "q4": "36",
+                "ot": 0,
+                "total": 118
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 25
         }
     },
     "13579": {
@@ -44294,7 +44294,7 @@
         "datetime": "2024-03-24T19:00:00-04:00",
         "date": "03/24/24",
         "time": "7:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44307,29 +44307,29 @@
             "id": 11,
             "code": "GSW",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "27",
+                "q2": "27",
+                "q3": "27",
+                "q4": "29",
+                "ot": 0,
+                "total": 110
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -4
         },
         "home": {
             "id": 22,
             "code": "MIN",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "18",
+                "q2": "28",
+                "q3": "32",
+                "q4": "36",
+                "ot": 0,
+                "total": 114
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 4
         }
     },
     "13580": {
@@ -44337,7 +44337,7 @@
         "datetime": "2024-03-24T22:00:00-04:00",
         "date": "03/24/24",
         "time": "10:00PM",
-        "finished": false,
+        "finished": true,
         "overtime": false,
         "playoffs": false,
         "arena": {
@@ -44350,29 +44350,29 @@
             "id": 15,
             "code": "IND",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "36",
+                "q2": "32",
+                "q3": "31",
+                "q4": "46",
+                "ot": 0,
+                "total": 145
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "L",
+            "margin": -5
         },
         "home": {
             "id": 17,
             "code": "LAL",
             "score": {
-                "q1": null,
-                "q2": null,
-                "q3": null,
-                "q4": null,
-                "ot": null,
-                "total": null
+                "q1": "30",
+                "q2": "42",
+                "q3": "44",
+                "q4": "34",
+                "ot": 0,
+                "total": 150
             },
-            "outcome": null,
-            "margin": null
+            "outcome": "W",
+            "margin": 5
         }
     },
     "13581": {

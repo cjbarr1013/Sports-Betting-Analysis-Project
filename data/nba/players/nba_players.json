@@ -2136,6 +2136,18 @@
         "position": "F"
     },
     {
+        "id": 999,
+        "firstname": "Chimezie",
+        "lastname": "Metu",
+        "height": {
+            "feet": "6",
+            "inches": "9"
+        },
+        "weight": "225",
+        "jersey": 7,
+        "position": "F-C"
+    },
+    {
         "id": 1001,
         "firstname": "Shake",
         "lastname": "Milton",
@@ -3804,18 +3816,6 @@
         "position": "F-C"
     },
     {
-        "id": 999,
-        "firstname": "Chimezie",
-        "lastname": "Metu",
-        "height": {
-            "feet": "6",
-            "inches": "9"
-        },
-        "weight": "225",
-        "jersey": 7,
-        "position": "F-C"
-    },
-    {
         "id": 1040,
         "firstname": "Yuta",
         "lastname": "Watanabe",
@@ -4030,6 +4030,18 @@
         "weight": "260",
         "jersey": 56,
         "position": "C"
+    },
+    {
+        "id": 4086,
+        "firstname": "M.",
+        "lastname": "Pereira",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "F"
     },
     {
         "id": 456,
@@ -4305,6 +4317,18 @@
         },
         "weight": "225",
         "jersey": 11,
+        "position": "G"
+    },
+    {
+        "id": 4085,
+        "firstname": "Jamie",
+        "lastname": "Jaquez Jr.",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
         "position": "G"
     },
     {
@@ -6072,6 +6096,18 @@
         "position": "F"
     },
     {
+        "id": 4087,
+        "firstname": "I.",
+        "lastname": "Thomas",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "G"
+    },
+    {
         "id": 153,
         "firstname": "Kevin",
         "lastname": "Durant",
@@ -7474,6 +7510,18 @@
         "weight": "195",
         "jersey": null,
         "position": "SG"
+    },
+    {
+        "id": 4088,
+        "firstname": "T.",
+        "lastname": "Vukcevic",
+        "height": {
+            "feet": null,
+            "inches": null
+        },
+        "weight": null,
+        "jersey": null,
+        "position": "PF"
     },
     {
         "id": 1191,
