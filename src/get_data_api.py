@@ -36,13 +36,18 @@ class APIClient:
 class NBAStatsAPIClient(APIClient):
     def __init__(self):
         self.base_url = 'https://api-nba-v1.p.rapidapi.com'
-        self.key = '5d4e021604msh02b622d72706cd8p1ea776jsnb23e50a563d2'
+        self.key = self.__init_key()
         self.host = 'api-nba-v1.p.rapidapi.com'
         self.headers = {
                         'X-RapidAPI-Key': self.key,
                         'X-RapidAPI-Host': self.host
                         }
-    
+        
+    def __init_key(self):
+        key_handler = FileHandler('api_keys_data.json', 'src')
+        keys = key_handler.load_file()
+        return keys['data']['nba']['key']
+
     def get_seasons(self):
         """Return JSON with callable seasons."""
 
@@ -154,8 +159,13 @@ class MLBStatsAPIClient:
 class OddsAPIClient(APIClient):
     def __init__(self):
         self.base_url = 'https://api.the-odds-api.com/v4/sports'
-        self.key = 'cb1d0f43e31783f0a89fe53481df9e9c'
+        self.key = self.__init_key()
         self.headers = None
+
+    def __init_key(self):
+        key_handler = FileHandler('api_keys_data.json', 'src')
+        keys = key_handler.load_file()
+        return keys['odds']['key']
 
     def get_sports(self, all: str='false'):
         """
